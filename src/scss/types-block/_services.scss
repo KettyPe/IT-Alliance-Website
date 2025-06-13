@@ -1,0 +1,86 @@
+
+.services-block {
+     &__cards {
+          margin-bottom: 60px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 32px;
+     }
+
+     &__card {
+     }
+}
+
+.card-services {
+     position: relative;
+     background-color: var(--whiteColor);
+     min-height: 248px;
+     border: 1px solid var(--borderColor);
+     border-radius: 4px;
+     padding: 20px;
+     cursor: pointer;
+     @media (any-hover: hover) {
+          transition:
+               color 0.3s ease 0s,
+               background-color 0.5s ease 0s,
+               border-color 0.5s ease 0s;
+          &:hover {
+               color: var(--whiteColor);
+               background-color: var(--AcentColor);
+               border-color: transparent;
+               .card-services__title {
+                    color: var(--whiteColor);
+               }
+               .card-services__text {
+                    color: var(--whiteColor);
+               }
+               .card-services__arrow {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translate(-20px, 20px);
+               }
+          }
+     }
+
+     &__icon {
+          margin-bottom: 32px;
+     }
+
+     &__title {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 130%;
+          margin-bottom: 12px;
+          transition: color 0.3s ease 0s;
+     }
+
+     &__text {
+          line-height: 130%;
+          color: var(--grayColor);
+          transition: color 0.3s ease 0s;
+     }
+
+     &__arrow {
+          width: 40px;
+          height: 40px;
+          border-radius: 50px;
+          border: 2px solid #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          // top: 30px;
+          // right: 30px;
+          top: 0;
+          right: 0;
+          opacity: 0;
+          visibility: hidden;
+          transform: translate(-30px, 30px);
+          transition: all 0.35s ease 0s;
+          will-change: transform;
+     }
+}
+
+.card-services-transition {
+     @include cardBorderGrayDashed;
+}

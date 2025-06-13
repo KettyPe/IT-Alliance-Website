@@ -1,0 +1,95 @@
+.tabs-card-solutions {
+     &__body {
+     }
+
+     &__btn-wrapper {
+          border-bottom: 1px solid var(--borderColor);
+     }
+
+     &__buttons {
+          display: flex;
+     }
+
+     &__button {
+          display: block;
+          cursor: pointer;
+          transition: color 0.3s ease 0s;
+          padding: 12px 0px 16px 0px;
+          span {
+               line-height: 150%;
+               pointer-events: none;
+               white-space: nowrap;
+          }
+
+          position: relative;
+          &::before {
+               content: "";
+               position: absolute;
+               width: 0;
+               height: 2px;
+               bottom: -1px;
+               left: 0;
+               background-color: var(--AcentColor);
+               transition: width 0.3s ease 0s;
+          }
+
+          &.active-tab-btn {
+               color: var(--AcentColor);
+               &::before {
+                    width: 100%;
+               }
+          }
+
+          @media (any-hover: hover) {
+               &:hover {
+                    color: var(--AcentColor);
+               }
+          }
+     }
+
+     &__content-wrapper {
+     }
+
+     &__content {
+          &.active-tab {
+               display: block;
+          }
+     }
+
+     &__text {
+          font-size: 24px;
+          line-height: 133%;
+     }
+
+     &__text-btn {
+          color: var(--AcentColor);
+          @include hoverLink;
+     }
+
+     &__table {
+          border: 1px solid var(--borderColor);
+          border-radius: 12px;
+          padding: 20px;
+     }
+
+     &__row {
+          display: flex;
+          column-gap: 32px;
+          &:not(:last-child) {
+               border-bottom: 1px solid var(--borderColor);
+               margin-bottom: 16px;
+               padding-bottom: 20px;
+          }
+     }
+
+     &__title {
+          flex: 0 0 332px;
+          font-weight: 600;
+          line-height: 150%;
+     }
+
+     &__description {
+          flex: 1 1 auto;
+          line-height: 150%;
+     }
+}

@@ -1,0 +1,926 @@
+<div id="callback" class="popup" style="display:none;">
+     <div class="popup__wrapper">
+          <div class="popup__content">
+               <div class="popup__top">
+                    <div class="popup__title-wrapper">
+                         <div class="popup__title">Свяжитесь с нами</div>
+                         <button data-fancybox-close="" class="popup__close">
+                              @@include('./icons/close.htm')
+                         </button>
+                    </div>
+                    <div class="popup__contacts contacts-popup">
+                         <ul class="contacts-popup__list">
+                              <li>
+                                   <a href="tel:" class="contacts-popup__link">
+                                        <span>+7 (343) 287-88-77</span>
+                                   </a>
+                              </li>
+                              <li>
+                                   <a href="mailto:it@ita1.ru" class="contacts-popup__link">
+                                        <span>it@ita1.ru</span>
+                                   </a>
+                              </li>
+                              <li>
+                                   <a href="#" class="contacts-popup__link">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M9.4002 19.7445L9.72644 14.816L18.6747 6.75319C19.0709 6.39199 18.5932 6.21722 18.0688 6.53181L7.02332 13.511L2.24624 11.9963C1.22092 11.705 1.20926 10.9943 2.47927 10.4816L21.0866 3.30437C21.9371 2.91988 22.7527 3.5141 22.4265 4.81905L19.2573 19.7445C19.0359 20.8048 18.3951 21.0611 17.5096 20.5718L12.6859 17.0064L10.3673 19.2551C10.0993 19.5231 9.87791 19.7445 9.4002 19.7445Z"
+                                                  fill="currentColor" />
+                                        </svg>
+                                        <span>Написать в Telegram</span>
+                                   </a>
+                              </li>
+                         </ul>
+                    </div>
+                    <p class="popup__text">Или отправьте сообщение на сайте</p>
+               </div>
+               <form action="#" class="popup__form form-popup">
+                    <div class="form-popup__items">
+                         <div class="form-popup__item">
+                              <input id="formPopupFIO" class="form-popup__input input" type="text">
+                              <label for="formPopupFIO" class="form-popup__label label">Имя <span>*</span></label>
+                         </div>
+                         <div class="form-popup__item">
+                              <input id="formPopupTel" class="form-popup__input input" type="tel">
+                              <label for="formPopupTel" class="form-popup__label label">Телефон <span>*</span></label>
+                         </div>
+                         <div class="form-popup__item">
+                              <input id="formPopupEmail" class="form-popup__input input" type="email">
+                              <label for="formPopupEmail" class="form-popup__label label">Электронная почта
+                                   <span>*</span>
+                              </label>
+                         </div>
+                         <div class="form-popup__item">
+                              <textarea class="form-popup__textarea" name="formPopupTeaxtarea"
+                                   id="formTeaxtarea"></textarea>
+                              <label for="formPopupTeaxtarea" class="form-popup__label label">Комментарий</label>
+                         </div>
+                    </div>
+                    <button class="form-popup__button btn btn-dark" type="submit"><span>Отправить</span></button>
+               </form>
+               <p class="popup__policy">Нажимая на кнопку, вы даете
+                    согласие на <a href="#" target="_blank">обработку персональных данных</a>
+                    и соглашаетесь с
+                    <a href="#" target="_blank">политикой конфиденциальности.</a>
+               </p>
+          </div>
+     </div>
+</div>
+
+<div id="send-seo" class="popup" style="display:none;">
+     <div class="popup__wrapper">
+          <div class="popup__content">
+               <div class="popup__top">
+                    <div class="popup__title-wrapper">
+                         <div class="popup__title">Написать директору</div>
+                         <button data-fancybox-close="" class="popup__close">
+                              @@include('./icons/close.htm')
+                         </button>
+                    </div>
+                    <p class="popup__text">Если у вас возникли вопросы по поводу работы наших сотрудников или компании в
+                         целом, а также если вы хотите сказать слова благодарности, напишите сообщение и оно придет
+                         директору лично</p>
+               </div>
+               <form action="#" class="popup__form form-popup">
+                    <div class="form-popup__items">
+                         <div class="form-popup__item">
+                              <input id="formPopupFIO" class="form-popup__input input" type="text">
+                              <label for="formPopupFIO" class="form-popup__label label">Ваше имя</label>
+                         </div>
+                         <div class="form-popup__item">
+                              <input id="formPopupTel" class="form-popup__input input" type="tel">
+                              <label for="formPopupTel" class="form-popup__label label">Телефон <span>*</span></label>
+                         </div>
+                         <div class="form-popup__item">
+                              <input id="formPopupEmail" class="form-popup__input input" type="email">
+                              <label for="formPopupEmail" class="form-popup__label label">Электронная почта
+                                   <span>*</span>
+                              </label>
+                         </div>
+                         <div class="form-popup__item">
+                              <input id="formPopupTheme" class="form-popup__input input" type="text">
+                              <label for="formPopupTheme" class="form-popup__label label">Тема</label>
+                         </div>
+                         <div class="form-popup__item">
+                              <textarea class="form-popup__textarea" name="formPopupTeaxtarea"
+                                   id="formTeaxtarea"></textarea>
+                              <label for="formPopupTeaxtarea" class="form-popup__label label">Сообщение
+                                   <span>*</span></label>
+                         </div>
+                         <div class="form-popup__file file-actions-form">
+                              <div class="file-actions-form__inner">
+                                   <input id="formFile" class="file-actions-form__input" type="file"
+                                        placeholder="Прикрепить файл">
+                                   <div class="file-actions-form__content">
+                                        <div class="file-actions-form__icon">
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <g clip-path="url(#clip0_46_2327)">
+                                                       <path d="M18.5 17.25C18.5 16.8358 18.1642 16.5 17.75 16.5H7C4.79 16.5 3 14.71 3 12.5C3 10.29 4.79 8.5 7 8.5H19.5C20.88 8.5 22 9.62 22 11C22 12.38 20.88 13.5 19.5 13.5H9C8.45 13.5 8 13.05 8 12.5C8 11.95 8.45 11.5 9 11.5H17.75C18.1642 11.5 18.5 11.1642 18.5 10.75C18.5 10.3358 18.1642 10 17.75 10H9C7.62 10 6.5 11.12 6.5 12.5C6.5 13.88 7.62 15 9 15H19.5C21.71 15 23.5 13.21 23.5 11C23.5 8.79 21.71 7 19.5 7H7C3.96 7 1.5 9.46 1.5 12.5C1.5 15.54 3.96 18 7 18H17.75C18.1642 18 18.5 17.6642 18.5 17.25Z"
+                                                            fill="currentColor" />
+                                                  </g>
+                                                  <defs>
+                                                       <clipPath id="clip0_46_2327">
+                                                            <rect width="24" height="24" fill="white"
+                                                                 transform="translate(0 0.5)" />
+                                                       </clipPath>
+                                                  </defs>
+                                             </svg>
+                                        </div>
+                                        <span class="file-actions-form__text">Прикрепить файл</span>
+                                   </div>
+                                   <p class="file-actions-form__error">Файл должен быть менее 2Мб</p>
+                              </div>
+                              <div class="file-actions-form__perview">
+                                   <img class="file-actions-form__filePreviewImg" src="" alt="">
+                                   <p class="file-actions-form__filePreviewText"></p>
+                                   <button class="file-actions-form__perview-btn" type="button">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M16.5 1.5L1.5 16.5" stroke="currentColor" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round" />
+                                             <path d="M1.5 1.5L16.5 16.5" stroke="currentColor" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                   </button>
+                              </div>
+                         </div>
+                    </div>
+                    <button class="form-popup__button btn btn-dark" type="submit"><span>Отправить</span></button>
+               </form>
+               <p class="popup__policy">Нажимая на кнопку, вы даете
+                    согласие на <a href="#" target="_blank">обработку персональных данных</a>
+                    и соглашаетесь с
+                    <a href="#" target="_blank">политикой конфиденциальности.</a>
+               </p>
+          </div>
+     </div>
+</div>
+
+<div id="resume" class="popup" style="display:none;">
+     <div class="popup__wrapper">
+          <div class="popup__content">
+               <div class="popup__top">
+                    <div class="popup__title-wrapper">
+                         <div class="popup__title">Откликнуться на вакансию</div>
+                         <button data-fancybox-close="" class="popup__close">
+                              @@include('./icons/close.htm')
+                         </button>
+                    </div>
+                    <p class="popup__text">Резюме также можно прислать на <a href="#" target="_blank">HeadHunter</a>.
+                    </p>
+               </div>
+               <form action="#" class="popup__form form-popup">
+                    <div class="form-popup__items">
+                         <div class="form-popup__item">
+                              <input id="formPopupFIO" class="form-popup__input input" type="text">
+                              <label for="formPopupFIO" class="form-popup__label label">Имя <span>*</span></label>
+                         </div>
+                         <div class="form-popup__item">
+                              <input id="formPopupFIO" class="form-popup__input input" type="text">
+                              <label for="formPopupFIO" class="form-popup__label label">Фамилия <span>*</span></label>
+                         </div>
+                         <div class="form-popup__item">
+                              <input id="formPopupTel" class="form-popup__input input" type="tel">
+                              <label for="formPopupTel" class="form-popup__label label">Телефон <span>*</span></label>
+                         </div>
+                         <div class="form-popup__item">
+                              <input id="formPopupEmail" class="form-popup__input input" type="email">
+                              <label for="formPopupEmail" class="form-popup__label label">Электронная почта
+                                   <span>*</span>
+                              </label>
+                         </div>
+                         <div class="form-popup__item">
+                              <textarea class="form-popup__textarea" name="formPopupTeaxtarea"
+                                   id="formTeaxtarea"></textarea>
+                              <label for="formPopupTeaxtarea" class="form-popup__label label">Ссылка на резюме или
+                                   комментарий</label>
+                         </div>
+                         <div class="form-popup__file file-actions-form">
+                              <div class="file-actions-form__inner">
+                                   <input id="formFile" class="file-actions-form__input" type="file"
+                                        placeholder="Прикрепить файл">
+                                   <div class="file-actions-form__content">
+                                        <div class="file-actions-form__icon">
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <g clip-path="url(#clip0_46_2327)">
+                                                       <path d="M18.5 17.25C18.5 16.8358 18.1642 16.5 17.75 16.5H7C4.79 16.5 3 14.71 3 12.5C3 10.29 4.79 8.5 7 8.5H19.5C20.88 8.5 22 9.62 22 11C22 12.38 20.88 13.5 19.5 13.5H9C8.45 13.5 8 13.05 8 12.5C8 11.95 8.45 11.5 9 11.5H17.75C18.1642 11.5 18.5 11.1642 18.5 10.75C18.5 10.3358 18.1642 10 17.75 10H9C7.62 10 6.5 11.12 6.5 12.5C6.5 13.88 7.62 15 9 15H19.5C21.71 15 23.5 13.21 23.5 11C23.5 8.79 21.71 7 19.5 7H7C3.96 7 1.5 9.46 1.5 12.5C1.5 15.54 3.96 18 7 18H17.75C18.1642 18 18.5 17.6642 18.5 17.25Z"
+                                                            fill="currentColor" />
+                                                  </g>
+                                                  <defs>
+                                                       <clipPath id="clip0_46_2327">
+                                                            <rect width="24" height="24" fill="white"
+                                                                 transform="translate(0 0.5)" />
+                                                       </clipPath>
+                                                  </defs>
+                                             </svg>
+                                        </div>
+                                        <span class="file-actions-form__text">Прикрепить файл</span>
+                                   </div>
+                                   <p class="file-actions-form__error">Файл должен быть менее 2Мб</p>
+                              </div>
+                              <div class="file-actions-form__perview">
+                                   <img class="file-actions-form__filePreviewImg" src="" alt="">
+                                   <p class="file-actions-form__filePreviewText"></p>
+                                   <button class="file-actions-form__perview-btn" type="button">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M16.5 1.5L1.5 16.5" stroke="currentColor" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round" />
+                                             <path d="M1.5 1.5L16.5 16.5" stroke="currentColor" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                   </button>
+                              </div>
+                         </div>
+                    </div>
+                    <button class="form-popup__button btn btn-dark" type="submit"><span>Отправить</span></button>
+               </form>
+               <p class="popup__policy">Нажимая на кнопку, вы даете
+                    согласие на <a href="#" target="_blank">обработку персональных данных</a>
+                    и соглашаетесь с
+                    <a href="#" target="_blank">политикой конфиденциальности.</a>
+               </p>
+          </div>
+     </div>
+</div>
+
+<div id="project" class="popup" style="display:none;">
+     <div class="popup__wrapper">
+          <div class="popup__content">
+               <div class="popup__top">
+                    <div class="popup__title-wrapper">
+                         <div class="popup__title">Опишите свою задачу и отправьте нам ТЗ</div>
+                         <button data-fancybox-close="" class="popup__close">
+                              @@include('./icons/close.htm')
+                         </button>
+                    </div>
+                    <p class="popup__text">Ответим в течении 4 часов, в рабочие дни</p>
+               </div>
+               <form action="#" class="popup__form form-popup">
+                    <div class="form-popup__items">
+                         <p class="actions-form__title">Контактные данные</p>
+                         <div class="form-popup__item">
+                              <input id="formPopupFIO" class="form-popup__input input" type="text">
+                              <label for="formPopupFIO" class="form-popup__label label">Название компании</label>
+                         </div>
+                         <div class="form-popup__item">
+                              <input id="formPopupFIO" class="form-popup__input input" type="text">
+                              <label for="formPopupFIO" class="form-popup__label label">Имя</label>
+                         </div>
+                         <div class="form-popup__item">
+                              <input id="formPopupTel" class="form-popup__input input" type="tel">
+                              <label for="formPopupTel" class="form-popup__label label">Телефон</label>
+                         </div>
+                         <div class="form-popup__item">
+                              <input id="formPopupEmail" class="form-popup__input input" type="email">
+                              <label for="formPopupEmail" class="form-popup__label label">Электронная почта
+                                   <span>*</span>
+                              </label>
+                         </div>
+                    </div>
+                    <div class="form-popup__items">
+                         <p class="actions-form__title">Описание задачи</p>
+                         <div class="form-popup__item">
+                              <textarea class="form-popup__textarea form-popup__textarea--max" name="formPopupTeaxtarea"
+                                   id="formTeaxtarea"></textarea>
+                              <label for="formPopupTeaxtarea" class="form-popup__label label">Расскажите о вашем
+                                   проекте</label>
+                         </div>
+                         <div class="form-popup__file file-actions-form">
+                              <div class="file-actions-form__inner">
+                                   <input id="formFile" class="file-actions-form__input" type="file"
+                                        placeholder="Прикрепить файл">
+                                   <div class="file-actions-form__content">
+                                        <div class="file-actions-form__icon">
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <g clip-path="url(#clip0_46_2327)">
+                                                       <path d="M18.5 17.25C18.5 16.8358 18.1642 16.5 17.75 16.5H7C4.79 16.5 3 14.71 3 12.5C3 10.29 4.79 8.5 7 8.5H19.5C20.88 8.5 22 9.62 22 11C22 12.38 20.88 13.5 19.5 13.5H9C8.45 13.5 8 13.05 8 12.5C8 11.95 8.45 11.5 9 11.5H17.75C18.1642 11.5 18.5 11.1642 18.5 10.75C18.5 10.3358 18.1642 10 17.75 10H9C7.62 10 6.5 11.12 6.5 12.5C6.5 13.88 7.62 15 9 15H19.5C21.71 15 23.5 13.21 23.5 11C23.5 8.79 21.71 7 19.5 7H7C3.96 7 1.5 9.46 1.5 12.5C1.5 15.54 3.96 18 7 18H17.75C18.1642 18 18.5 17.6642 18.5 17.25Z"
+                                                            fill="currentColor" />
+                                                  </g>
+                                                  <defs>
+                                                       <clipPath id="clip0_46_2327">
+                                                            <rect width="24" height="24" fill="white"
+                                                                 transform="translate(0 0.5)" />
+                                                       </clipPath>
+                                                  </defs>
+                                             </svg>
+                                        </div>
+                                        <span class="file-actions-form__text">Прикрепить файл</span>
+                                   </div>
+                                   <p class="file-actions-form__error">Файл должен быть менее 2Мб</p>
+                              </div>
+                              <div class="file-actions-form__perview">
+                                   <img class="file-actions-form__filePreviewImg" src="" alt="">
+                                   <p class="file-actions-form__filePreviewText"></p>
+                                   <button class="file-actions-form__perview-btn" type="button">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M16.5 1.5L1.5 16.5" stroke="currentColor" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round" />
+                                             <path d="M1.5 1.5L16.5 16.5" stroke="currentColor" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                   </button>
+                              </div>
+                         </div>
+                    </div>
+                    <button class="form-popup__button btn btn-dark" type="submit"><span>Отправить</span></button>
+               </form>
+               <p class="popup__policy">Нажимая на кнопку, вы даете
+                    согласие на <a href="#" target="_blank">обработку персональных данных</a>
+                    и соглашаетесь с
+                    <a href="#" target="_blank">политикой конфиденциальности.</a>
+               </p>
+          </div>
+     </div>
+</div>
+
+<div id="application" class="popup" style="display:none;">
+     <div class="popup__wrapper">
+          <div class="popup__content">
+               <div class="popup__top">
+                    <div class="popup__title-wrapper">
+                         <div class="popup__title">Опишите свою задачу и отправьте нам ТЗ</div>
+                         <button data-fancybox-close="" class="popup__close">
+                              @@include('./icons/close.htm')
+                         </button>
+                    </div>
+                    <p class="popup__text">Менеджер уточнит нужное оборудование под вашу задачу</p>
+               </div>
+               <form action="#" class="popup__form form-popup">
+                    <div class="form-popup__items">
+                         <div class="form-popup__item">
+                              <input id="formPopupFIO" class="form-popup__input input" type="text">
+                              <label for="formPopupFIO" class="form-popup__label label">Имя <span>*</span></label>
+                         </div>
+                         <div class="form-popup__item">
+                              <input id="formPopupTel" class="form-popup__input input" type="tel">
+                              <label for="formPopupTel" class="form-popup__label label">Телефон <span>*</span></label>
+                         </div>
+                         <div class="form-popup__item">
+                              <input id="formPopupEmail" class="form-popup__input input" type="email">
+                              <label for="formPopupEmail" class="form-popup__label label">Электронная почта
+                                   <span>*</span>
+                              </label>
+                         </div>
+                         <div class="form-popup__item">
+                              <textarea class="form-popup__textarea" name="formPopupTeaxtarea"
+                                   id="formTeaxtarea"></textarea>
+                              <label for="formPopupTeaxtarea" class="form-popup__label label">Комментарий</label>
+                         </div>
+                         <div class="form-popup__file file-actions-form">
+                              <div class="file-actions-form__inner">
+                                   <input id="formFile" class="file-actions-form__input" type="file"
+                                        placeholder="Прикрепить файл">
+                                   <div class="file-actions-form__content">
+                                        <div class="file-actions-form__icon">
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <g clip-path="url(#clip0_46_2327)">
+                                                       <path d="M18.5 17.25C18.5 16.8358 18.1642 16.5 17.75 16.5H7C4.79 16.5 3 14.71 3 12.5C3 10.29 4.79 8.5 7 8.5H19.5C20.88 8.5 22 9.62 22 11C22 12.38 20.88 13.5 19.5 13.5H9C8.45 13.5 8 13.05 8 12.5C8 11.95 8.45 11.5 9 11.5H17.75C18.1642 11.5 18.5 11.1642 18.5 10.75C18.5 10.3358 18.1642 10 17.75 10H9C7.62 10 6.5 11.12 6.5 12.5C6.5 13.88 7.62 15 9 15H19.5C21.71 15 23.5 13.21 23.5 11C23.5 8.79 21.71 7 19.5 7H7C3.96 7 1.5 9.46 1.5 12.5C1.5 15.54 3.96 18 7 18H17.75C18.1642 18 18.5 17.6642 18.5 17.25Z"
+                                                            fill="currentColor" />
+                                                  </g>
+                                                  <defs>
+                                                       <clipPath id="clip0_46_2327">
+                                                            <rect width="24" height="24" fill="white"
+                                                                 transform="translate(0 0.5)" />
+                                                       </clipPath>
+                                                  </defs>
+                                             </svg>
+                                        </div>
+                                        <span class="file-actions-form__text">Прикрепить файл</span>
+                                   </div>
+                                   <p class="file-actions-form__error">Файл должен быть менее 2Мб</p>
+                              </div>
+                              <div class="file-actions-form__perview">
+                                   <img class="file-actions-form__filePreviewImg" src="" alt="">
+                                   <p class="file-actions-form__filePreviewText"></p>
+                                   <button class="file-actions-form__perview-btn" type="button">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M16.5 1.5L1.5 16.5" stroke="currentColor" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round" />
+                                             <path d="M1.5 1.5L16.5 16.5" stroke="currentColor" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                   </button>
+                              </div>
+                         </div>
+                    </div>
+                    <button class="form-popup__button btn btn-dark" type="submit"><span>Отправить</span></button>
+               </form>
+               <p class="popup__policy">Нажимая на кнопку, вы даете
+                    согласие на <a href="#" target="_blank">обработку персональных данных</a>
+                    и соглашаетесь с
+                    <a href="#" target="_blank">политикой конфиденциальности.</a>
+               </p>
+          </div>
+     </div>
+</div>
+
+<div id="consultation" class="popup" style="display:none;">
+     <div class="popup__wrapper">
+          <div class="popup__content">
+               <div class="popup__top">
+                    <div class="popup__title-wrapper">
+                         <div class="popup__title">Получите консультацию</div>
+                         <button data-fancybox-close="" class="popup__close">
+                              @@include('./icons/close.htm')
+                         </button>
+                    </div>
+                    <p class="popup__text">Подберем решение под ваши задачи, бюджет и требования</p>
+               </div>
+               <form action="#" class="popup__form form-popup">
+                    <div class="form-popup__items">
+                         <div class="form-popup__item">
+                              <input id="formPopupFIO" class="form-popup__input input" type="text">
+                              <label for="formPopupFIO" class="form-popup__label label">Имя <span>*</span></label>
+                         </div>
+                         <div class="form-popup__item">
+                              <input id="formPopupTel" class="form-popup__input input" type="tel">
+                              <label for="formPopupTel" class="form-popup__label label">Телефон <span>*</span></label>
+                         </div>
+                         <div class="form-popup__item">
+                              <input id="formPopupEmail" class="form-popup__input input" type="email">
+                              <label for="formPopupEmail" class="form-popup__label label">Электронная почта
+                                   <span>*</span>
+                              </label>
+                         </div>
+                         <div class="form-popup__checkbox checkbox-form-popup">
+                              <input id="c_1" class="checkbox-form-popup__input" type="checkbox" value="1"
+                                   name="formFooter">
+                              <label for="c_1" class="checkbox-form-popup__label"><span
+                                        class="checkbox-form-popup__text">Перезвоните мне</span></label>
+                         </div>
+                    </div>
+                    <button class="form-popup__button btn btn-dark" type="submit"><span>Получить
+                              консультацию</span></button>
+               </form>
+               <p class="popup__policy">Нажимая на кнопку, вы даете
+                    согласие на <a href="#" target="_blank">обработку персональных данных</a>
+                    и соглашаетесь с
+                    <a href="#" target="_blank">политикой конфиденциальности.</a>
+               </p>
+          </div>
+     </div>
+</div>
+
+<div id="solutions" class="popup" style="display:none;">
+     <div class="popup__wrapper">
+          <div class="popup__content">
+               <div class="popup__top">
+                    <div class="popup__title-wrapper">
+                         <div class="popup__title">Заказать готовое решение</div>
+                         <button data-fancybox-close="" class="popup__close">
+                              @@include('./icons/close.htm')
+                         </button>
+                    </div>
+                    <p class="popup__text">Заполните форму, чтобы получить коммерческое предложение со стоимостью выбранной услуги</p>
+               </div>
+               <form action="#" class="popup__form form-popup">
+                    <div class="form-popup__items">
+                         <div class="form-popup__item">
+                              <input id="formPopupFIO" class="form-popup__input input" type="text">
+                              <label for="formPopupFIO" class="form-popup__label label">Готовое решение</label>
+                         </div>
+                         <div class="form-popup__item">
+                              <input id="formPopupFIO" class="form-popup__input input" type="text">
+                              <label for="formPopupFIO" class="form-popup__label label">ФИО</label>
+                         </div>
+                         <div class="form-popup__inner-items">
+                              <div class="form-popup__item">
+                                   <input id="formPopupTel" class="form-popup__input input" type="tel">
+                                   <label for="formPopupTel" class="form-popup__label label">Телефон <span>*</span></label>
+                              </div>
+                              <div class="form-popup__item">
+                                   <input id="formPopupEmail" class="form-popup__input input" type="email">
+                                   <label for="formPopupEmail" class="form-popup__label label">Электронная почта
+                                        <span>*</span>
+                                   </label>
+                              </div>
+                         </div>
+                         <div class="form-popup__item">
+                              <input id="formPopupCompany" class="form-popup__input input" type="text">
+                              <label for="formPopupCompany" class="form-popup__label label">Название компании</label>
+                         </div>
+                         <div class="form-popup__file file-actions-form form-popup__file--solutions">
+                              <div class="file-actions-form__inner">
+                                   <input id="formFile" class="file-actions-form__input" type="file"
+                                        placeholder="Прикрепить файл">
+                                   <div class="file-actions-form__content">
+                                        <div class="file-actions-form__icon">
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <g clip-path="url(#clip0_46_2327)">
+                                                       <path d="M18.5 17.25C18.5 16.8358 18.1642 16.5 17.75 16.5H7C4.79 16.5 3 14.71 3 12.5C3 10.29 4.79 8.5 7 8.5H19.5C20.88 8.5 22 9.62 22 11C22 12.38 20.88 13.5 19.5 13.5H9C8.45 13.5 8 13.05 8 12.5C8 11.95 8.45 11.5 9 11.5H17.75C18.1642 11.5 18.5 11.1642 18.5 10.75C18.5 10.3358 18.1642 10 17.75 10H9C7.62 10 6.5 11.12 6.5 12.5C6.5 13.88 7.62 15 9 15H19.5C21.71 15 23.5 13.21 23.5 11C23.5 8.79 21.71 7 19.5 7H7C3.96 7 1.5 9.46 1.5 12.5C1.5 15.54 3.96 18 7 18H17.75C18.1642 18 18.5 17.6642 18.5 17.25Z"
+                                                            fill="currentColor" />
+                                                  </g>
+                                                  <defs>
+                                                       <clipPath id="clip0_46_2327">
+                                                            <rect width="24" height="24" fill="white"
+                                                                 transform="translate(0 0.5)" />
+                                                       </clipPath>
+                                                  </defs>
+                                             </svg>
+                                        </div>
+                                        <span class="file-actions-form__text">Прикрепить файл</span>
+                                   </div>
+                                   <p class="file-actions-form__error">Файл должен быть менее 2Мб</p>
+                              </div>
+                              <div class="file-actions-form__perview">
+                                   <img class="file-actions-form__filePreviewImg" src="" alt="">
+                                   <p class="file-actions-form__filePreviewText"></p>
+                                   <button class="file-actions-form__perview-btn" type="button">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M16.5 1.5L1.5 16.5" stroke="currentColor" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round" />
+                                             <path d="M1.5 1.5L16.5 16.5" stroke="currentColor" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                   </button>
+                              </div>
+                         </div>
+                         <div class="form-popup__item">
+                              <textarea class="form-popup__textarea" name="formPopupTeaxtarea"
+                                   id="formAddress"></textarea>
+                              <label for="formPopupAddress" class="form-popup__label label">Адрес</label>
+                         </div>
+                         <div class="form-popup__item">
+                              <textarea class="form-popup__textarea" name="formPopupTeaxtarea"
+                                   id="formComments"></textarea>
+                              <label for="formPopupComments" class="form-popup__label label">Комментарий к заказу</label>
+                         </div>
+                    </div>
+                    <button class="form-popup__button btn btn-dark" type="submit"><span>Отправить</span></button>
+               </form>
+               <p class="popup__policy">Нажимая на кнопку, вы даете
+                    согласие на <a href="#" target="_blank">обработку персональных данных</a>
+                    и соглашаетесь с
+                    <a href="#" target="_blank">политикой конфиденциальности.</a>
+               </p>
+          </div>
+     </div>
+</div>
+
+<div id="question" class="popup" style="display:none;">
+     <div class="popup__wrapper">
+          <div class="popup__content">
+               <div class="popup__top">
+                    <div class="popup__title-wrapper">
+                         <div class="popup__title">Задайте вопрос</div>
+                         <button data-fancybox-close="" class="popup__close">
+                              @@include('./icons/close.htm')
+                         </button>
+                    </div>
+                    <p class="popup__text">Менеджер проконсультирует вас по всем вопросам </p>
+               </div>
+               <form action="#" class="popup__form form-popup">
+                    <div class="form-popup__items">
+                         <div class="form-popup__item">
+                              <input id="formPopupFIO" class="form-popup__input input" type="text">
+                              <label for="formPopupFIO" class="form-popup__label label">Имя <span>*</span></label>
+                         </div>
+                         <div class="form-popup__item">
+                              <input id="formPopupTel" class="form-popup__input input" type="tel">
+                              <label for="formPopupTel" class="form-popup__label label">Телефон <span>*</span></label>
+                         </div>
+                         <div class="form-popup__item">
+                              <input id="formPopupEmail" class="form-popup__input input" type="email">
+                              <label for="formPopupEmail" class="form-popup__label label">Электронная почта
+                                   <span>*</span>
+                              </label>
+                         </div>
+                         <div class="form-popup__item">
+                              <textarea class="form-popup__textarea" name="formPopupTeaxtarea"
+                                   id="formTeaxtarea"></textarea>
+                              <label for="formPopupTeaxtarea" class="form-popup__label label">Комментарий</label>
+                         </div>
+                         <div class="form-popup__file file-actions-form">
+                              <div class="file-actions-form__inner">
+                                   <input id="formFile" class="file-actions-form__input" type="file"
+                                        placeholder="Прикрепить файл">
+                                   <div class="file-actions-form__content">
+                                        <div class="file-actions-form__icon">
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <g clip-path="url(#clip0_46_2327)">
+                                                       <path d="M18.5 17.25C18.5 16.8358 18.1642 16.5 17.75 16.5H7C4.79 16.5 3 14.71 3 12.5C3 10.29 4.79 8.5 7 8.5H19.5C20.88 8.5 22 9.62 22 11C22 12.38 20.88 13.5 19.5 13.5H9C8.45 13.5 8 13.05 8 12.5C8 11.95 8.45 11.5 9 11.5H17.75C18.1642 11.5 18.5 11.1642 18.5 10.75C18.5 10.3358 18.1642 10 17.75 10H9C7.62 10 6.5 11.12 6.5 12.5C6.5 13.88 7.62 15 9 15H19.5C21.71 15 23.5 13.21 23.5 11C23.5 8.79 21.71 7 19.5 7H7C3.96 7 1.5 9.46 1.5 12.5C1.5 15.54 3.96 18 7 18H17.75C18.1642 18 18.5 17.6642 18.5 17.25Z"
+                                                            fill="currentColor" />
+                                                  </g>
+                                                  <defs>
+                                                       <clipPath id="clip0_46_2327">
+                                                            <rect width="24" height="24" fill="white"
+                                                                 transform="translate(0 0.5)" />
+                                                       </clipPath>
+                                                  </defs>
+                                             </svg>
+                                        </div>
+                                        <span class="file-actions-form__text">Прикрепить файл</span>
+                                   </div>
+                                   <p class="file-actions-form__error">Файл должен быть менее 2Мб</p>
+                              </div>
+                              <div class="file-actions-form__perview">
+                                   <img class="file-actions-form__filePreviewImg" src="" alt="">
+                                   <p class="file-actions-form__filePreviewText"></p>
+                                   <button class="file-actions-form__perview-btn" type="button">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M16.5 1.5L1.5 16.5" stroke="currentColor" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round" />
+                                             <path d="M1.5 1.5L16.5 16.5" stroke="currentColor" stroke-width="1.5"
+                                                  stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                   </button>
+                              </div>
+                         </div>
+                    </div>
+                    <button class="form-popup__button btn btn-dark" type="submit"><span>Отправить</span></button>
+               </form>
+               <p class="popup__policy">Нажимая на кнопку, вы даете
+                    согласие на <a href="#" target="_blank">обработку персональных данных</a>
+                    и соглашаетесь с
+                    <a href="#" target="_blank">политикой конфиденциальности.</a>
+               </p>
+          </div>
+     </div>
+</div>
+
+<div id="mail" class="popup" style="display:none;">
+     <div class="popup__wrapper">
+          <div class="popup__content">
+               <div class="popup__top">
+                    <div class="popup__title-wrapper">
+                         <div class="popup__title">Отправить состав заказа на почту</div>
+                         <button data-fancybox-close="" class="popup__close">
+                              @@include('./icons/close.htm')
+                         </button>
+                    </div>
+               </div>
+               <form action="#" class="popup__form form-popup">
+                    <div class="form-popup__items">
+                         <div class="form-popup__item">
+                              <input id="formPopupEmail" class="form-popup__input input" type="email">
+                              <label for="formPopupEmail" class="form-popup__label label">Электронная почта
+                                   <span>*</span>
+                              </label>
+                         </div>
+                    </div>
+                    <div class="form-popup__buttons">
+                         <button class="form-popup__button btn btn-dark" type="submit"><span>Отправить</span></button>
+                         <button class="form-popup__button btn btn-dark-border" type="reset"><span>Отмена</span></button>
+                    </div>
+               </form>
+          </div>
+     </div>
+</div>
+
+<div id="product" class="popup" style="display:none;">
+     <div class="popup__wrapper">
+          <div class="popup__content popup__content--product">
+               <div class="popup__top">
+                    <div class="popup__title-wrapper">
+                         <div class="popup__title">Товар добавлен в корзину</div>
+                         <button data-fancybox-close="" class="popup__close">
+                              @@include('./icons/close.htm')
+                         </button>
+                    </div>
+               </div>
+               <article class="products-cart__card card-products-cart">
+                    <div class="card-products-cart__art-inner">
+                         <div class="card-products-cart__image card-products-cart__image--modal">
+                              <img src="@img/equipment/laser.png" alt="equipment laser">
+                         </div>
+                         <div class="card-products-cart__inner card-products-cart__inner--modal">
+                              <p class="card-products-cart__title">МФУ лазерное Pantum </p>
+                              <div class="card-products-cart__stepper stepper">
+                                   <button type="button"
+                                        class="stepper__btn stepper__btn--down stepper__btn--disable"
+                                        aria-label="Увеличить количество">
+                                        <span>-</span>
+                                   </button>
+                                   <label class="stepper__field">
+                                        <input type="text" value="1" maxlength="5"
+                                             class="stepper__input">
+                                   </label>
+                                   <button type="button"
+                                        class="stepper__btn stepper__btn--up"
+                                        aria-label="Уменьшить количество">
+                                        <span>+</span>
+                                   </button>
+                              </div>
+                         </div>
+                         <div class="card-products-cart__info">
+                              <div class="card-products-cart__info-main-wrapper">
+                                   <div class="card-products-cart__info-main">
+                                        <div class="card-products-cart__info-inner">
+                                             <p class="card-products-cart__old-price">50
+                                                  000
+                                                  <span>₽</span>
+                                             </p>
+                                             <div class="card-products-cart__discount">
+                                                  <span>-30%</span>
+                                             </div>
+                                        </div>
+                                        <p class="card-products-cart__price">35 000
+                                             <span>₽</span>
+                                        </p>
+                                   </div>
+                                   <p style="display: none;" class="card-products-cart__out-stock">Нет в наличии</p>
+                              </div>
+                         </div>
+                    </div>
+               </article>
+               <div class="form-popup__buttons">
+                    <button class="form-popup__button btn btn-dark" type="submit"><span>Перейти в корзину</span></button>
+                    <button class="form-popup__button btn btn-dark-border" type="reset"><span>Продолжить покупки</span></button>
+               </div>
+          </div>
+     </div>
+</div>
+
+
+<div id="application-sent" class="popup" style="display:none;">
+     <div class="popup__wrapper">
+          <div class="popup__content popup__content--sent">
+               <div class="popup__top popup__top--sent">
+                    <button data-fancybox-close="" class="popup__close">
+                         @@include('./icons/close.htm')
+                    </button>
+               </div>
+               <div class="popup__end">
+                    <div class="popup__title">Заявка отправлена</div>
+                    <p class="popup__text">Мы изучим заявку и ответим в течении 4 часов, в рабочие дни</p>
+                    <button data-fancybox-close="" class="popup__btn-close btn btn-dark-border" type="button"><span>Закрыть</span></button>
+               </div>
+               <div class="popup__contacts contacts-popup popup__contacts--sent">
+                    <ul class="contacts-popup__list">
+                         <li>
+                              <a href="tel:" class="contacts-popup__link">
+                                   <span>+7 (343) 287-88-77</span>
+                              </a>
+                         </li>
+                         <li>
+                              <a href="mailto:it@ita1.ru" class="contacts-popup__link">
+                                   <span>it@ita1.ru</span>
+                              </a>
+                         </li>
+                         <li>
+                              <a href="#" class="contacts-popup__link">
+                                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.4002 19.7445L9.72644 14.816L18.6747 6.75319C19.0709 6.39199 18.5932 6.21722 18.0688 6.53181L7.02332 13.511L2.24624 11.9963C1.22092 11.705 1.20926 10.9943 2.47927 10.4816L21.0866 3.30437C21.9371 2.91988 22.7527 3.5141 22.4265 4.81905L19.2573 19.7445C19.0359 20.8048 18.3951 21.0611 17.5096 20.5718L12.6859 17.0064L10.3673 19.2551C10.0993 19.5231 9.87791 19.7445 9.4002 19.7445Z"
+                                             fill="currentColor" />
+                                   </svg>
+                                   <span>Написать в Telegram</span>
+                              </a>
+                         </li>
+                    </ul>
+               </div>
+          </div>
+     </div>
+</div>
+
+<div id="message-sent" class="popup" style="display:none;">
+     <div class="popup__wrapper">
+          <div class="popup__content popup__content--sent">
+               <div class="popup__top popup__top--sent">
+                    <button data-fancybox-close="" class="popup__close">
+                         @@include('./icons/close.htm')
+                    </button>
+               </div>
+               <div class="popup__end">
+                    <div class="popup__title">Сообщение отправлено</div>
+                    <p class="popup__text">Мы изучим заявку и ответим в течении 4 часов, в рабочие дни</p>
+                    <button data-fancybox-close="" class="popup__btn-close btn btn-dark-border" type="button"><span>Закрыть</span></button>
+               </div>
+               <div class="popup__contacts contacts-popup popup__contacts--sent">
+                    <ul class="contacts-popup__list">
+                         <li>
+                              <a href="tel:" class="contacts-popup__link">
+                                   <span>+7 (343) 287-88-77</span>
+                              </a>
+                         </li>
+                         <li>
+                              <a href="mailto:it@ita1.ru" class="contacts-popup__link">
+                                   <span>it@ita1.ru</span>
+                              </a>
+                         </li>
+                         <li>
+                              <a href="#" class="contacts-popup__link">
+                                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.4002 19.7445L9.72644 14.816L18.6747 6.75319C19.0709 6.39199 18.5932 6.21722 18.0688 6.53181L7.02332 13.511L2.24624 11.9963C1.22092 11.705 1.20926 10.9943 2.47927 10.4816L21.0866 3.30437C21.9371 2.91988 22.7527 3.5141 22.4265 4.81905L19.2573 19.7445C19.0359 20.8048 18.3951 21.0611 17.5096 20.5718L12.6859 17.0064L10.3673 19.2551C10.0993 19.5231 9.87791 19.7445 9.4002 19.7445Z"
+                                             fill="currentColor" />
+                                   </svg>
+                                   <span>Написать в Telegram</span>
+                              </a>
+                         </li>
+                    </ul>
+               </div>
+          </div>
+     </div>
+</div>
+
+<div id="reaction-sent" class="popup" style="display:none;">
+     <div class="popup__wrapper">
+          <div class="popup__content popup__content--sent">
+               <div class="popup__top popup__top--sent">
+                    <button data-fancybox-close="" class="popup__close">
+                         @@include('./icons/close.htm')
+                    </button>
+               </div>
+               <div class="popup__end">
+                    <div class="popup__title">Отклик отправлен</div>
+                    <p class="popup__text">Резюме также можно прислать на <a href="#" target="_blank">HeadHunter</a>.</p>
+                    <p class="popup__subtext">Мы получили ваше резюме, спасибо! Внимательно с ним ознакомимся и свяжемся с вами.</p>
+                    <button data-fancybox-close="" class="popup__btn-close btn btn-dark-border" type="button"><span>Закрыть</span></button>
+               </div>
+               <div class="popup__contacts contacts-popup popup__contacts--sent">
+                    <ul class="contacts-popup__list">
+                         <li>
+                              <a href="tel:" class="contacts-popup__link">
+                                   <span>+7 (343) 287-88-77</span>
+                              </a>
+                         </li>
+                         <li>
+                              <a href="mailto:it@ita1.ru" class="contacts-popup__link">
+                                   <span>it@ita1.ru</span>
+                              </a>
+                         </li>
+                         <li>
+                              <a href="#" class="contacts-popup__link">
+                                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.4002 19.7445L9.72644 14.816L18.6747 6.75319C19.0709 6.39199 18.5932 6.21722 18.0688 6.53181L7.02332 13.511L2.24624 11.9963C1.22092 11.705 1.20926 10.9943 2.47927 10.4816L21.0866 3.30437C21.9371 2.91988 22.7527 3.5141 22.4265 4.81905L19.2573 19.7445C19.0359 20.8048 18.3951 21.0611 17.5096 20.5718L12.6859 17.0064L10.3673 19.2551C10.0993 19.5231 9.87791 19.7445 9.4002 19.7445Z"
+                                             fill="currentColor" />
+                                   </svg>
+                                   <span>Написать в Telegram</span>
+                              </a>
+                         </li>
+                    </ul>
+               </div>
+          </div>
+     </div>
+</div>
+
+<div id="order-sent" class="popup" style="display:none;">
+     <div class="popup__wrapper">
+          <div class="popup__content popup__content--sent">
+               <div class="popup__top popup__top--sent">
+                    <button data-fancybox-close="" class="popup__close">
+                         @@include('./icons/close.htm')
+                    </button>
+               </div>
+               <div class="popup__end">
+                    <div class="popup__title">Получили ваш заказ!</div>
+                    <p class="popup__text">Менеджер внимательно с ним ознакомимся и свяжется с вами.</p>
+                    <button data-fancybox-close="" class="popup__btn-close btn btn-dark-border" type="button"><span>Закрыть</span></button>
+               </div>
+               <div class="popup__contacts contacts-popup popup__contacts--sent">
+                    <ul class="contacts-popup__list">
+                         <li>
+                              <a href="tel:" class="contacts-popup__link">
+                                   <span>+7 (343) 287-88-77</span>
+                              </a>
+                         </li>
+                         <li>
+                              <a href="mailto:it@ita1.ru" class="contacts-popup__link">
+                                   <span>it@ita1.ru</span>
+                              </a>
+                         </li>
+                         <li>
+                              <a href="#" class="contacts-popup__link">
+                                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.4002 19.7445L9.72644 14.816L18.6747 6.75319C19.0709 6.39199 18.5932 6.21722 18.0688 6.53181L7.02332 13.511L2.24624 11.9963C1.22092 11.705 1.20926 10.9943 2.47927 10.4816L21.0866 3.30437C21.9371 2.91988 22.7527 3.5141 22.4265 4.81905L19.2573 19.7445C19.0359 20.8048 18.3951 21.0611 17.5096 20.5718L12.6859 17.0064L10.3673 19.2551C10.0993 19.5231 9.87791 19.7445 9.4002 19.7445Z"
+                                             fill="currentColor" />
+                                   </svg>
+                                   <span>Написать в Telegram</span>
+                              </a>
+                         </li>
+                    </ul>
+               </div>
+          </div>
+     </div>
+</div>
+
+<div id="mail-sent" class="popup" style="display:none;">
+     <div class="popup__wrapper">
+          <div class="popup__content">
+               <div class="popup__top">
+                    <div class="popup__title-wrapper">
+                         <div class="popup__title">Состав заказа отправлен</div>
+                         <button data-fancybox-close="" class="popup__close">
+                              @@include('./icons/close.htm')
+                         </button>
+                    </div>
+                    <p class="popup__text">На почту <span>Mail@mail.com</span></p>
+                    <button data-fancybox-close="" class="popup__btn-close btn btn-dark-border" type="button"><span>Закрыть</span></button>
+               </div>
+          </div>
+     </div>
+</div>

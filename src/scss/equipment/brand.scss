@@ -1,0 +1,103 @@
+.brand-equipment {
+     &__container {
+     }
+
+     &__top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          column-gap: 32px;
+          margin-bottom: 32px;
+     }
+
+     &__title {
+          font-size: 32px;
+          line-height: 131%;
+          a {
+               color: var(--AcentColor);
+               @include hoverLink;
+          }
+     }
+
+     &__arrows {
+     }
+
+     &__arrow {
+     }
+
+     &__arrow-prev {
+     }
+
+     &__arrow-next {
+     }
+
+     &__slider {
+     }
+
+     &__swiper-wrapper {
+     }
+
+     &__slide {
+          height: max-content !important;
+     }
+
+     &__btn-catalog {
+          margin-top: 32px;
+          display: inline-block;
+     }
+}
+
+.card-equipment {
+
+
+     &__labels {
+     }
+
+     &__label {
+     }
+
+     &__label--registry {
+     }
+
+     &__label--new {
+     }
+
+     &__slider {
+     }
+
+     &__swiper-wrapper {
+     }
+
+     &__slide {
+     }
+
+     &__slide-link {
+     }
+
+     &__image {
+     }
+
+     &__dotts {
+     }
+
+     &__info {
+     }
+
+     &__price {
+     }
+
+     &__title {
+     }
+
+     &__description {
+     }
+
+     &__status {
+     }
+
+     &__status-active {
+     }
+
+     &__button {
+     }
+}

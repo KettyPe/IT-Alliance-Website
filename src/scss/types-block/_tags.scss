@@ -1,0 +1,56 @@
+.tags {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 8px;
+
+     &__item {
+          border-radius: 4px;
+          padding: 4px 12px;
+          span {
+               font-size: 14px;
+               line-height: 133%;
+          }
+
+          &--gray {
+               background-color: var(--BgGrayDark);
+               span {
+                    color: var(--grayColor);
+               }
+          }
+     
+          &--green {
+               background-color: var(--BgGreen);
+               span {
+                    color: var(--greenColor);
+               }
+          }
+     
+          &--pink {
+               background-color: var(--pinkBg);
+               span {
+                    color: var(--pinkText);
+               }
+          }
+     
+          &--orange {
+               background-color: var(--orangeBg);
+               span {
+                    color: var(--orangeText);
+               }
+          }
+          
+          &--blue {
+               background-color: var(--darkBlueBg);
+               span {
+                    color: var(--darkBlueText);
+               }
+          }
+
+          &--purple {
+               background-color: var(--purpleBg);
+               span {
+                    color: var(--purpleText);
+               }
+          }
+     }
+}

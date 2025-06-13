@@ -1,0 +1,382 @@
+.variety-equipment {
+     border-radius: 20px 20px 0 0;
+     padding: 40px 0px 0px 0px;
+     background-color: var(--BackgroundGray);
+
+     &__container {
+     }
+
+     &__body {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+     }
+
+     &__title {
+     }
+
+     &__tabs {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+     }
+
+     &__btn-wrapper {
+          border-bottom: 1px solid var(--borderColor);
+     }
+
+     &__buttons {
+          display: flex;
+          align-items: center;
+          column-gap: 32px;
+     }
+
+     &__button {
+          display: block;
+          padding: 12px 0px 16px 0px;
+          cursor: pointer;
+          transition: color 0.3s ease 0s;
+          span {
+               font-size: 24px;
+               line-height: 133%;
+               pointer-events: none;
+          }
+
+          position: relative;
+          &::before {
+               content: "";
+               position: absolute;
+               width: 0;
+               height: 2px;
+               bottom: 0;
+               left: 0;
+               background-color: var(--AcentColor);
+               transition: width 0.3s ease 0s;
+          }
+
+          // &--active {
+          //      color: var(--AcentColor);
+          //      &::before {
+          //           width: 100%;
+          //      }
+          // }
+
+          &.tabs-active-btn {
+               color: var(--AcentColor);
+               &::before {
+                    width: 100%;
+               }
+          }
+
+          @media (any-hover: hover) {
+               &:hover {
+                    color: var(--AcentColor);
+               }
+          }
+     }
+
+     &__text-info {
+          margin-bottom: 32px;
+          max-width: 800px;
+          p {
+               font-size: 24px;
+               line-height: 133%;
+               a {
+                    @include hoverLink;
+               }
+               button {
+                    color: var(--AcentColor);
+                    @include hoverLink;
+               }
+          }
+     }
+
+     &__tabs-content-wrapper {
+     }
+
+     &__tabs-content {
+          display: none;
+          &.tabs-active-content {
+               display: block;
+          }
+     }
+
+     &__tab {
+     }
+
+     &__test {
+          border-radius: 12px;
+          padding: 40px;
+          background-color: var(--BgDark);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          column-gap: 20px;
+
+          &--brand {
+               align-items: flex-start;
+          }
+     }
+
+     &__test-text {
+          color: var(--whiteColor);
+          font-size: 32px;
+          line-height: 131%;
+     }
+
+     &__test-btn {
+     }
+}
+
+.brand-variety-equipment {
+     color: var(--whiteColor);
+
+     &__title {
+          font-size: 32px;
+          line-height: 131%;
+          margin-bottom: 16px;
+          a {
+               color: var(--AcentColor);
+          }
+     }
+
+     &__list {
+     }
+
+     &__item {
+          line-height: 150%;
+          padding-left: 20px;
+          position: relative;
+          &::before {
+               content: "";
+               position: absolute;
+               width: 5px;
+               height: 5px;
+               top: 12px;
+               left: 0;
+               border-radius: 50%;
+               background-color: var(--whiteColor);
+          }
+     }
+}
+
+.tab-equipment {
+     &__inner {
+          display: flex;
+          column-gap: 32px;
+     }
+
+     &__buttons {
+          flex: 0 0 352px;
+          height: 100%;
+          border-left: 1px solid var(--borderColor);
+     }
+
+     &__button {
+          padding: 12px;
+          cursor: pointer;
+          display: block;
+          span {
+               pointer-events: none;
+          }
+          position: relative;
+          &::before {
+               content: "";
+               position: absolute;
+               width: 2px;
+               height: 0;
+               top: 0;
+               left: -1px;
+               background-color: var(--AcentColor);
+               border-radius: 10px;
+               transition: height 0.3s ease 0s;
+          }
+
+          &.active-tab-btn {
+               &::before {
+                    height: 100%;
+               }
+          }
+
+          @media (any-hover: hover) {
+               transition: color 0.3s ease 0s;
+               &:hover {
+                    color: var(--AcentColor);
+               }
+          }
+     }
+
+     &__catalog {
+          margin-top: 32px;
+          display: inline-block;
+          //background-color: transparent;
+     }
+
+     &__content-wrapper {
+     }
+
+     &__content {
+          &.active-tab {
+               display: block;
+          }
+     }
+
+     &__cards {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 32px;
+     }
+
+     &__card {
+          min-width: 0;
+          height: 100%;
+          //overflow: hidden;
+     }
+}
+
+.card-equipment {
+     border-radius: 4px;
+     padding: 20px;
+     background-color: var(--whiteColor);
+     height: 100%;
+     position: relative;
+
+     &__labels {
+          display: flex;
+          column-gap: 8px;
+          margin-bottom: 16px;
+     }
+
+     &__label {
+          border-radius: 10px;
+          padding: 5px 10px;
+          span {
+               font-size: 14px;
+               line-height: 143%;
+               display: block;
+          }
+
+          &--registry {
+               background-color: var(--purpleBg);
+               color: var(--purpleText);
+          }
+
+          &--new {
+               background-color: var(--BgGreen);
+               color: var(--greenColor);
+          }
+
+          &--hit {
+               background-color: var(--AcentBg);
+               color: var(--AcentColor);
+          }
+     }
+
+     &__slider {
+     }
+
+     &__swiper-wrapper {
+     }
+
+     &__slide {
+          //height: auto !important;
+     }
+
+     &__slide-link {
+          padding: 0px 33px;
+          height: 216px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+
+     &__image {
+          img {
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               object-fit: contain;
+          }
+     }
+
+     &__dotts {
+          margin: 16px 0px;
+          display: flex;
+          column-gap: 2px;
+          .swiper-pagination-bullet {
+               height: 2px;
+               background-color: var(--borderColor);
+               width: 100%;
+               transition: background-color 0.3s ease 0s;
+          }
+          .swiper-pagination-bullet-active {
+               background-color: var(--AcentColor);
+          }
+
+          &.equipment-dotts-disable {
+               overflow: hidden;
+               opacity: 0;
+          }
+     }
+
+     &__info {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          height: 45%;
+     }
+
+     &__price {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 133%;
+     }
+
+     &__title {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 150%;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+          @include hoverLinkImp;
+     }
+
+     &__description {
+          font-size: 14px;
+          line-height: 143%;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+          overflow: hidden;
+     }
+
+     &__status {
+          font-size: 14px;
+          line-height: 143%;
+     }
+
+     &__status-active {
+          color: var(--greenColor);
+     }
+
+     &__button {
+          margin-top: auto;
+     }
+
+     transition: border 0.3s ease 0s;
+     border: 1px solid transparent;
+     @media (any-hover: hover) {
+          cursor: pointer;
+          &:hover {
+               border-color: var(--borderColor);
+               .card-equipment__title {
+                    color: var(--AcentColor);
+               }
+          }
+     }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Реквизиты и лицензии"
+})
+
+<body>
+     <div class="wrapper">
+          @@include('html/_header.htm',{})
+          <main class="page">
+               <div class="breadcrumbs">
+                    <div class="breadcrumbs__container">
+                         <ul class="breadcrumbs__list">
+                              <li class="breadcrumbs__item">
+                                   <a href="index.html" target="_blank">Главная</a>
+                              </li>
+                              <li class="breadcrumbs__item">
+                                   <a href="about.html" target="_blank">О компании</a>
+                              </li>
+                              <li class="breadcrumbs__item">
+                                   <span>Реквизиты</span>
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+               <section class="requisite">
+                    <div class="requisite__container">
+                         <h1 class="requisite__title title mb-8">Реквизиты</h1>
+                         <ul class="requisite__list gap-8">
+                              <li class="requisite__item requisite-info">
+                                   <ul class="requisite-info__list">
+                                        <li class="requisite-info__item">Общество с ограниченной ответственностью <br>
+                                             "АК ПРИНТ" <br> (сокращенное наименование ООО "АК ПРИНТ")</li>
+                                        <li class="requisite-info__item">ИНН/КПП: 6658457319/665801001</li>
+                                        <li class="requisite-info__item">ОГРН: 1146658010806</li>
+                                        <li class="requisite-info__item">К/с: 30101810100000000964</li>
+                                        <li class="requisite-info__item">Р/с: 40702810638260000662 В ФИЛИАЛ
+                                             "ЕКАТЕРИНБУРГСКИЙ" АО "АЛЬФА-БАНК"</li>
+                                        <li class="requisite-info__item">БИК: 046577964</li>
+                                        <li class="requisite-info__item">ОКПО: 39905208</li>
+                                   </ul>
+                              </li>
+                              <li class="requisite__item communication-requisite">
+                                   <p class="communication-requisite__title">Юридический адрес</p>
+                                   <p class="communication-requisite__info">620014, Свердловская обл, Екатеринбург г,
+                                        Северный пер, дом № 2А, офис 1, этаж 5</p>
+                              </li>
+                              <li class="requisite__item communication-requisite">
+                                   <p class="communication-requisite__title">Фактический адрес</p>
+                                   <p class="communication-requisite__info">620014, Свердловская обл, Екатеринбург г,
+                                        Северный пер, дом № 2А, офис 1, этаж 5</p>
+                              </li>
+                              <li class="requisite__item communication-requisite">
+                                   <p class="communication-requisite__title">Телефон, факс</p>
+                                   <a href="tel:+73433510822" class="communication-requisite__info">+7 (343)
+                                        351-08-22</a>
+                              </li>
+                              <li class="requisite__item communication-requisite">
+                                   <p class="communication-requisite__title">Электронная почта</p>
+                                   <a href="mailto:it@ita1.ru" class="communication-requisite__info">it@ita1.ru</a>
+                              </li>
+                              <li class="requisite__item download-requisite">
+                                   <a href="#" download="#" class="download-requisite__top">
+                                        <div class="download-requisite__icon">
+                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <g clip-path="url(#clip0_396_2665)">
+                                                       <path d="M12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 12V8H11V12H8L12 16L16 12H13Z"
+                                                            fill="#22B5E3" />
+                                                  </g>
+                                                  <defs>
+                                                       <clipPath id="clip0_396_2665">
+                                                            <rect width="24" height="24" fill="white" />
+                                                       </clipPath>
+                                                  </defs>
+                                             </svg>
+                                        </div>
+                                        <span>Скачать реквизиты</span>
+                                   </a>
+                                   <p class="download-requisite__text">PDF, 2.4 MB</p>
+                              </li>
+                         </ul>
+                    </div>
+               </section>
+               @@include('html/_form.htm',{})
+          </main>
+          @@include('html/_footer.htm',{})
+     </div>
+     <script src="https://api-maps.yandex.ru/2.1/?apikey=72e4cd21-9400-4735-9cfe-40e993aeb72f&lang=ru_RU&_v=20240307171659"></script>
+     @@include('html/_js.htm',{})
+</body>
+
+</html>

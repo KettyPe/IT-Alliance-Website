@@ -1,0 +1,135 @@
+.btn-dark-border {
+	//background-color: var(--whiteColor);
+	background-color: transparent;
+	border: 1px solid var(--BgDark);
+	color: var(--BgDark);
+	@media (any-hover: hover) {
+		transition: color 0.3s ease 0s, border-color 0.3s ease 0s;
+		&:hover {
+			border-color: var(--AcentColor);
+			color: var(--AcentColor);
+		}
+	}
+
+	&:active {
+		background-color: rgba(34, 181, 227, 0.16);
+	}
+}
+
+.btn-blue-border {
+	background-color: var(--whiteColor);
+	border: 1px solid var(--AcentColor);
+	color: var(--AcentColor);
+	transition: color 0.3s ease 0s, border-color 0.3s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+			border-color: var(--AcentHover);
+			color: var(--AcentHover);
+		}
+	}
+
+	&:active {
+		color: var(--AcentActive);
+		border-color: var(--AcentActive);
+	}
+}
+
+.btn-white-border {
+	background-color: transparent;
+	border: 1px solid var(--whiteColor);
+	color: var(--whiteColor);
+	transition: color 0.3s ease 0s, border-color 0.3s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+			border-color: var(--AcentHover);
+			color: var(--AcentHover);
+		}
+	}
+
+	&:active {
+		color: var(--AcentColor);
+		border-color: var(--AcentColor);
+		background-color: rgba(34, 181, 227, 0.16);
+	}
+}
+
+.btn-blue {
+	background-color: var(--AcentColor);
+	color: var(--whiteColor);
+	@media (any-hover: hover) {
+		transition: background-color 0.3s ease 0s;
+		&:hover {
+			background-color: var(--AcentHover);
+		}
+	}
+
+	&:active {
+		background-color: var(--AcentActive);
+	}
+}
+
+.btn-acent {
+	background-color: var(--AcentBg);
+	color: var(--AcentColor);
+	transition: color 0.3s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+			color: var(--AcentHover);
+		}
+	}
+
+	&:active {
+		color: var(--AcentActive);
+	}
+}
+
+.btn-white {
+	background-color: var(--whiteColor);
+	span {
+		transition: color 0.3s ease 0s;
+		color: var(--mainColor);
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			span {
+				color: var(--AcentColor);
+			}
+		}
+	}
+	transition: background-color 0.3s ease 0s;
+	&:active {
+		background-color: var(--AcentBg);
+	}
+}
+
+.btn-dark {
+	background-color: var(--BgDark);
+	span {
+		color: var(--whiteColor);
+	}
+	@media (any-hover: hover) {
+		transition: background-color 0.3s ease 0s;
+		&:hover {
+			background-color: var(--AcentColor);
+		}
+	}
+
+	&:active {
+		background-color: var(--AcentHover);
+	}
+}
+
+.btn-gray {
+	color: var(--AcentColor);
+	background-color: var(--BackgroundGray);
+	transition: color 0.3s ease 0s, background-color 0.3s ease 0s;
+	@media (any-hover: hover){
+		&:hover{
+			color: var(--AcentHover);
+		}
+	}
+
+	&:active {
+		color: var(--AcentActive);
+	}
+}

@@ -1,0 +1,89 @@
+
+
+@mixin hoverAcent {
+	@media (any-hover: hover) {
+		transition: color 0.3s ease 0s;
+		&:hover {
+			color: var(--AcentHover);
+		}
+	}
+}
+
+@mixin hoverLink {
+	@media (any-hover: hover) {
+		transition: color 0.3s ease 0s;
+		&:hover {
+			color: var(--AcentHover);
+		}
+	}
+
+	&:active {
+		color: var(--AcentActive);
+	}
+}
+
+@mixin hoverLinkImp {
+	@media (any-hover: hover) {
+		transition: color 0.3s ease 0s;
+		&:hover {
+			color: var(--AcentHover) !important;
+		}
+	}
+
+	&:active {
+		color: var(--AcentActive) !important;
+	}
+}
+
+@mixin hoverClose {
+	@media (any-hover: hover){
+		transition: color 0.3s ease 0s;
+		cursor: pointer;
+		&:hover{
+			color: var(--grayColor);
+		}
+	}
+}
+
+@mixin cardBorderGrayDashed {
+	min-height: 215px;
+	border: 1px dashed var(--borderColor);
+     display: flex;
+     flex-direction: column;
+     gap: 12px;
+     align-items: center;
+     justify-content: center;
+     color: var(--AcentColor);
+     @media (any-hover: hover){
+          transition: border 0.3s ease 0s;
+          &:hover{
+               border: 1px dashed var(--AcentColor);
+               .card-services-transition__icon {
+                    color: var(--whiteColor);
+                    background-color: var(--AcentColor);
+               }
+          }
+     }
+
+     &__text {
+          font-weight: 600;
+          line-height: 130%;
+     }
+
+     &__icon {
+          width: 45px;
+          height: 45px;
+          border-radius: 50px;
+          background-color: var(--AcentBg);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: background-color 0.5s ease 0s, color 0.3s ease 0s;
+     }
+}
+
+
+@function percent($px, $from) {
+	$result: math.div($px, $from) * 100%;
+	@return $result;
+}

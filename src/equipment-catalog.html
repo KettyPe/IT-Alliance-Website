@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Оборудование каталог"
+})
+
+<body>
+     <div class="wrapper">
+          @@include('html/_header.htm',{})
+          <main class="page">
+               <div class="breadcrumbs">
+                    <div class="breadcrumbs__container">
+                         <ul class="breadcrumbs__list">
+                              <li class="breadcrumbs__item">
+                                   <a href="index.html" target="_blank">Главная</a>
+                              </li>
+                              <li class="breadcrumbs__item">
+                                   <a href="equipment.html" target="_blank">Оборудование</a>
+                              </li>
+                              <li class="breadcrumbs__item">
+                                   <a href="equipment.html" target="_blank">Печатная техника</a>
+                              </li>
+                              <li class="breadcrumbs__item">
+                                   <span>МФУ лазерные монохромные</span>
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+               <div class="equipment-catalog">
+                    <section class="equipment-catalog__main tabs">
+                         @@include('html/equipment-catalog/baner-tabs.htm',{})
+                         <div class="equipment-catalog__btn-wrapper">
+                              <div class="equipment-catalog__container">
+                                   <div class="equipment-catalog__buttons">
+                                        <button class="equipment-catalog__button tabs-btn active-tab-btn" type="button"
+                                             data-tabs-path="print">
+                                             <img src="@img/icons-dark/print.svg" alt="icon print">
+                                             <span>Печатная техника</span>
+                                        </button>
+                                        <button class="equipment-catalog__button tabs-btn" type="button"
+                                             data-tabs-path="server">
+                                             <img src="@img/icons-dark/server.svg" alt="icon server">
+                                             <span>Серверы и СХД</span>
+                                        </button>
+                                        <button class="equipment-catalog__button tabs-btn" type="button"
+                                             data-tabs-path="comp">
+                                             <img src="@img/icons-dark/comp.svg" alt="icon comp">
+                                             <span>Компьютерная техника</span>
+                                        </button>
+                                        <button class="equipment-catalog__button tabs-btn" type="button"
+                                             data-tabs-path="multimedia">
+                                             <img src="@img/icons-dark/multimedia.svg" alt="icon miltimedia">
+                                             <span>Мультимедийное оборудование</span>
+                                        </button>
+                                        <button class="equipment-catalog__button tabs-btn" type="button"
+                                             data-tabs-path="ecopower">
+                                             <img src="@img/icons-dark/ecopower.png" alt="icon ecopower">
+                                             <span>Ecopower</span>
+                                        </button>
+                                   </div>
+                              </div>
+                         </div>
+                         @@include('html/equipment-catalog/catalog-tabs.htm',{})
+                    </section>
+                    @@include('html/equipment-page/vendors.htm',{})
+                    @@include('html/equipment-page/projects.htm',{})
+               </div>
+          </main>
+          @@include('html/_form.htm',{})
+          @@include('html/_footer.htm',{})
+     </div>
+     @@include('html/_popup.htm',{})
+     <script
+          src="https://api-maps.yandex.ru/2.1/?apikey=72e4cd21-9400-4735-9cfe-40e993aeb72f&lang=ru_RU&_v=20240307171659"></script>
+     @@include('html/_js.htm',{})
+</body>
+
+</html>

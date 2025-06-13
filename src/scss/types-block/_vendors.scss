@@ -1,0 +1,60 @@
+.equipment__vendors {
+     .vendors {
+          margin-bottom: 0;
+     }
+}
+
+.vendors {
+     background-color: var(--BackgroundGray);
+     padding: 60px 0px;
+
+     &__container {
+     }
+
+     &__top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          column-gap: 30px;
+          margin-bottom: 32px;
+     }
+
+     &__title {
+          font-size: 32px;
+          line-height: 131%;
+     }
+
+     &__arrows {
+          .swiper-button-disabled {
+               background-color: var(--BgGrayDark) !important;
+          }
+     }
+
+     &__arrow {
+     }
+
+     &__arrow-prev {
+     }
+
+     &__arrow-next {
+     }
+
+     &__slider {
+     }
+
+     &__swiper-wrapper {
+     }
+
+     &__slide {
+          padding: 20px;
+          height: 120px;
+     }
+
+     &__image {
+          img {
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+          }
+     }
+}

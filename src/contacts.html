@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Контакты"
+})
+
+<body>
+     <div class="wrapper">
+          @@include('html/_header.htm',{})
+          <main class="page">
+               <div class="breadcrumbs">
+                    <div class="breadcrumbs__container">
+                         <ul class="breadcrumbs__list">
+                              <li class="breadcrumbs__item">
+                                   <a href="#" target="_blank">Главная</a>
+                              </li>
+                              <li class="breadcrumbs__item">
+                                   <a href="#" target="_blank">О компании</a>
+                              </li>
+                              <li class="breadcrumbs__item">
+                                   <span>Контакты</span>
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+               <section class="contacts">
+                    <div class="contacts__container">
+                         <h1 class="contacts__title title mb-8">Контакты</h1>
+                         <div class="contacts__tabs tabs-contact tabs">
+                              <div class="tabs-contact__btn-wrapper mb-8">
+                                   <div class="tabs-contact__buttons gap-8">
+                                        <button class="tabs-contact__button tabs-btn active-tab-btn" type="button"
+                                             data-tabs-path="Ekaterinburg"><span>Екатеринбург</span></button>
+                                        <button class="tabs-contact__button tabs-btn" type="button"
+                                             data-tabs-path="Moscow"><span>Москва</span></button>
+                                        <button class="tabs-contact__button tabs-btn" type="button"
+                                             data-tabs-path="Novosibirsk"><span>Новосибирск</span></button>
+                                   </div>
+                              </div>
+                              <div class="tabs-contact__content-wrapper">
+                                   <div class="tabs-contact__content tabs-content active-tab" data-tabs-target="Ekaterinburg">
+                                        <section class="tabs-contact__actions actions-tabs-contact gap-8">
+                                             <div class="actions-tabs-contact__block">
+                                                  <div class="actions-tabs-contact__top">
+                                                       <div class="actions-tabs-contact__icon">
+                                                            <svg width="40" height="41" viewBox="0 0 40 41" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                 <g clip-path="url(#clip0_401_5327)">
+                                                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                           d="M6.32629 4.13141C7.06433 3.40986 8.05548 3.00586 9.08763 3.00586C10.1198 3.00586 11.1109 3.40986 11.849 4.13141L11.8591 4.14129L16.6167 8.89903C17.3381 9.63305 17.7423 10.6211 17.7423 11.6502C17.7423 12.6794 17.338 13.6674 16.6167 14.4014L15.7251 13.5252L16.6025 14.4156C16.4703 14.5458 16.3654 14.701 16.2937 14.8722C16.2221 15.0434 16.1852 15.2272 16.1852 15.4127C16.1852 15.5983 16.2221 15.782 16.2937 15.9532C16.3654 16.1244 16.4703 16.2796 16.6025 16.4099L16.609 16.4163L24.1032 23.9105C24.3737 24.1728 24.7357 24.3196 25.1126 24.3196C25.4915 24.3196 25.8554 24.1713 26.1263 23.9064L27.0001 24.8002L26.124 23.9087C26.858 23.1873 27.846 22.7831 28.8751 22.7831C29.9043 22.7831 30.8923 23.1873 31.6263 23.9087L31.6294 23.9117L36.4191 28.6513C37.1406 29.3893 37.5445 30.3806 37.5445 31.4127C37.5445 32.4449 37.1405 33.436 36.4189 34.1741L36.399 34.194L35.2818 35.2864C33.7942 36.7902 31.8349 37.7372 29.7321 37.9685C27.6255 38.2002 25.5034 37.6995 23.7225 36.5506L24.4001 35.5002L23.701 36.5364C15.9288 31.2919 9.2303 24.6107 3.96577 16.8521L3.94975 16.8279C2.80084 15.047 2.30016 12.9248 2.53189 10.8182C2.76319 8.71545 3.71016 6.75619 5.21391 5.26862L6.30638 4.15133L6.32629 4.13141ZM25.0882 34.4566C26.3843 35.2893 27.9272 35.6519 29.4588 35.4835C30.9945 35.3145 32.4252 34.622 33.5104 33.5223L33.5261 33.5063L34.6395 32.4179C34.8993 32.1479 35.0445 31.7877 35.0445 31.4127C35.0445 31.0367 34.8985 30.6756 34.6374 30.4053L29.874 25.6918C29.8735 25.6913 29.8731 25.6909 29.8726 25.6904C29.6063 25.4294 29.2481 25.2831 28.8751 25.2831C28.5015 25.2831 28.1428 25.4299 27.8763 25.6918L27.0001 24.8002L27.874 25.694C27.1359 26.4156 26.1448 26.8196 25.1126 26.8196C24.0805 26.8196 23.0893 26.4156 22.3513 25.694L22.3412 25.6842L14.8441 18.187C14.8453 18.1882 14.8465 18.1894 14.8477 18.1906L15.7251 17.3002L14.8413 18.1841L14.8441 18.187C14.4776 17.8249 14.1865 17.3937 13.9876 16.9184C13.788 16.4415 13.6852 15.9297 13.6852 15.4127C13.6852 14.8958 13.788 14.384 13.9876 13.9071C14.1855 13.434 14.4748 13.0047 14.8389 12.6437C15.0975 12.3778 15.2423 12.0214 15.2423 11.6502C15.2423 11.2781 15.0967 10.9208 14.8368 10.6547L10.097 5.91487C9.82654 5.65261 9.46453 5.50586 9.08763 5.50586C8.71272 5.50586 8.35253 5.65107 8.08253 5.91074L6.97824 7.04013C5.87852 8.12528 5.18583 9.55586 5.0169 11.0916C4.84848 12.6227 5.21077 14.165 6.04296 15.4609C11.1249 22.9469 17.5889 29.3942 25.0882 34.4566Z"
+                                                                           fill="currentColor" />
+                                                                 </g>
+                                                                 <defs>
+                                                                      <clipPath id="clip0_401_5327">
+                                                                           <rect width="35" height="35" fill="white"
+                                                                                transform="translate(2.5 3)" />
+                                                                      </clipPath>
+                                                                 </defs>
+                                                            </svg>
+                                                       </div>
+                                                       <button class="tabs-contact__sub-button"
+                                                            type="button" data-fancybox data-src="#callback">
+                                                            <span>Заказать звонок</span>
+                                                       </button>
+                                                  </div>
+                                                  <p class="tabs-contact__subtitle">Звоните</p>
+                                                  <a href="tel:+73432878877" class="actions-tabs-contact__link">+7 (343)
+                                                       287-88-77</a>
+                                                  <a href="tel:+73433510822" class="actions-tabs-contact__link">+7 (343)
+                                                       351-08-22</a>
+                                                  <p class="tabs-contact__schedule">Понедельник-Пятница, с 9:00 до
+                                                       18:00</p>
+                                             </div>
+                                             <div class="actions-tabs-contact__block">
+                                                  <div class="actions-tabs-contact__top">
+                                                       <div class="actions-tabs-contact__icon">
+                                                            <svg width="40" height="41" viewBox="0 0 40 41" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                 <g clip-path="url(#clip0_401_5339)">
+                                                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                           d="M6.25 8.625C5.55964 8.625 5 9.18464 5 9.875V31.125C5 31.8154 5.55964 32.375 6.25 32.375H33.75C34.4404 32.375 35 31.8154 35 31.125V9.875C35 9.18464 34.4404 8.625 33.75 8.625H6.25ZM2.5 9.875C2.5 7.80393 4.17893 6.125 6.25 6.125H33.75C35.8211 6.125 37.5 7.80393 37.5 9.875V31.125C37.5 33.1961 35.8211 34.875 33.75 34.875H6.25C4.17893 34.875 2.5 33.1961 2.5 31.125V9.875Z"
+                                                                           fill="currentColor" />
+                                                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                           d="M2.79912 9.68868C3.24722 9.16351 4.0362 9.10103 4.56137 9.54912L19.2047 22.0435C19.4286 22.2281 19.7098 22.3291 20 22.3291C20.2903 22.3291 20.5715 22.2281 20.7953 22.0435L35.4387 9.54912C35.9638 9.10103 36.7528 9.16351 37.2009 9.68868C37.649 10.2138 37.5865 11.0028 37.0614 11.4509L22.4001 23.9606C21.7263 24.5218 20.877 24.8291 20 24.8291C19.1231 24.8291 18.2739 24.5217 17.6 23.9605L17.5886 23.951L2.93867 11.4509C2.41351 11.0028 2.35103 10.2138 2.79912 9.68868Z"
+                                                                           fill="currentColor" />
+                                                                 </g>
+                                                                 <defs>
+                                                                      <clipPath id="clip0_401_5339">
+                                                                           <rect width="35" height="35" fill="white"
+                                                                                transform="translate(2.5 3)" />
+                                                                      </clipPath>
+                                                                 </defs>
+                                                            </svg>
+                                                       </div>
+                                                  </div>
+                                                  <p class="tabs-contact__subtitle">Пишите</p>
+                                                  <a href="mailto:it@ita1.ru"
+                                                       class="actions-tabs-contact__link">it@ita1.ru</a>
+                                                  <p class="tabs-contact__schedule">Ответим в течении 4-х часов, в
+                                                       рабочие дни</p>
+                                             </div>
+                                             <div class="actions-tabs-contact__block">
+                                                  <div class="actions-tabs-contact__top">
+                                                       <div class="actions-tabs-contact__icon">
+                                                            <svg width="40" height="41" viewBox="0 0 40 41" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                 <path d="M15.667 33.407L16.2107 25.1928L31.1245 11.7548C31.7848 11.1528 30.9886 10.8616 30.1147 11.3859L11.7055 23.0179L3.74373 20.4934C2.03486 20.0079 2.01544 18.8233 4.13211 17.9689L35.1443 6.0068C36.5619 5.36597 37.9212 6.35634 37.3775 8.53127L32.0955 33.407C31.7265 35.1742 30.6585 35.6014 29.1826 34.7858L21.1432 28.8436L17.2788 32.5914C16.8321 33.0381 16.4632 33.407 15.667 33.407Z"
+                                                                      fill="currentColor" />
+                                                            </svg>
+                                                       </div>
+                                                  </div>
+                                                  <p class="tabs-contact__subtitle">Подписывайтесь</p>
+                                                  <a href="#" class="actions-tabs-contact__link">
+                                                       <span>Наш телеграм канал</span>
+                                                       <svg width="45" height="46" viewBox="0 0 45 46" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M34.2071 27.6275C33.0062 27.6275 32.0323 26.6546 32.031 25.4537L32.018 13.4828L20.047 13.4698C18.8461 13.4685 17.8733 12.4946 17.8733 11.2937C17.8733 10.0919 18.8476 9.11758 20.0494 9.11758L36.3832 9.11758L36.3832 25.4514C36.3832 26.6532 35.4089 27.6275 34.2071 27.6275Z"
+                                                                 fill="currentColor" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M8.44716 33.969L31.7559 10.6603L34.8409 13.7452L11.5321 37.054C10.7749 37.8112 9.47044 37.7345 8.61855 36.8826C7.76666 36.0307 7.68992 34.7262 8.44716 33.969Z"
+                                                                 fill="currentColor" />
+                                                       </svg>
+                                                  </a>
+                                                  <p class="tabs-contact__schedule">Рассказываем о компаниии, бизнесе от
+                                                       лица топ-менеджеров и основателей компании</p>
+                                             </div>
+                                        </section>
+                                        <section class="tabs-contact__address address-contact">
+                                             <p class="address-contact__title">Адреса</p>
+                                             <p class="address-contact__text">Офисы в Екатеринбурге. <br> Приходите к
+                                                  нам на чашечку ароматного кофе.<br>Совместно обсудим ваши проекты и
+                                                  предложим рекомендации!</p>
+                                             <div class="address-contact__columns gap-8">
+                                                  <div class="address-contact__column">
+                                                       <p class="tabs-contact__subtitle">Офис</p>
+                                                       <p class="address-contact__info">г. Екатеринбург, переулок
+                                                            Северный, 2А5 этаж, центральный вход, 320014</p>
+                                                       <button class="tabs-contact__sub-button"
+                                                            type="button"><span>Показать на карте</span></button>
+                                                       <p class="tabs-contact__schedule">Понедельник-Пятница, с 9:00 до
+                                                            18:00</p>
+                                                  </div>
+                                                  <div class="address-contact__column">
+                                                       <p class="tabs-contact__subtitle">Сервис и склад</p>
+                                                       <p class="address-contact__info">г. Екатеринбург, улица Машинистов, 2Б320014</p>
+                                                       <button class="tabs-contact__sub-button"
+                                                            type="button"><span>Показать на карте</span></button>
+                                                       <p class="tabs-contact__schedule">Понедельник-Пятница, с 9:00 до
+                                                            18:00</p>
+                                                  </div>
+                                             </div>
+                                        </section>
+                                        <section id="Ekaterinburg" class="tabs-contact__map"></section>
+                                   </div>
+                                   <div class="tabs-contact__content tabs-content" data-tabs-target="Moscow">
+                                        Москва
+                                   </div>
+                                   <div class="tabs-contact__content tabs-content" data-tabs-target="Novosibirsk">
+                                        Новосибирск
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </section>
+          </main>
+          @@include('html/_form.htm',{})
+          @@include('html/_footer.htm',{})
+     </div>
+     @@include('html/_popup.htm',{})
+     <script src="https://api-maps.yandex.ru/2.1/?apikey=72e4cd21-9400-4735-9cfe-40e993aeb72f&lang=ru_RU&_v=20240307171659"></script>
+     @@include('html/_js.htm',{})
+</body>
+
+</html>

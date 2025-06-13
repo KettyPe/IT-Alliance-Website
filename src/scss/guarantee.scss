@@ -1,0 +1,30 @@
+.guarantee {
+	&__container {
+	}
+
+	&__title {
+	}
+
+	&__inner {
+	}
+
+	&__subtitle {
+	}
+
+	&__text {
+		max-width: 736px;
+		p {
+			font-size: 24px;
+			line-height: 133%;
+			&:not(:last-child) {
+				margin-bottom: 25px;
+
+			}
+		}
+	}
+
+	&__text-link {
+		color: var(--AcentColor);
+		@include hoverLink;
+	}
+}

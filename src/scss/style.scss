@@ -1,0 +1,168 @@
+@use "sass:math";
+
+@import "fonts/fonts";
+@import "base/reset";
+@import "base/mixin";
+
+:root {
+	--mainColor: #101828;
+	--whiteColor: #ffffff;
+	--grayColor: #74818e;
+	--AcentColor: #22b5e3;
+	--LightBlue: #19294d;
+
+	--orangeColor: #ff7a00;
+	--hoverOrangeColor: #c96000;
+	--orangeText: #cc4d0a;
+	--orangeBg: #fee8d3;
+
+	--bg: #f5f7f9;
+	--BgDark: #0d1c39;
+	--AcentBg: #effcff;
+	--BackgroundGray: #f5f7f9;
+	--BgGrayDark: #ebeff1;
+
+	--greenColor: #1b7f37;
+	--BgGreen: #dbf6c5;
+
+	--darkBlueText: #0063db;
+	--darkBlueBg: #ebf3fc;
+
+	--borderColor: #d9d9d9;
+	--AcentHover: #1882a4;
+	--AcentActive: #005980;
+
+	--purpleBg: #ddcefc;
+	--purpleText: #6d4aa7;
+
+	--pinkBg: #fcebf0;
+	--pinkText: #c3248b;
+
+	--redText: #F51414;
+	--redBg: #FFEFEF;
+
+	--cubic-bezier: cubic-bezier(0.68, 0, 0.265, 1.55);
+	--index: calc(1vw + 1vh);
+}
+
+.disable-scroll {
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	> main {
+		flex: 1 1 auto;
+	}
+	> * {
+		min-width: 0;
+	}
+}
+
+[class*="__container"] {
+	max-width: 1500px;
+	padding: 0px 40px;
+	box-sizing: content-box;
+	margin: 0 auto;
+}
+
+@import "base/common";
+
+@import "types-block/_btn";
+@import "types-block/_breadcrumbs";
+@import "types-block/_paginations";
+@import "types-block/_tags";
+@import "types-block/_show-more";
+
+@import "base/header";
+@import "base/footer";
+@import "base/popup";
+@import "base/form";
+@import "base/tabs";
+
+@import "types-block/_vendors";
+@import "types-block/_services";
+@import "types-block/_benefits";
+@import "types-block/_configurator";
+
+@import "main/mainblock";
+@import "main/proposal";
+@import "main/partners";
+@import "main/equipment-solutions";
+@import "main/news";
+@import "main/about";
+@import "main/help";
+
+@import "equipment/main";
+@import "equipment/benefits";
+@import "equipment/brand";
+@import "equipment/variety";
+@import "equipment/project";
+@import "equipment/reviews";
+
+@import "equipment-catalog/style.scss";
+@import "equipment-catalog/baner.scss";
+@import "equipment-catalog/catalog-tabs.scss";
+
+@import "card-catalog/style.scss";
+@import "card-catalog/main-info.scss";
+@import "card-catalog/tabs.scss";
+
+@import "solutions/industry";
+@import "solutions/ready";
+
+@import "education/style";
+@import "education/education-tabs";
+
+@import "card-project/main";
+@import "card-project/products";
+@import "card-project/style";
+
+@import "about-company/style";
+@import "about-company/mainblock";
+
+@import "about-page/style";
+@import "about-page/gallery";
+@import "about-page/vacancy";
+@import "about-page/requisite";
+@import "about-page/certificate";
+
+@import "equipment-page/style";
+
+@import "card-news/style";
+
+@import "card-solutions/style";
+@import "card-solutions/tabs";
+
+@import "made-solutions/style";
+
+@import "projects-page/style";
+
+@import "config-form/config-main";
+@import "config-form/config-form";
+
+@import "history-company";
+@import "guarantee";
+@import "about-send";
+@import "news-page";
+@import "contacts";
+
+@import "ordering/style";
+@import "cart/style";
+@import "cart-empty/style";
+
+@import "services";
+@import "search-results";
+@import "404";
+@import "cookie";
+
+@import "media";

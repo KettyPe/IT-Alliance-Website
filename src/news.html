@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Новости"
+})
+
+<body>
+     <div class="wrapper">
+          @@include('html/_header.htm',{})
+          <main class="page">
+               <div class="breadcrumbs">
+                    <div class="breadcrumbs__container">
+                         <ul class="breadcrumbs__list">
+                              <li class="breadcrumbs__item">
+                                   <a href="#" target="_blank">Главная</a>
+                              </li>
+                              <li class="breadcrumbs__item">
+                                   <a href="#" target="_blank">О компании</a>
+                              </li>
+                              <li class="breadcrumbs__item">
+                                   <span>Новости</span>
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+               <section class="news-page">
+                    <div class="news-page__container">
+                         <div class="news-page__top mb-8">
+                              <h1 class="news-page__title title">Новости</h1>
+                              <div class="news-page__media media-news">
+                                   <a href="#" class="media-news__card" target="_blank">
+                                        <div class="media-news__card-image">
+                                             <img src="img/media/rbk.png" alt="rbk">
+                                        </div>
+                                        <div class="media-news__card-icon">
+                                             <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M34.2071 27.1275C33.0062 27.1275 32.0323 26.1546 32.031 24.9537L32.018 12.9828L20.047 12.9698C18.8461 12.9685 17.8733 11.9946 17.8733 10.7937C17.8733 9.59185 18.8476 8.61758 20.0494 8.61758L36.3832 8.61758L36.3832 24.9514C36.3832 26.1532 35.4089 27.1275 34.2071 27.1275Z"
+                                                       fill="currentColor"></path>
+                                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                                       d="M8.44716 33.469L31.7559 10.1603L34.8409 13.2452L11.5321 36.554C10.7749 37.3112 9.47044 37.2345 8.61855 36.3826C7.76666 35.5307 7.68992 34.2262 8.44716 33.469Z"
+                                                       fill="currentColor"></path>
+                                             </svg>
+                                        </div>
+                                   </a>
+                                   <a href="#" class="media-news__card" target="_blank">
+                                        <div class="media-news__card-image">
+                                             <img src="img/media/dzen.png" alt="dzen">
+                                        </div>
+                                        <div class="media-news__card-icon">
+                                             <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M34.2071 27.1275C33.0062 27.1275 32.0323 26.1546 32.031 24.9537L32.018 12.9828L20.047 12.9698C18.8461 12.9685 17.8733 11.9946 17.8733 10.7937C17.8733 9.59185 18.8476 8.61758 20.0494 8.61758L36.3832 8.61758L36.3832 24.9514C36.3832 26.1532 35.4089 27.1275 34.2071 27.1275Z"
+                                                       fill="currentColor"></path>
+                                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                                       d="M8.44716 33.469L31.7559 10.1603L34.8409 13.2452L11.5321 36.554C10.7749 37.3112 9.47044 37.2345 8.61855 36.3826C7.76666 35.5307 7.68992 34.2262 8.44716 33.469Z"
+                                                       fill="currentColor"></path>
+                                             </svg>
+                                        </div>
+                                   </a>
+                                   <a href="#" class="media-news__card" target="_blank">
+                                        <div class="media-news__card-image">
+                                             <img src="img/media/kvartal.png" alt="delovoy kvartal">
+                                        </div>
+                                        <div class="media-news__card-icon">
+                                             <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M34.2071 27.1275C33.0062 27.1275 32.0323 26.1546 32.031 24.9537L32.018 12.9828L20.047 12.9698C18.8461 12.9685 17.8733 11.9946 17.8733 10.7937C17.8733 9.59185 18.8476 8.61758 20.0494 8.61758L36.3832 8.61758L36.3832 24.9514C36.3832 26.1532 35.4089 27.1275 34.2071 27.1275Z"
+                                                       fill="currentColor"></path>
+                                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                                       d="M8.44716 33.469L31.7559 10.1603L34.8409 13.2452L11.5321 36.554C10.7749 37.3112 9.47044 37.2345 8.61855 36.3826C7.76666 35.5307 7.68992 34.2262 8.44716 33.469Z"
+                                                       fill="currentColor"></path>
+                                             </svg>
+                                        </div>
+                                   </a>
+                              </div>
+                         </div>
+                         <div class="news-page__cards">
+                              <article class="news-page__card card-news-page">
+                                   <a href="card-news.html" class="card-news-page__image" target="_blank">
+                                        <img src="@img/news/card-news.jpg" alt="card-news">
+                                        <div class="label-card-partners">
+                                             <span>Наш партнёр</span>
+                                        </div>
+                                   </a>
+                                   <div class="card-news-page__tags tags">
+                                        <div class="tags__item tags__item--green">
+                                             <span>Компания</span>
+                                        </div>
+                                   </div>
+                                   <a href="card-news.html" class="card-news-page__title" target="_blank">МФУ
+                                        Kyocera Европа vs Азия: экспертное руководство по выбору</a>
+                                   <p class="card-news-page__date">17 апреля 2024</p>
+                              </article>
+                              <article class="news-page__card card-news-page">
+                                   <a href="card-news.html" class="card-news-page__image" target="_blank">
+                                        <img src="@img/news/card-news.jpg" alt="card-news">
+                                        <div class="label-card-partners">
+                                             <span>Наш партнёр</span>
+                                        </div>
+                                   </a>
+                                   <div class="card-news-page__tags tags">
+                                        <div class="tags__item tags__item--green">
+                                             <span>Компания</span>
+                                        </div>
+                                   </div>
+                                   <a href="card-news.html" class="card-news-page__title" target="_blank">
+                                        ИТ Альянс и YADRO продолжают успешное сотрудничество: высококачественные
+                                        серверы доступны для наших клиентов
+                                   </a>
+                                   <p class="card-news-page__date">17 апреля 2024</p>
+                              </article>
+                              <article class="news-page__card card-news-page">
+                                   <a href="card-news.html" class="card-news-page__image" target="_blank">
+                                        <img src="@img/news/card-news.jpg" alt="card-news">
+                                   </a>
+                                   <div class="card-news-page__tags tags">
+                                        <div class="tags__item tags__item--green">
+                                             <span>Компания</span>
+                                        </div>
+                                   </div>
+                                   <a href="card-news.html" class="card-news-page__title" target="_blank">
+                                        ИТ Альянс и YADRO продолжают успешное сотрудничество: высококачественные
+                                        серверы доступны для наших клиентов
+                                   </a>
+                                   <p class="card-news-page__date">17 апреля 2024</p>
+                              </article>
+                              <article class="news-page__card card-news-page">
+                                   <a href="card-news.html" class="card-news-page__image" target="_blank">
+                                        <img src="@img/news/card-news.jpg" alt="card-news">
+                                   </a>
+                                   <div class="card-news-page__tags tags">
+                                        <div class="tags__item tags__item--green">
+                                             <span>Компания</span>
+                                        </div>
+                                   </div>
+                                   <a href="card-news.html" class="card-news-page__title" target="_blank">
+                                        ИТ Альянс и YADRO продолжают успешное сотрудничество: высококачественные
+                                        серверы доступны для наших клиентов
+                                   </a>
+                                   <p class="card-news-page__date">17 апреля 2024</p>
+                              </article>
+                              <article class="news-page__card card-news-page">
+                                   <a href="card-news.html" class="card-news-page__image" target="_blank">
+                                        <img src="@img/news/card-news.jpg" alt="card-news">
+                                   </a>
+                                   <div class="card-news-page__tags tags">
+                                        <div class="tags__item tags__item--green">
+                                             <span>Компания</span>
+                                        </div>
+                                   </div>
+                                   <a href="card-news.html" class="card-news-page__title" target="_blank">МФУ
+                                        Kyocera Европа vs Азия: экспертное руководство по выбору</a>
+                                   <p class="card-news-page__date">17 апреля 2024</p>
+                              </article>
+                              <article class="news-page__card card-news-page">
+                                   <a href="card-news.html" class="card-news-page__image" target="_blank">
+                                        <img src="@img/news/card-news.jpg" alt="card-news">
+                                   </a>
+                                   <div class="card-news-page__tags tags">
+                                        <div class="tags__item tags__item--green">
+                                             <span>Компания</span>
+                                        </div>
+                                   </div>
+                                   <a href="card-news.html" class="card-news-page__title" target="_blank">МФУ
+                                        Kyocera Европа vs Азия: экспертное руководство по выбору</a>
+                                   <p class="card-news-page__date">17 апреля 2024</p>
+                              </article>
+                              <article class="news-page__card card-news-page">
+                                   <a href="card-news.html" class="card-news-page__image" target="_blank">
+                                        <img src="@img/news/card-news.jpg" alt="card-news">
+                                   </a>
+                                   <div class="card-news-page__tags tags">
+                                        <div class="tags__item tags__item--green">
+                                             <span>Компания</span>
+                                        </div>
+                                   </div>
+                                   <a href="card-news.html" class="card-news-page__title" target="_blank">МФУ
+                                        Kyocera Европа vs Азия: экспертное руководство по выбору</a>
+                                   <p class="card-news-page__date">17 апреля 2024</p>
+                              </article>
+                              <article class="news-page__card card-news-page">
+                                   <a href="card-news.html" class="card-news-page__image" target="_blank">
+                                        <img src="@img/news/card-news.jpg" alt="card-news">
+                                   </a>
+                                   <div class="card-news-page__tags tags">
+                                        <div class="tags__item tags__item--green">
+                                             <span>Компания</span>
+                                        </div>
+                                   </div>
+                                   <a href="card-news.html" class="card-news-page__title" target="_blank">МФУ
+                                        Kyocera Европа vs Азия: экспертное руководство по выбору</a>
+                                   <p class="card-news-page__date">17 апреля 2024</p>
+                              </article>
+                         </div>
+                         <div class="news-page__bottom show-more">
+                              <button class="show-more__btn btn btn-gray mb-8"><span>Загрузить ещё</span></button>
+                              <div class="show-more__actions">
+                                   <div class="show-more__pagination">
+                                        @@include('html/_pagination.htm',{})
+                                   </div>
+                                   <div class="show-more__number">30 из 60</div>
+                              </div>
+                         </div>
+                    </div>
+               </section>
+          </main>
+          @@include('html/_form.htm',{})
+          @@include('html/_footer.htm',{})
+     </div>
+     @@include('html/_popup.htm',{})
+     <script src="https://api-maps.yandex.ru/2.1/?apikey=72e4cd21-9400-4735-9cfe-40e993aeb72f&lang=ru_RU&_v=20240307171659"></script>
+     @@include('html/_js.htm',{})
+</body>
+
+</html>

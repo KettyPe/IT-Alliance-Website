@@ -1,0 +1,127 @@
+.footer {
+     background-color: var(--BgDark);
+     color: var(--whiteColor);
+     padding: 60px 0px;
+     position: relative;
+
+     &::before {
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: calc(var(--index) * 15.8);
+          bottom: -70px;
+          right: 0;
+          background-image: url(../img/decor/footer.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: bottom;
+     }
+
+     // &__decor {
+     //      position:absolute;
+     //      bottom:0;
+     //      right:0;
+     // }
+
+     &__container {
+     }
+
+     &__body {
+          display: flex;
+          column-gap: 219px;
+          position: relative;
+          z-index: 2;
+          margin-bottom: 32px;
+     }
+
+     &__info {
+          flex: 0 0 293px;
+     }
+
+     &__logo {
+          margin-bottom: 24px;
+          display: block;
+     }
+
+     &__info-list {
+     }
+
+     &__info-list-item {
+          &:not(:last-child) {
+               margin-bottom: 46px;
+          }
+          &:last-child {
+               margin-top: 60px;
+          }
+          span {
+               font-weight: 600;
+               font-size: 24px;
+               margin-bottom: 15px;
+               display: block;
+          }
+          a {
+               font-size: 32px;
+               @include hoverLink;
+          }
+     }
+
+     &__menu {
+     }
+
+     &__bottom {
+          max-width: 723px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+     }
+
+     &__copy,
+     &__policy {
+          font-size: 14px;
+          line-height: 143%;
+          color: var(--grayColor)
+     }
+
+     &__policy {
+          @include hoverLink;
+     }
+}
+
+.menu-footer {
+     flex: 1 1 auto;
+     display: flex;
+     column-gap: 32px;
+     &__column {
+          flex: 0 1 33.333%;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+     }
+
+     &__list {
+     }
+
+     &__list-inner {
+          .menu-footer__list {
+               &:not(:last-child) {
+                    margin-bottom: 32px;
+               }
+          }
+     }
+
+     &__item {
+          &:not(:last-child) {
+               margin-bottom: 13px;
+          }
+          &:first-child {
+               font-weight: 600;
+               font-size: 24px;
+               margin-bottom: 24px;
+               color: var(--grayColor);
+          }
+     }
+
+     &__link {
+          @include hoverLink;
+     }
+}

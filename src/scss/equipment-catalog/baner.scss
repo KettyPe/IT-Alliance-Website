@@ -1,0 +1,38 @@
+
+.baner-tabs-catalog {
+
+     &__container {
+     }
+
+     &__baner {
+          &.active-tab {
+               display: block;
+          }
+     }
+
+     &__baner-inner {
+          background-color: var(--BgDark);
+          border-radius: 20px;
+          padding: 40px;
+          color: var(--whiteColor);
+     }
+
+     &__title {
+     }
+
+     &__text {
+          font-size: 24px;
+          line-height: 133%;
+     }
+
+     &__main-modal {
+          color: var(--AcentColor);
+     }
+
+     &__button {
+          border-radius: 4px;
+          height: 48px;
+          padding: 0px 24px;
+     }
+}
+

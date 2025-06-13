@@ -1,0 +1,111 @@
+.equipment-solutions {
+     &__container {
+     }
+
+     &__title {
+          margin-bottom: 16px;
+     }
+
+     &__text {
+          font-size: 32px;
+          line-height: 130%;
+          margin-bottom: 32px;
+          max-width: 860px;
+          p {
+               a {
+                    color: var(--AcentColor);
+                    @include hoverLink;
+               }
+               &:not(:last-child) {
+                    margin-bottom: 20px;
+               }
+          }
+     }
+
+     &__cards {
+          display: grid;
+          gap: 32px;
+          grid-template-columns: repeat(6, 1fr);
+     }
+
+     &__card {
+     }
+}
+
+.card-equipment-solutions {
+     position: relative;
+     border-radius: 4px;
+     padding: 20px 20px 40px 20px;
+     background-color: var(--BackgroundGray);
+
+     &:nth-child(1),
+     &:nth-child(2),
+     &:nth-child(3) {
+          grid-column: span 2;
+     }
+
+     &:nth-child(4),
+     &:nth-child(5) {
+          grid-column: span 3;
+     }
+
+     &__title {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 130%;
+          margin-bottom: 16px;
+          display: block;
+          @include hoverAcent;
+     }
+
+     &__content {
+          display: flex;
+          column-gap: 24px;
+          justify-content: space-between;
+     }
+
+     &__left {
+     }
+
+     &__list {
+          margin-bottom: 16px;
+          li {
+               &:not(:last-child) {
+                    margin-bottom: 8px;
+               }
+          }
+     }
+
+     &__link {
+          line-height: 130%;
+          @include hoverAcent;
+     }
+
+     &__offers {
+          display: flex;
+          align-items: center;
+          column-gap: 8px;
+          color: var(--orangeColor);
+          @media (any-hover: hover) {
+               transition: color 0.3s ease 0s;
+               &:hover {
+                    color: var(--hoverOrangeColor);
+               }
+          }
+     }
+
+     &__offers-icon {
+     }
+
+     &__image {
+          position: absolute;
+          right: 20px;
+          bottom: 40px;
+          margin-top: auto;
+          max-width: 180px;
+          max-height: 160px;
+          img {
+               width: 100%;
+          }
+     }
+}

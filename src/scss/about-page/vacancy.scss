@@ -1,0 +1,110 @@
+.about-vacancy {
+     &__container {
+     }
+
+     &__inner {
+          display: inline-flex;
+          flex-direction: column;
+     }
+
+     &__title {
+     }
+
+     &__cards {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+     }
+
+     &__card {
+     }
+
+     &__button {
+          width: max-content;
+     }
+
+     &__number {
+          line-height: 150%;
+          color: var(--grayColor);
+          margin-bottom: 16px;
+     }
+}
+
+.card-about-vacancy {
+     border: 1px solid var(--borderColor);
+     border-radius: 4px;
+     background-color: var(--whiteColor);
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     min-height: 300px;
+     position: relative;
+
+     @media (any-hover: hover){
+          transition: background-color 0.3s ease 0s;
+          &:hover{
+               background-color: var(--AcentColor);
+               .card-about-vacancy__title,
+               .card-about-vacancy__city {
+                    color: var(--whiteColor);
+               }
+               .card-about-vacancy__arrow {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translate(-20px, 20px);
+               }
+          }
+          &:active {
+               .card-about-vacancy__title {
+                    color: var(--AcentActive);
+               }
+          }
+     }
+
+     &__info {
+          flex: 1 1 auto;
+     }
+
+     &__label {
+          border-radius: 4px;
+          padding: 4px 12px;
+          background-color: var(--BgGrayDark);
+          width: max-content;
+          span {
+               color: var(--grayColor);
+               font-size: 14px;
+               line-height: 143%;
+          }
+          margin-bottom: 16px;
+     }
+
+     &__title {
+          font-size: 24px;
+          line-height: 133%;
+          transition: color 0.3s ease 0s;
+          @include hoverLinkImp;
+     }
+
+     &__city {
+          color: var(--grayColor);
+     }
+
+     &__arrow {
+          width: 40px;
+          height: 40px;
+          border-radius: 50px;
+          border: 2px solid #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          // top: 30px;
+          // right: 30px;
+          top: 0;
+          right: 0;
+          opacity: 0;
+          visibility: hidden;
+          transform: translate(-30px, 30px);
+          transition: all 0.35s ease 0s;
+          will-change: transform;
+     }
+}

@@ -1,0 +1,106 @@
+.certificate {
+     &__container {
+     }
+
+     &__title {
+     }
+
+     &__text {
+          max-width: 864px;
+          font-size: 24px;
+          line-height: 133%;
+     }
+
+     &__cards {
+          display: flex;
+          flex-direction: column;
+     }
+
+     &__card {
+     }
+}
+
+.card-certificate {
+     border: 1px solid var(--borderColor);
+     border-radius: 12px;
+     padding: 40px;
+     display: flex;
+     column-gap: 32px;
+
+     &__image {
+          flex: 0 0 141px;
+          img {
+               width: 100%;
+               object-fit: cover;
+          }
+     }
+
+     &__info {
+          flex: 1 1 auto;
+     }
+
+     &__info-top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          column-gap: 32px;
+          margin-bottom: 24px;
+     }
+
+     &__info-top-left {
+          display: flex;
+          align-items: center;
+          column-gap: 32px;
+          span {
+               font-size: 14px;
+               line-height: 143%;
+               color: var(--grayColor);
+               white-space: nowrap;
+          }
+     }
+
+     &__title {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 133%;
+     }
+
+     &__icon {
+          color: var(--AcentColor);
+          flex: 0 0 40px;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          border: 2px solid var(--AcentColor);
+          transition:
+               border-color 0.3s ease 0s,
+               color 0.3s ease 0s;
+          @media (any-hover: hover) {
+               &:hover {
+                    color: var(--AcentHover);
+                    border-color: var(--AcentHover);
+               }
+          }
+          &:active {
+               color: var(--AcentActive);
+               border-color: var(--AcentActive);
+          }
+     }
+
+     &__text {
+          max-width: 780px;
+          p {
+               line-height: 150%;
+               a {
+                    color: var(--AcentColor);
+                    @include hoverLink;
+               }
+               &:not(:last-child) {
+                    margin-bottom: 20px;
+               }
+          }
+     }
+}

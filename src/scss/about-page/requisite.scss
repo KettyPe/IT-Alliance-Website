@@ -1,0 +1,63 @@
+.requisite {
+     &__container {
+     }
+
+     &__title {
+     }
+
+     &__list {
+          display: flex;
+          flex-direction: column;
+     }
+
+     &__item {
+     }
+}
+
+.requisite-info {
+
+     &__list {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+     }
+
+     &__item {
+          line-height: 150%;
+     }
+}
+.communication-requisite {
+     a {
+          @include hoverLink;
+     }
+
+     &__title {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 133%;
+          margin-bottom: 8px;
+     }
+
+     &__info {
+          line-height: 150%;
+     }
+}
+.download-requisite {
+     &__top {
+          display: flex;
+          align-items: center;
+          column-gap: 8px;
+          color: var(--AcentColor);
+     }
+
+     &__icon {
+          padding-top: 2px;
+     }
+
+     &__text {
+          font-size: 14px;
+          line-height: 143%;
+          color: var(--grayColor);
+          padding-left: 32px;
+     }
+}

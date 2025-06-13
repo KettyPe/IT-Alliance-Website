@@ -1,0 +1,131 @@
+.mainblock {
+     background-color: var(--BgDark);
+     padding: 7.5% 0px 32px 0px;
+     color: var(--whiteColor);
+     @media(min-width: 1280px) {
+          min-height: 100vh;
+     }
+
+     &__container {
+     }
+
+     &__body {
+          position: relative;
+     }
+
+     &__inner {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          column-gap: 50px;
+     }
+
+     &__info {
+          max-width: 791px;
+     }
+
+     &__title {
+          margin-bottom: 8px;
+     }
+
+     &__subtitle {
+          margin-bottom: 16px;
+     }
+
+     &__text {
+          margin-bottom: 32px;
+          font-size: 32px;
+          line-height: 130%;
+          a {
+               color: var(--AcentColor);
+               @include hoverLink;
+          }
+     }
+
+     &__btn-wrapper {
+          display: flex;
+          column-gap: 32px;
+     }
+
+     &__button {
+     }
+
+     &__cards {
+          max-width: 607px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 16px;
+
+          a {
+               color: var(--AcentColor);
+               @include hoverLink;
+          }
+     }
+
+     &__card {
+     }
+}
+
+.card-mainblock {
+     border-radius: 20px;
+     padding: 20px;
+     background-color: var(--LightBlue);
+     &:first-child,
+     &:nth-child(6) {
+          background-color: transparent;
+     }
+
+     &:nth-child(6) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+
+     &__icon {
+          margin-bottom: 16px;
+     }
+
+     &__text {
+          line-height: 130%;
+          span {
+               color: var(--whiteColor);
+          }
+     }
+
+     &__text--wh {
+          color: var(--whiteColor);
+     }
+
+     &__title {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 150%;
+          margin-bottom: 16px;
+     }
+}
+
+.benefits-mainblock {
+     position: absolute;
+     bottom: 32px;
+     max-width: 1500px;
+     width: 100%;
+     display: flex;
+     column-gap: 64px;
+
+     &__item {
+          flex: 0 1 33.333%;
+          color: var(--grayColor);
+     }
+
+     &__title {
+          line-height: 150%;
+          font-weight: 600;
+          display: block;
+          margin-bottom: 4px;
+     }
+
+     &__text {
+          font-size: 14px;
+          line-height: 143%;
+     }
+}

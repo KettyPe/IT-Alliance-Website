@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Готовые решения"
+})
+
+<body>
+     <div class="wrapper">
+          @@include('html/_header.htm',{})
+          <main class="page">
+               <div class="breadcrumbs">
+                    <div class="breadcrumbs__container">
+                         <ul class="breadcrumbs__list">
+                              <li class="breadcrumbs__item">
+                                   <a href="index.html" target="_blank">Главная</a>
+                              </li>
+                              <li class="breadcrumbs__item">
+                                   <a href="solutions.html" target="_blank">Решения</a>
+                              </li>
+                              <li class="breadcrumbs__item">
+                                   <span>Готовые решения</span>
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+               <div class="made-solutions">
+                    <div class="made-solutions__baner baner-made-solutions mb-8">
+                         <div class="baner-made-solutions__container">
+                              <div class="baner-made-solutions__inner">
+                                   <h1 class="baner-made-solutions__title title mb-8">Готовые решения</h1>
+                                   <h2 class="baner-made-solutions__subtitle mb-15">Оформим проект,
+                                        проконсультируем,<br> подберем выгодное решение под ваш бюджет,<br> внедрим и
+                                        будем сопровождать в эксплуатации.</h2>
+                                   <div class="baner-made-solutions__btn-wrapper gap-8">
+                                        <button class="baner-made-solutions__button btn btn-white" type="button"
+                                             data-fancybox data-src="#project">
+                                             <span>Заказать проект</span>
+                                        </button>
+                                        <button class="baner-made-solutions__button btn btn-white-border" type="button"
+                                             data-fancybox data-src="#consultation">
+                                             <span>Получить консультацию</span>
+                                        </button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <section class="made-solutions__catalog">
+                         <div class="made-solutions__container">
+                              <div class="made-solutions__inner">
+                                   <div class="made-solutions__filter filter-catalog">
+                                        <button class="filter-catalog__btn-mobile" type="button">
+                                             @@include('html/icons/filter.htm',{})
+                                             <span>Фильтр</span>
+                                             <div class="filter-catalog__select-number">
+                                                  <span>2</span>
+                                             </div>
+                                        </button>
+                                        <div class="filter-catalog__inner">
+                                             <div class="filter-catalog__top-mb">
+                                                  <div class="filter-catalog__top-mb-inner">
+                                                       <button class="filter-catalog__close" type="button">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                 <path d="M19.5 4.5L4.5 19.5" stroke="currentColor"
+                                                                      stroke-width="1.5" stroke-linecap="round"
+                                                                      stroke-linejoin="round" />
+                                                                 <path d="M4.5 4.5L19.5 19.5" stroke="currentColor"
+                                                                      stroke-width="1.5" stroke-linecap="round"
+                                                                      stroke-linejoin="round" />
+                                                            </svg>
+                                                       </button>
+                                                       <p class="filter-catalog__title">Фильтр</p>
+                                                       <div class="filter-catalog__reset-mb">
+                                                            <button class="filter-catalog__button" type="button">
+                                                                 <svg width="24" height="25" viewBox="0 0 24 25"
+                                                                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                      <path d="M19.5 5L4.5 20" stroke="currentColor"
+                                                                           stroke-width="1.5" stroke-linecap="round"
+                                                                           stroke-linejoin="round" />
+                                                                      <path d="M4.5 5L19.5 20" stroke="currentColor"
+                                                                           stroke-width="1.5" stroke-linecap="round"
+                                                                           stroke-linejoin="round" />
+                                                                 </svg>
+                                                                 <span>Сбросить все</span>
+                                                            </button>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                             <div class="filter-catalog__content-mb">
+                                                  <div class="filter-catalog__selected-mb">
+                                                       <div class="catalog__selected-filter selected-filter-catalog">
+                                                            <div class="selected-filter-catalog__items">
+                                                                 <div class="selected-filter-catalog__item">
+                                                                      <span>Услуга: Проектирование ИТ-инфраструктуры</span>
+                                                                      <button class="selected-filter-catalog__btn-close"
+                                                                           type="button">
+                                                                           <svg width="20" height="21" viewBox="0 0 20 21"
+                                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M16.25 4.25L3.75 16.75"
+                                                                                     stroke="currentColor" stroke-width="1.5"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round" />
+                                                                                <path d="M3.75 4.25L16.25 16.75"
+                                                                                     stroke="currentColor" stroke-width="1.5"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round" />
+                                                                           </svg>
+                                                                      </button>
+                                                                 </div>
+                                                                 <div class="selected-filter-catalog__item">
+                                                                      <span>Услуга: Поставка оборудование</span>
+                                                                      <button class="selected-filter-catalog__btn-close"
+                                                                           type="button">
+                                                                           <svg width="20" height="21" viewBox="0 0 20 21"
+                                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M16.25 4.25L3.75 16.75"
+                                                                                     stroke="currentColor" stroke-width="1.5"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round" />
+                                                                                <path d="M3.75 4.25L16.25 16.75"
+                                                                                     stroke="currentColor" stroke-width="1.5"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round" />
+                                                                           </svg>
+                                                                      </button>
+                                                                 </div>
+                                                                 <div class="selected-filter-catalog__item">
+                                                                      <span>Отрасль: Образование</span>
+                                                                      <button class="selected-filter-catalog__btn-close"
+                                                                           type="button">
+                                                                           <svg width="20" height="21" viewBox="0 0 20 21"
+                                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M16.25 4.25L3.75 16.75"
+                                                                                     stroke="currentColor" stroke-width="1.5"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round" />
+                                                                                <path d="M3.75 4.25L16.25 16.75"
+                                                                                     stroke="currentColor" stroke-width="1.5"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round" />
+                                                                           </svg>
+                                                                      </button>
+                                                                 </div>
+                                                                 <div class="selected-filter-catalog__item">
+                                                                      <span>Услуга: Поставка оборудование</span>
+                                                                      <button class="selected-filter-catalog__btn-close"
+                                                                           type="button">
+                                                                           <svg width="20" height="21" viewBox="0 0 20 21"
+                                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M16.25 4.25L3.75 16.75"
+                                                                                     stroke="currentColor" stroke-width="1.5"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round" />
+                                                                                <path d="M3.75 4.25L16.25 16.75"
+                                                                                     stroke="currentColor" stroke-width="1.5"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round" />
+                                                                           </svg>
+                                                                      </button>
+                                                                 </div>
+                                                                 <div class="selected-filter-catalog__item">
+                                                                      <span>Отрасль: Образование</span>
+                                                                      <button class="selected-filter-catalog__btn-close"
+                                                                           type="button">
+                                                                           <svg width="20" height="21" viewBox="0 0 20 21"
+                                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M16.25 4.25L3.75 16.75"
+                                                                                     stroke="currentColor" stroke-width="1.5"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round" />
+                                                                                <path d="M3.75 4.25L16.25 16.75"
+                                                                                     stroke="currentColor" stroke-width="1.5"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round" />
+                                                                           </svg>
+                                                                      </button>
+                                                                 </div>
+                                                                 <div class="selected-filter-catalog__item">
+                                                                      <span>Отрасль: Образование</span>
+                                                                      <button class="selected-filter-catalog__btn-close"
+                                                                           type="button">
+                                                                           <svg width="20" height="21" viewBox="0 0 20 21"
+                                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M16.25 4.25L3.75 16.75"
+                                                                                     stroke="currentColor" stroke-width="1.5"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round" />
+                                                                                <path d="M3.75 4.25L16.25 16.75"
+                                                                                     stroke="currentColor" stroke-width="1.5"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round" />
+                                                                           </svg>
+                                                                      </button>
+                                                                 </div>
+                                                                 <div class="selected-filter-catalog__item">
+                                                                      <span>Отрасль: Промышленность</span>
+                                                                      <button class="selected-filter-catalog__btn-close"
+                                                                           type="button">
+                                                                           <svg width="20" height="21" viewBox="0 0 20 21"
+                                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M16.25 4.25L3.75 16.75"
+                                                                                     stroke="currentColor" stroke-width="1.5"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round" />
+                                                                                <path d="M3.75 4.25L16.25 16.75"
+                                                                                     stroke="currentColor" stroke-width="1.5"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round" />
+                                                                           </svg>
+                                                                      </button>
+                                                                 </div>
+                                                                 <div class="selected-filter-catalog__item">
+                                                                      <span>Отрасль: Образование</span>
+                                                                      <button class="selected-filter-catalog__btn-close"
+                                                                           type="button">
+                                                                           <svg width="20" height="21" viewBox="0 0 20 21"
+                                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M16.25 4.25L3.75 16.75"
+                                                                                     stroke="currentColor" stroke-width="1.5"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round" />
+                                                                                <path d="M3.75 4.25L16.25 16.75"
+                                                                                     stroke="currentColor" stroke-width="1.5"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round" />
+                                                                           </svg>
+                                                                      </button>
+                                                                 </div>
+                                                                 <div class="selected-filter-catalog__item">
+                                                                      <span>Отрасль: Промышленность</span>
+                                                                      <button class="selected-filter-catalog__btn-close"
+                                                                           type="button">
+                                                                           <svg width="20" height="21" viewBox="0 0 20 21"
+                                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M16.25 4.25L3.75 16.75"
+                                                                                     stroke="currentColor" stroke-width="1.5"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round" />
+                                                                                <path d="M3.75 4.25L16.25 16.75"
+                                                                                     stroke="currentColor" stroke-width="1.5"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round" />
+                                                                           </svg>
+                                                                      </button>
+                                                                 </div>
+                                                                 <button class="selected-filter-catalog__reset" type="button">
+                                                                      <span>Сбросить все</span>
+                                                                 </button>
+                                                            </div>
+                                                            <button class="selected-filter-catalog__show-more" type="button">
+                                                                 <span>Показать всё</span>
+                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                                      xmlns="http://www.w3.org/2000/svg">
+                                                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                           d="M3.65206 6.696C3.87173 6.47633 4.22788 6.47633 4.44755 6.696L8.52255 10.771C8.78413 11.0326 9.21548 11.0326 9.47706 10.771L13.5521 6.696C13.7717 6.47633 14.1279 6.47633 14.3476 6.696C14.5672 6.91567 14.5672 7.27183 14.3476 7.4915L10.2726 11.5665C9.57163 12.2674 8.42798 12.2674 7.72706 11.5665L3.65206 7.4915C3.43239 7.27183 3.43239 6.91567 3.65206 6.696Z"
+                                                                           fill="currentColor" />
+                                                                 </svg>
+                                                            </button>
+                                                       </div>
+                                                  </div>
+                                                  <div class="filter-catalog__items">
+                                                       <div class="filter-catalog__item">
+                                                            <p class="filter-catalog__item-title">Отрасль</p>
+                                                            <ul class="filter-catalog__checkbox-wrapper">
+                                                                 <li class="filter-catalog__checkbox checkbox">
+                                                                      <input id="industry" class="checkbox__input"
+                                                                           type="checkbox" value="sector"
+                                                                           name="formFooter">
+                                                                      <label for="industry" class="checkbox__label">
+                                                                           <span
+                                                                                class="checkbox__text">Промышленность</span>
+                                                                      </label>
+                                                                 </li>
+                                                                 <li class="filter-catalog__checkbox checkbox">
+                                                                      <input id="gosSector" class="checkbox__input"
+                                                                           type="checkbox" value="sector"
+                                                                           name="formFooter">
+                                                                      <label for="gosSector" class="checkbox__label">
+                                                                           <span class="checkbox__text">Госсектор</span>
+                                                                      </label>
+                                                                 </li>
+                                                                 <li class="filter-catalog__checkbox checkbox">
+                                                                      <input id="medicine" class="checkbox__input"
+                                                                           type="checkbox" value="sector"
+                                                                           name="formFooter">
+                                                                      <label for="medicine" class="checkbox__label">
+                                                                           <span class="checkbox__text">Медицина</span>
+                                                                      </label>
+                                                                 </li>
+                                                                 <li class="filter-catalog__checkbox checkbox">
+                                                                      <input id="support" class="checkbox__input"
+                                                                           type="checkbox" value="sector"
+                                                                           name="formFooter">
+                                                                      <label for="support" class="checkbox__label">
+                                                                           <span
+                                                                                class="checkbox__text">Техподдержка</span>
+                                                                      </label>
+                                                                 </li>
+                                                                 <li class="filter-catalog__checkbox checkbox">
+                                                                      <input id="education" class="checkbox__input"
+                                                                           type="checkbox" value="sector"
+                                                                           name="formFooter">
+                                                                      <label for="education" class="checkbox__label">
+                                                                           <span
+                                                                                class="checkbox__text">Образование</span>
+                                                                      </label>
+                                                                 </li>
+                                                                 <li class="filter-catalog__checkbox checkbox">
+                                                                      <input id="office" class="checkbox__input"
+                                                                           type="checkbox" value="sector"
+                                                                           name="formFooter">
+                                                                      <label for="office" class="checkbox__label">
+                                                                           <span class="checkbox__text">Офисы</span>
+                                                                      </label>
+                                                                 </li>
+                                                                 <li class="filter-catalog__checkbox checkbox">
+                                                                      <input id="retail" class="checkbox__input"
+                                                                           type="checkbox" value="sector"
+                                                                           name="formFooter">
+                                                                      <label for="retail" class="checkbox__label">
+                                                                           <span class="checkbox__text">Ритейл</span>
+                                                                      </label>
+                                                                 </li>
+                                                                 <li class="filter-catalog__checkbox checkbox">
+                                                                      <input id="military" class="checkbox__input"
+                                                                           type="checkbox" value="sector"
+                                                                           name="formFooter">
+                                                                      <label for="military" class="checkbox__label">
+                                                                           <span class="checkbox__text">Военно-промышленный
+                                                                                комплекс</span>
+                                                                      </label>
+                                                                 </li>
+                                                            </ul>
+                                                            <button class="filter-catalog__show-more" type="button">
+                                                                 <span>Показать всё</span>
+                                                                 <div class="filter-catalog__show-more-icon">
+                                                                      <svg width="18" height="18" viewBox="0 0 18 18"
+                                                                           fill="none"
+                                                                           xmlns="http://www.w3.org/2000/svg">
+                                                                           <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                                d="M3.65206 6.696C3.87173 6.47633 4.22788 6.47633 4.44755 6.696L8.52255 10.771C8.78413 11.0326 9.21548 11.0326 9.47706 10.771L13.5521 6.696C13.7717 6.47633 14.1279 6.47633 14.3476 6.696C14.5672 6.91567 14.5672 7.27183 14.3476 7.4915L10.2726 11.5665C9.57163 12.2674 8.42798 12.2674 7.72706 11.5665L3.65206 7.4915C3.43239 7.27183 3.43239 6.91567 3.65206 6.696Z"
+                                                                                fill="currentColor" />
+                                                                      </svg>
+                                                                 </div>
+                                                            </button>
+                                                       </div>
+                                                       <div class="filter-catalog__item">
+                                                            <p class="filter-catalog__item-title">Помещение</p>
+                                                            <div
+                                                                 class="filter-catalog__checkbox--all checkbox checkbox--all">
+                                                                 <input id="all" class="checkbox__input" type="checkbox"
+                                                                      value="room" name="formFooter">
+                                                                 <label for="all" class="checkbox__label">
+                                                                      <span class="checkbox__text">Выбрать все</span>
+                                                                 </label>
+                                                            </div>
+                                                            <ul class="filter-catalog__checkbox-wrapper">
+                                                                 <li class="filter-catalog__checkbox checkbox">
+                                                                      <input id="negotiation" class="checkbox__input"
+                                                                           type="checkbox" value="room"
+                                                                           name="formFooter">
+                                                                      <label for="negotiation" class="checkbox__label">
+                                                                           <span class="checkbox__text">Переговорная
+                                                                                комната</span>
+                                                                      </label>
+                                                                 </li>
+                                                                 <li class="filter-catalog__checkbox checkbox">
+                                                                      <input id="conference" class="checkbox__input"
+                                                                           type="checkbox" value="room"
+                                                                           name="formFooter">
+                                                                      <label for="conference" class="checkbox__label">
+                                                                           <span
+                                                                                class="checkbox__text">Конференц-зал</span>
+                                                                      </label>
+                                                                 </li>
+                                                                 <li class="filter-catalog__checkbox checkbox">
+                                                                      <input id="assembly" class="checkbox__input"
+                                                                           type="checkbox" value="room"
+                                                                           name="formFooter">
+                                                                      <label for="assembly" class="checkbox__label">
+                                                                           <span class="checkbox__text">Актовый
+                                                                                зал</span>
+                                                                      </label>
+                                                                 </li>
+                                                                 <li class="filter-catalog__checkbox checkbox">
+                                                                      <input id="lecture" class="checkbox__input"
+                                                                           type="checkbox" value="room"
+                                                                           name="formFooter">
+                                                                      <label for="lecture" class="checkbox__label">
+                                                                           <span class="checkbox__text">Лекционный
+                                                                                зал</span>
+                                                                      </label>
+                                                                 </li>
+                                                                 <li class="filter-catalog__checkbox checkbox">
+                                                                      <input id="meeting" class="checkbox__input"
+                                                                           type="checkbox" value="room"
+                                                                           name="formFooter">
+                                                                      <label for="meeting" class="checkbox__label">
+                                                                           <span class="checkbox__text">Зал заседаний и
+                                                                                зал
+                                                                                совещаний</span>
+                                                                      </label>
+                                                                 </li>
+                                                                 <li class="filter-catalog__checkbox checkbox">
+                                                                      <input id="conf" class="checkbox__input"
+                                                                           type="checkbox" value="room"
+                                                                           name="formFooter">
+                                                                      <label for="conf" class="checkbox__label">
+                                                                           <span class="checkbox__text">Учебная
+                                                                                аудитория</span>
+                                                                      </label>
+                                                                 </li>
+                                                                 <li class="filter-catalog__checkbox checkbox">
+                                                                      <input id="study" class="checkbox__input"
+                                                                           type="checkbox" value="room"
+                                                                           name="formFooter">
+                                                                      <label for="study" class="checkbox__label">
+                                                                           <span class="checkbox__text">Учебный
+                                                                                кабинет</span>
+                                                                      </label>
+                                                                 </li>
+                                                                 <li class="filter-catalog__checkbox checkbox">
+                                                                      <input id="officePlace" class="checkbox__input"
+                                                                           type="checkbox" value="room"
+                                                                           name="formFooter">
+                                                                      <label for="officePlace" class="checkbox__label">
+                                                                           <span class="checkbox__text">Рабочий
+                                                                                кабинет</span>
+                                                                      </label>
+                                                                 </li>
+                                                            </ul>
+                                                            <button class="filter-catalog__show-more" type="button">
+                                                                 <span>Показать всё</span>
+                                                                 <div class="filter-catalog__show-more-icon">
+                                                                      <svg width="18" height="18" viewBox="0 0 18 18"
+                                                                           fill="none"
+                                                                           xmlns="http://www.w3.org/2000/svg">
+                                                                           <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                                d="M3.65206 6.696C3.87173 6.47633 4.22788 6.47633 4.44755 6.696L8.52255 10.771C8.78413 11.0326 9.21548 11.0326 9.47706 10.771L13.5521 6.696C13.7717 6.47633 14.1279 6.47633 14.3476 6.696C14.5672 6.91567 14.5672 7.27183 14.3476 7.4915L10.2726 11.5665C9.57163 12.2674 8.42798 12.2674 7.72706 11.5665L3.65206 7.4915C3.43239 7.27183 3.43239 6.91567 3.65206 6.696Z"
+                                                                                fill="#22B5E3" />
+                                                                      </svg>
+                                                                 </div>
+                                                            </button>
+                                                       </div>
+                                                       <div class="filter-catalog__item">
+                                                            <p class="filter-catalog__item-title">Рабочий кабинет</p>
+                                                            <ul class="filter-catalog__checkbox-wrapper">
+                                                                 <li class="filter-catalog__checkbox checkbox">
+                                                                      <input id="admin" class="checkbox__input"
+                                                                           type="checkbox" value="office"
+                                                                           name="formFooter">
+                                                                      <label for="admin" class="checkbox__label">
+                                                                           <span
+                                                                                class="checkbox__text">Администрация</span>
+                                                                      </label>
+                                                                 </li>
+                                                                 <li class="filter-catalog__checkbox checkbox">
+                                                                      <input id="director" class="checkbox__input"
+                                                                           type="checkbox" value="office"
+                                                                           name="formFooter">
+                                                                      <label for="director" class="checkbox__label">
+                                                                           <span
+                                                                                class="checkbox__text">Руководитель</span>
+                                                                      </label>
+                                                                 </li>
+                                                                 <li class="filter-catalog__checkbox checkbox">
+                                                                      <input id="account" class="checkbox__input"
+                                                                           type="checkbox" value="office"
+                                                                           name="formFooter">
+                                                                      <label for="account" class="checkbox__label">
+                                                                           <span
+                                                                                class="checkbox__text">Бухгалтерия</span>
+                                                                      </label>
+                                                                 </li>
+                                                                 <li class="filter-catalog__checkbox checkbox">
+                                                                      <input id="techsupport" class="checkbox__input"
+                                                                           type="checkbox" value="office"
+                                                                           name="formFooter">
+                                                                      <label for="techsupport" class="checkbox__label">
+                                                                           <span
+                                                                                class="checkbox__text">Техподдержка</span>
+                                                                      </label>
+                                                                 </li>
+                                                                 <li class="filter-catalog__checkbox checkbox">
+                                                                      <input id="department" class="checkbox__input"
+                                                                           type="checkbox" value="office"
+                                                                           name="formFooter">
+                                                                      <label for="department" class="checkbox__label">
+                                                                           <span class="checkbox__text">Отдел
+                                                                                продаж</span>
+                                                                      </label>
+                                                                 </li>
+                                                            </ul>
+                                                            <button class="filter-catalog__show-more" type="button">
+                                                                 <span>Показать всё</span>
+                                                                 <div class="filter-catalog__show-more-icon">
+                                                                      <svg width="18" height="18" viewBox="0 0 18 18"
+                                                                           fill="none"
+                                                                           xmlns="http://www.w3.org/2000/svg">
+                                                                           <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                                d="M3.65206 6.696C3.87173 6.47633 4.22788 6.47633 4.44755 6.696L8.52255 10.771C8.78413 11.0326 9.21548 11.0326 9.47706 10.771L13.5521 6.696C13.7717 6.47633 14.1279 6.47633 14.3476 6.696C14.5672 6.91567 14.5672 7.27183 14.3476 7.4915L10.2726 11.5665C9.57163 12.2674 8.42798 12.2674 7.72706 11.5665L3.65206 7.4915C3.43239 7.27183 3.43239 6.91567 3.65206 6.696Z"
+                                                                                fill="currentColor" />
+                                                                      </svg>
+                                                                 </div>
+                                                            </button>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                             <div class="filter-catalog__bottom-mb">
+                                                  <button class="filter-catalog__btn-use btn btn-blue" type="button">
+                                                       <span>Применить</span>
+                                                       <div class="filter-catalog__gif-loading">
+                                                            <img src="@img/loading.gif" alt="">
+                                                       </div>
+                                                  </button>
+                                             </div>
+                                             <div class="filter-catalog__reset-desctop">
+                                                  <button class="filter-catalog__button" type="button">
+                                                       <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M19.5 5L4.5 20" stroke="currentColor"
+                                                                 stroke-width="1.5" stroke-linecap="round"
+                                                                 stroke-linejoin="round" />
+                                                            <path d="M4.5 5L19.5 20" stroke="currentColor"
+                                                                 stroke-width="1.5" stroke-linecap="round"
+                                                                 stroke-linejoin="round" />
+                                                       </svg>
+                                                       <span>Сбросить все</span>
+                                                  </button>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="catalog__projects">
+                                        <div class="catalog__selected-filter-desctop">
+                                             <div class="catalog__selected-filter selected-filter-catalog">
+                                                  <div class="selected-filter-catalog__items">
+                                                       <div class="selected-filter-catalog__item">
+                                                            <span>Услуга: Проектирование ИТ-инфраструктуры</span>
+                                                            <button class="selected-filter-catalog__btn-close"
+                                                                 type="button">
+                                                                 <svg width="20" height="21" viewBox="0 0 20 21"
+                                                                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                      <path d="M16.25 4.25L3.75 16.75"
+                                                                           stroke="currentColor" stroke-width="1.5"
+                                                                           stroke-linecap="round"
+                                                                           stroke-linejoin="round" />
+                                                                      <path d="M3.75 4.25L16.25 16.75"
+                                                                           stroke="currentColor" stroke-width="1.5"
+                                                                           stroke-linecap="round"
+                                                                           stroke-linejoin="round" />
+                                                                 </svg>
+                                                            </button>
+                                                       </div>
+                                                       <div class="selected-filter-catalog__item">
+                                                            <span>Услуга: Поставка оборудование</span>
+                                                            <button class="selected-filter-catalog__btn-close"
+                                                                 type="button">
+                                                                 <svg width="20" height="21" viewBox="0 0 20 21"
+                                                                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                      <path d="M16.25 4.25L3.75 16.75"
+                                                                           stroke="currentColor" stroke-width="1.5"
+                                                                           stroke-linecap="round"
+                                                                           stroke-linejoin="round" />
+                                                                      <path d="M3.75 4.25L16.25 16.75"
+                                                                           stroke="currentColor" stroke-width="1.5"
+                                                                           stroke-linecap="round"
+                                                                           stroke-linejoin="round" />
+                                                                 </svg>
+                                                            </button>
+                                                       </div>
+                                                       <div class="selected-filter-catalog__item">
+                                                            <span>Отрасль: Образование</span>
+                                                            <button class="selected-filter-catalog__btn-close"
+                                                                 type="button">
+                                                                 <svg width="20" height="21" viewBox="0 0 20 21"
+                                                                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                      <path d="M16.25 4.25L3.75 16.75"
+                                                                           stroke="currentColor" stroke-width="1.5"
+                                                                           stroke-linecap="round"
+                                                                           stroke-linejoin="round" />
+                                                                      <path d="M3.75 4.25L16.25 16.75"
+                                                                           stroke="currentColor" stroke-width="1.5"
+                                                                           stroke-linecap="round"
+                                                                           stroke-linejoin="round" />
+                                                                 </svg>
+                                                            </button>
+                                                       </div>
+                                                       <div class="selected-filter-catalog__item">
+                                                            <span>Услуга: Поставка оборудование</span>
+                                                            <button class="selected-filter-catalog__btn-close"
+                                                                 type="button">
+                                                                 <svg width="20" height="21" viewBox="0 0 20 21"
+                                                                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                      <path d="M16.25 4.25L3.75 16.75"
+                                                                           stroke="currentColor" stroke-width="1.5"
+                                                                           stroke-linecap="round"
+                                                                           stroke-linejoin="round" />
+                                                                      <path d="M3.75 4.25L16.25 16.75"
+                                                                           stroke="currentColor" stroke-width="1.5"
+                                                                           stroke-linecap="round"
+                                                                           stroke-linejoin="round" />
+                                                                 </svg>
+                                                            </button>
+                                                       </div>
+                                                       <div class="selected-filter-catalog__item">
+                                                            <span>Отрасль: Образование</span>
+                                                            <button class="selected-filter-catalog__btn-close"
+                                                                 type="button">
+                                                                 <svg width="20" height="21" viewBox="0 0 20 21"
+                                                                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                      <path d="M16.25 4.25L3.75 16.75"
+                                                                           stroke="currentColor" stroke-width="1.5"
+                                                                           stroke-linecap="round"
+                                                                           stroke-linejoin="round" />
+                                                                      <path d="M3.75 4.25L16.25 16.75"
+                                                                           stroke="currentColor" stroke-width="1.5"
+                                                                           stroke-linecap="round"
+                                                                           stroke-linejoin="round" />
+                                                                 </svg>
+                                                            </button>
+                                                       </div>
+                                                       <div class="selected-filter-catalog__item">
+                                                            <span>Отрасль: Образование</span>
+                                                            <button class="selected-filter-catalog__btn-close"
+                                                                 type="button">
+                                                                 <svg width="20" height="21" viewBox="0 0 20 21"
+                                                                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                      <path d="M16.25 4.25L3.75 16.75"
+                                                                           stroke="currentColor" stroke-width="1.5"
+                                                                           stroke-linecap="round"
+                                                                           stroke-linejoin="round" />
+                                                                      <path d="M3.75 4.25L16.25 16.75"
+                                                                           stroke="currentColor" stroke-width="1.5"
+                                                                           stroke-linecap="round"
+                                                                           stroke-linejoin="round" />
+                                                                 </svg>
+                                                            </button>
+                                                       </div>
+                                                       <div class="selected-filter-catalog__item">
+                                                            <span>Отрасль: Промышленность</span>
+                                                            <button class="selected-filter-catalog__btn-close"
+                                                                 type="button">
+                                                                 <svg width="20" height="21" viewBox="0 0 20 21"
+                                                                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                      <path d="M16.25 4.25L3.75 16.75"
+                                                                           stroke="currentColor" stroke-width="1.5"
+                                                                           stroke-linecap="round"
+                                                                           stroke-linejoin="round" />
+                                                                      <path d="M3.75 4.25L16.25 16.75"
+                                                                           stroke="currentColor" stroke-width="1.5"
+                                                                           stroke-linecap="round"
+                                                                           stroke-linejoin="round" />
+                                                                 </svg>
+                                                            </button>
+                                                       </div>
+                                                       <div class="selected-filter-catalog__item">
+                                                            <span>Отрасль: Образование</span>
+                                                            <button class="selected-filter-catalog__btn-close"
+                                                                 type="button">
+                                                                 <svg width="20" height="21" viewBox="0 0 20 21"
+                                                                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                      <path d="M16.25 4.25L3.75 16.75"
+                                                                           stroke="currentColor" stroke-width="1.5"
+                                                                           stroke-linecap="round"
+                                                                           stroke-linejoin="round" />
+                                                                      <path d="M3.75 4.25L16.25 16.75"
+                                                                           stroke="currentColor" stroke-width="1.5"
+                                                                           stroke-linecap="round"
+                                                                           stroke-linejoin="round" />
+                                                                 </svg>
+                                                            </button>
+                                                       </div>
+                                                       <div class="selected-filter-catalog__item">
+                                                            <span>Отрасль: Промышленность</span>
+                                                            <button class="selected-filter-catalog__btn-close"
+                                                                 type="button">
+                                                                 <svg width="20" height="21" viewBox="0 0 20 21"
+                                                                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                      <path d="M16.25 4.25L3.75 16.75"
+                                                                           stroke="currentColor" stroke-width="1.5"
+                                                                           stroke-linecap="round"
+                                                                           stroke-linejoin="round" />
+                                                                      <path d="M3.75 4.25L16.25 16.75"
+                                                                           stroke="currentColor" stroke-width="1.5"
+                                                                           stroke-linecap="round"
+                                                                           stroke-linejoin="round" />
+                                                                 </svg>
+                                                            </button>
+                                                       </div>
+                                                       <button class="selected-filter-catalog__reset" type="button">
+                                                            <span>Сбросить все</span>
+                                                       </button>
+                                                  </div>
+                                                  <button class="selected-filter-catalog__show-more" type="button">
+                                                       <span>Показать всё</span>
+                                                       <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M3.65206 6.696C3.87173 6.47633 4.22788 6.47633 4.44755 6.696L8.52255 10.771C8.78413 11.0326 9.21548 11.0326 9.47706 10.771L13.5521 6.696C13.7717 6.47633 14.1279 6.47633 14.3476 6.696C14.5672 6.91567 14.5672 7.27183 14.3476 7.4915L10.2726 11.5665C9.57163 12.2674 8.42798 12.2674 7.72706 11.5665L3.65206 7.4915C3.43239 7.27183 3.43239 6.91567 3.65206 6.696Z"
+                                                                 fill="currentColor" />
+                                                       </svg>
+                                                  </button>
+                                             </div>
+                                        </div>
+                                        <p class="catalog__projects-number">4 варианта</p>
+                                        <div class="catalog__cards">
+                                             <article class="catalog__card slide-solutions-help">
+                                                  <div class="slide-solutions-help__inner">
+                                                       <div class="tags">
+                                                            <div class="tags__item tags__item--blue">
+                                                                 <span>Офисы</span>
+                                                            </div>
+                                                       </div>
+                                                       <a href="#" class="slide-solutions-help__image" target="_blank">
+                                                            <img src="@img/help-solutions/01.jpg" alt="help-solutions">
+                                                       </a>
+                                                       <div class="slide-solutions-help__info">
+                                                            <a href="#" class="slide-solutions-help__title"
+                                                                 title="Маленькая переговорная комната Маленькая переговорная комната Маленькая переговорная комната"
+                                                                 target="_blank">Маленькая переговорная комната</a>
+                                                            <div class="slide-solutions-help__users">
+                                                                 <img src="@img/icons/user.svg" alt="user icon">
+                                                                 <span>2-3</span>
+                                                            </div>
+                                                            <p class="slide-solutions-help__text">Для малых
+                                                                 конференц-встреч и
+                                                                 совещаний в узком кругу людей. <br>Оснащается
+                                                                 проектором и
+                                                                 экраном или телевизором с большой диаганалью,
+                                                                 дополняется
+                                                                 звуковыми системами. <br>Есть возможность проводить
+                                                                 сеансы
+                                                                 видеосвязи.</p>
+                                                       </div>
+                                                       <button class="slide-solutions-help__button btn btn-blue-border"
+                                                            type="button">
+                                                            <span>Заказать от 150 000 ₽ </span>
+                                                       </button>
+                                                  </div>
+                                             </article>
+                                             <article class="catalog__card slide-solutions-help">
+                                                  <div class="slide-solutions-help__inner">
+                                                       <div class="tags">
+                                                            <div class="tags__item tags__item--blue">
+                                                                 <span>Офисы</span>
+                                                            </div>
+                                                       </div>
+                                                       <a href="#" class="slide-solutions-help__image" target="_blank">
+                                                            <img src="@img/help-solutions/01.jpg" alt="help-solutions">
+                                                       </a>
+                                                       <div class="slide-solutions-help__info">
+                                                            <a href="#" class="slide-solutions-help__title"
+                                                                 title="Средняя переговорная комната"
+                                                                 target="_blank">Средняя переговорная комната</a>
+                                                            <div class="slide-solutions-help__users">
+                                                                 <img src="@img/icons/user.svg" alt="user icon">
+                                                                 <span>2-3</span>
+                                                            </div>
+                                                            <p class="slide-solutions-help__text">Для малых
+                                                                 конференц-встреч и
+                                                                 совещаний в узком кругу людей. <br>Оснащается
+                                                                 проектором и
+                                                                 экраном или телевизором с большой диаганалью,
+                                                                 дополняется
+                                                                 звуковыми системами. <br>Есть возможность проводить
+                                                                 сеансы
+                                                                 видеосвязи.</p>
+                                                       </div>
+                                                       <button class="slide-solutions-help__button btn btn-blue-border"
+                                                            type="button">
+                                                            <span>Заказать от 150 000 ₽ </span>
+                                                       </button>
+                                                  </div>
+                                             </article>
+                                             <article class="catalog__card slide-solutions-help">
+                                                  <div class="slide-solutions-help__inner">
+                                                       <div class="tags">
+                                                            <div class="tags__item tags__item--blue">
+                                                                 <span>Офисы</span>
+                                                            </div>
+                                                       </div>
+                                                       <a href="#" class="slide-solutions-help__image" target="_blank">
+                                                            <img src="@img/help-solutions/01.jpg" alt="help-solutions">
+                                                       </a>
+                                                       <div class="slide-solutions-help__info">
+                                                            <a href="#" class="slide-solutions-help__title"
+                                                                 title="Большая переговорная комната"
+                                                                 target="_blank">Большая переговорная комната</a>
+                                                            <div class="slide-solutions-help__users">
+                                                                 <img src="@img/icons/user.svg" alt="user icon">
+                                                                 <span>2-3</span>
+                                                            </div>
+                                                            <p class="slide-solutions-help__text">Для малых
+                                                                 конференц-встреч и
+                                                                 совещаний в узком кругу людей. <br>Оснащается
+                                                                 проектором и
+                                                                 экраном или телевизором с большой диаганалью,
+                                                                 дополняется
+                                                                 звуковыми системами. <br>Есть возможность проводить
+                                                                 сеансы
+                                                                 видеосвязи.</p>
+                                                       </div>
+                                                       <button class="slide-solutions-help__button btn btn-blue-border"
+                                                            type="button">
+                                                            <span>Заказать от 150 000 ₽ </span>
+                                                       </button>
+                                                  </div>
+                                             </article>
+                                             <article class="catalog__card slide-solutions-help">
+                                                  <div class="slide-solutions-help__inner">
+                                                       <div class="tags">
+                                                            <div class="tags__item tags__item--green">
+                                                                 <span>Образование</span>
+                                                            </div>
+                                                       </div>
+                                                       <a href="#" class="slide-solutions-help__image" target="_blank">
+                                                            <img src="@img/help-solutions/01.jpg" alt="help-solutions">
+                                                       </a>
+                                                       <div class="slide-solutions-help__info">
+                                                            <a href="#" class="slide-solutions-help__title"
+                                                                 title="Маленькая переговорная комната Маленькая переговорная комната Маленькая переговорная комната"
+                                                                 target="_blank">Маленькая переговорная комната</a>
+                                                            <div class="slide-solutions-help__users">
+                                                                 <img src="@img/icons/user.svg" alt="user icon">
+                                                                 <span>>30</span>
+                                                            </div>
+                                                            <p class="slide-solutions-help__text">Для малых
+                                                                 конференц-встреч и
+                                                                 совещаний в узком кругу людей. <br>Оснащается
+                                                                 проектором и
+                                                                 экраном или телевизором с большой диаганалью,
+                                                                 дополняется
+                                                                 звуковыми системами. <br>Есть возможность проводить
+                                                                 сеансы
+                                                                 видеосвязи.</p>
+                                                       </div>
+                                                       <button class="slide-solutions-help__button btn btn-blue-border"
+                                                            type="button">
+                                                            <span>Заказать от 150 000 ₽ </span>
+                                                       </button>
+                                                  </div>
+                                             </article>
+                                             <article class="catalog__card slide-solutions-help">
+                                                  <div class="slide-solutions-help__inner">
+                                                       <div class="tags">
+                                                            <div class="tags__item tags__item--green">
+                                                                 <span>Образование</span>
+                                                            </div>
+                                                       </div>
+                                                       <a href="#" class="slide-solutions-help__image" target="_blank">
+                                                            <img src="@img/help-solutions/01.jpg" alt="help-solutions">
+                                                       </a>
+                                                       <div class="slide-solutions-help__info">
+                                                            <a href="#" class="slide-solutions-help__title"
+                                                                 title="Маленькая переговорная комната Маленькая переговорная комната Маленькая переговорная комната"
+                                                                 target="_blank">Маленькая переговорная комната</a>
+                                                            <div class="slide-solutions-help__users">
+                                                                 <img src="@img/icons/user.svg" alt="user icon">
+                                                                 <span>>30</span>
+                                                            </div>
+                                                            <p class="slide-solutions-help__text">Для малых
+                                                                 конференц-встреч и
+                                                                 совещаний в узком кругу людей. <br>Оснащается
+                                                                 проектором и
+                                                                 экраном или телевизором с большой диаганалью,
+                                                                 дополняется
+                                                                 звуковыми системами. <br>Есть возможность проводить
+                                                                 сеансы
+                                                                 видеосвязи.</p>
+                                                       </div>
+                                                       <button class="slide-solutions-help__button btn btn-blue-border"
+                                                            type="button">
+                                                            <span>Заказать от 150 000 ₽ </span>
+                                                       </button>
+                                                  </div>
+                                             </article>
+                                             <article class="catalog__card slide-solutions-help">
+                                                  <div class="slide-solutions-help__inner">
+                                                       <div class="tags">
+                                                            <div class="tags__item tags__item--green">
+                                                                 <span>Образование</span>
+                                                            </div>
+                                                       </div>
+                                                       <a href="#" class="slide-solutions-help__image" target="_blank">
+                                                            <img src="@img/help-solutions/01.jpg" alt="help-solutions">
+                                                       </a>
+                                                       <div class="slide-solutions-help__info">
+                                                            <a href="#" class="slide-solutions-help__title"
+                                                                 title="Маленькая переговорная комната Маленькая переговорная комната Маленькая переговорная комната"
+                                                                 target="_blank">Маленькая переговорная комната</a>
+                                                            <div class="slide-solutions-help__users">
+                                                                 <img src="@img/icons/user.svg" alt="user icon">
+                                                                 <span>>30</span>
+                                                            </div>
+                                                            <p class="slide-solutions-help__text">Для малых
+                                                                 конференц-встреч и
+                                                                 совещаний в узком кругу людей. <br>Оснащается
+                                                                 проектором и
+                                                                 экраном или телевизором с большой диаганалью,
+                                                                 дополняется
+                                                                 звуковыми системами. <br>Есть возможность проводить
+                                                                 сеансы
+                                                                 видеосвязи.</p>
+                                                       </div>
+                                                       <button class="slide-solutions-help__button btn btn-blue-border"
+                                                            type="button">
+                                                            <span>Заказать от 150 000 ₽ </span>
+                                                       </button>
+                                                  </div>
+                                             </article>
+                                             <article class="catalog__card slide-solutions-help">
+                                                  <div class="slide-solutions-help__inner">
+                                                       <div class="tags">
+                                                            <div class="tags__item tags__item--blue">
+                                                                 <span>Офисы</span>
+                                                            </div>
+                                                       </div>
+                                                       <a href="#" class="slide-solutions-help__image" target="_blank">
+                                                            <img src="@img/help-solutions/01.jpg" alt="help-solutions">
+                                                       </a>
+                                                       <div class="slide-solutions-help__info">
+                                                            <a href="#" class="slide-solutions-help__title"
+                                                                 title="Средняя переговорная комната"
+                                                                 target="_blank">Средняя переговорная комната</a>
+                                                            <div class="slide-solutions-help__users">
+                                                                 <img src="@img/icons/user.svg" alt="user icon">
+                                                                 <span>2-3</span>
+                                                            </div>
+                                                            <p class="slide-solutions-help__text">Для малых
+                                                                 конференц-встреч и
+                                                                 совещаний в узком кругу людей. <br>Оснащается
+                                                                 проектором и
+                                                                 экраном или телевизором с большой диаганалью,
+                                                                 дополняется
+                                                                 звуковыми системами. <br>Есть возможность проводить
+                                                                 сеансы
+                                                                 видеосвязи.</p>
+                                                       </div>
+                                                       <button class="slide-solutions-help__button btn btn-blue-border"
+                                                            type="button">
+                                                            <span>Заказать от 150 000 ₽ </span>
+                                                       </button>
+                                                  </div>
+                                             </article>
+                                             <article class="catalog__card slide-solutions-help">
+                                                  <div class="slide-solutions-help__inner">
+                                                       <div class="tags">
+                                                            <div class="tags__item tags__item--green">
+                                                                 <span>Образование</span>
+                                                            </div>
+                                                       </div>
+                                                       <a href="#" class="slide-solutions-help__image" target="_blank">
+                                                            <img src="@img/help-solutions/01.jpg" alt="help-solutions">
+                                                       </a>
+                                                       <div class="slide-solutions-help__info">
+                                                            <a href="#" class="slide-solutions-help__title"
+                                                                 title="Маленькая переговорная комната Маленькая переговорная комната Маленькая переговорная комната"
+                                                                 target="_blank">Маленькая переговорная комната</a>
+                                                            <div class="slide-solutions-help__users">
+                                                                 <img src="@img/icons/user.svg" alt="user icon">
+                                                                 <span>>30</span>
+                                                            </div>
+                                                            <p class="slide-solutions-help__text">Для малых
+                                                                 конференц-встреч и
+                                                                 совещаний в узком кругу людей. <br>Оснащается
+                                                                 проектором и
+                                                                 экраном или телевизором с большой диаганалью,
+                                                                 дополняется
+                                                                 звуковыми системами. <br>Есть возможность проводить
+                                                                 сеансы
+                                                                 видеосвязи.</p>
+                                                       </div>
+                                                       <button class="slide-solutions-help__button btn btn-blue-border"
+                                                            type="button">
+                                                            <span>Заказать от 150 000 ₽ </span>
+                                                       </button>
+                                                  </div>
+                                             </article>
+                                        </div>
+                                        <div class="catalog__show-more show-more">
+                                             <button class="show-more__btn btn btn-gray mb-8">
+                                                  <span hidden>Загрузить ещё</span>
+                                                  <div style="display: block" class="show-more__gif">
+                                                       <img src="@img/loading.gif" alt="">
+                                                  </div>
+                                             </button>
+                                             <div class="show-more__actions">
+                                                  <div class="show-more__pagination">
+                                                       @@include('html/_pagination.htm',{})
+                                                  </div>
+                                                  <div class="show-more__number">4 из 4</div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </section>
+                    <section class="made-solutions__config">
+                         <div class="made-solutions__container">
+                              <h3 class="made-solutions__title subtitle">Конфигуратор</h3>
+                         </div>
+                    </section>
+                    @@include('html/types-block/_vendors.htm',{})
+                    <section class="reviews">
+                         <div class="reviews__container">
+                              <div class="reviews__top">
+                                   <h5 class="reviews__title subtitle">Отзывы</h5>
+                                   <div class="reviews__arrows arrows">
+                                        <button class="reviews__arrow arrow  reviews__arrow-prev arrow arrow-blue"
+                                             type="button">
+                                             @@include('html/icons/arrow-left.htm')
+                                        </button>
+                                        <button class="reviews__arrow arrow  reviews__arrow-next arrow arrow-blue"
+                                             type="button">
+                                             @@include('html/icons/arrow-right.htm')
+                                        </button>
+                                   </div>
+                              </div>
+                              <div class="reviews__slider swiper">
+                                   <div class="reviews__swiper-wrapper swiper-wrapper">
+                                        <div class="reviews__slide swiper-slide reviews-slide">
+                                             <div class="reviews-slide__inner">
+                                                  <h5 class="reviews-slide__title">Отзыв</h5>
+                                                  <div class="reviews-slide__info">
+                                                       <div class="reviews-slide__image">
+                                                            <img src="@img/reviews/01.jpg" alt="Александр Говорин">
+                                                       </div>
+                                                       <div class="reviews-slide__desc">
+                                                            <p class="reviews-slide__name">Александр Говорин</p>
+                                                            <p class="reviews-slide__post">Директор ФКУ "ДВОУМТС МВД
+                                                                 РОССИИ"
+                                                            </p>
+                                                       </div>
+                                                  </div>
+                                                  <div class="reviews-slide__text">
+                                                       <p>Сотрудничаем с ИТ Альянс с 2020 года.</p>
+                                                       <p>За этот период компанией выполнен значительный объем работ по
+                                                            поставке оборудования и комплектации рабочих классов.</p>
+                                                       <p>Положительно оцениваем профессианализм сотрудников ИТ Альянс,
+                                                            внимательное отношение к клиенту, высокую скорость и
+                                                            качество
+                                                            работы. </p>
+                                                  </div>
+                                                  <div class="reviews-slide__icon">
+                                                       <img src="@img/icons/text.svg" alt="">
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="reviews__slide swiper-slide reviews-slide">
+                                             <div class="reviews-slide__inner">
+                                                  <h5 class="reviews-slide__title">Отзыв</h5>
+                                                  <div class="reviews-slide__info">
+                                                       <div class="reviews-slide__image">
+                                                            <img src="@img/reviews/01.jpg" alt="Александр Говорин">
+                                                       </div>
+                                                       <div class="reviews-slide__desc">
+                                                            <p class="reviews-slide__name">Александр Говорин</p>
+                                                            <p class="reviews-slide__post">Директор ФКУ "ДВОУМТС МВД
+                                                                 РОССИИ"
+                                                            </p>
+                                                       </div>
+                                                  </div>
+                                                  <div class="reviews-slide__text">
+                                                       <p>Сотрудничаем с ИТ Альянс с 2020 года.</p>
+                                                       <p>За этот период компанией выполнен значительный объем работ по
+                                                            поставке оборудования и комплектации рабочих классов.</p>
+                                                       <p>Положительно оцениваем профессианализм сотрудников ИТ Альянс,
+                                                            внимательное отношение к клиенту, высокую скорость и
+                                                            качество
+                                                            работы. </p>
+                                                  </div>
+                                                  <div class="reviews-slide__icon">
+                                                       <img src="@img/icons/text.svg" alt="">
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </section>
+               </div>
+          </main>
+          @@include('html/_form.htm',{})
+          @@include('html/_footer.htm',{})
+     </div>
+     @@include('html/_popup.htm',{})
+     <script
+          src="https://api-maps.yandex.ru/2.1/?apikey=72e4cd21-9400-4735-9cfe-40e993aeb72f&lang=ru_RU&_v=20240307171659"></script>
+     @@include('html/_js.htm',{})
+</body>
+
+</html>

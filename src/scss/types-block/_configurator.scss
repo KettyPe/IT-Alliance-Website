@@ -1,0 +1,1193 @@
+.configurator {
+     margin-bottom: 120px;
+
+     &__container {
+     }
+
+     &__inner {
+          display: flex;
+          flex-direction: column;
+     }
+
+     &__top {
+     }
+
+     &__title {
+     }
+
+     &__subtitle {
+          font-size: 32px;
+          line-height: 131%;
+     }
+
+     &__toggle {
+          display: flex;
+          align-items: center;
+          column-gap: 16px;
+     }
+
+     &__slider {
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+          overflow: visible !important;
+     }
+
+     &__swiper-wrapper {
+          //display: flex !important;
+          //justify-content: center;
+          //flex-wrap: wrap;
+          @media (min-width: 992px) {
+               display: grid !important;
+               grid-template-columns: repeat(3, 1fr);
+               //display: flex !important;
+               //flex-wrap: wrap;
+               justify-content: center;
+               gap: 15px;
+          }
+
+          &.close {
+               .slide-configurator__screen-wrapper {
+                    opacity: 0;
+                    overflow: hidden;
+               }
+          }
+     }
+
+     &__image {
+     }
+
+     &__plashka {
+     }
+
+     &__arrows {
+          display: none;
+     }
+}
+
+.toggle-configurator {
+     &__btn {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: -5px;
+
+          &.active {
+               .toggle-configurator__btn--gray {
+                    display: block;
+               }
+
+               .toggle-configurator__btn--blue {
+                    display: none;
+               }
+          }
+
+          &--gray {
+               display: none;
+          }
+
+          &--blue {
+          }
+     }
+
+     span {
+          font-size: 24px;
+          line-height: 133%;
+     }
+}
+
+.slide-configurator {
+     cursor: pointer;
+     position: relative;
+
+     @media (min-width: 992px) {
+          &:nth-child(4),
+          &:nth-child(5) {
+               top: percent(-480, 1500);
+               right: percent(-580, 885);
+          }
+     }
+
+     @media (any-hover: hover) {
+          &:hover {
+               .plashka-slide-config {
+                    height: auto;
+                    opacity: 1;
+                    overflow: visible;
+               }
+          }
+     }
+
+     &__images-wrapper {
+          position: relative;
+     }
+
+     &__image {
+          img {
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+          }
+     }
+
+     &__screen-wrapper {
+          opacity: 1;
+          overflow: visible;
+          transition: all 0.3s ease 0s;
+     }
+
+     &__screen-inner {
+          position: relative;
+     }
+
+     &__screen {
+          position: absolute;
+          top: 0;
+          left: 0;
+          &.active {
+               .config-sreen-info {
+                    opacity: 1;
+                    overflow: visible;
+               }
+          }
+
+          img {
+               width: 100%;
+               height: 100%;
+          }
+     }
+
+     &__screen--img {
+          z-index: 2;
+     }
+
+     &__screen--sh {
+          z-index: 1;
+     }
+}
+
+.slide-configurator:nth-child(1) {
+     .config-sreen-info:nth-child(1) {
+          .config-sreen-info__hit {
+               width: 26%;
+               height: 15%;
+               transform: rotate(-31deg);
+               top: 18%;
+               left: 12%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(80, 389);
+               right: percent(-110, 335);
+          }
+     }
+     
+     .config-sreen-info:nth-child(2) {
+          .config-sreen-info__hit {
+               width: 10%;
+               height: 6%;
+               top: 40%;
+               left: 7%;
+               transform: rotate(-31deg);
+          }
+
+          .config-sreen-info__inner {
+               top: percent(110, 389);
+               right: percent(-50, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(3) {
+          .config-sreen-info__hit {
+               width: 6%;
+               height: 3%;
+               top: 47%;
+               left: 10%;
+               transform: rotate(-31deg);
+          }
+
+          .config-sreen-info__inner {
+               top: percent(163, 389);
+               right: percent(-50, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(4) {
+          .config-sreen-info__hit {
+               width: 4%;
+               height: 3%;
+               top: 43%;
+               left: 16%;
+               transform: rotate(-31deg);
+          }
+
+          .config-sreen-info__inner {
+               top: percent(150, 389);
+               right: percent(-70, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(5) {
+          .config-sreen-info__hit {
+               width: 11%;
+               height: 15%;
+               top: 55%;
+               left: 77%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(180, 389);
+               right: percent(-290, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(6) {
+          .config-sreen-info__hit {
+               width: 6%;
+               height: 6%;
+               top: 48%;
+               left: 72%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(160, 389);
+               right: percent(-265, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(7) {
+          .config-sreen-info__hit {
+               width: 6%;
+               height: 6%;
+               top: 44%;
+               left: 66%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(140, 389);
+               right: percent(-250, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(8) {
+          .config-sreen-info__hit {
+               width: 4%;
+               height: 6%;
+               top: 38%;
+               left: 58%;
+               border-radius: 46%;
+               transform: rotate(45deg);
+          }
+
+          .config-sreen-info__inner {
+               top: percent(115, 389);
+               right: percent(-215, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(9) {
+          .config-sreen-info__hit {
+               width: 4%;
+               height: 3%;
+               top: 40%;
+               left: 53%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(145, 389);
+               right: percent(-190, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(10) {
+          .config-sreen-info__hit {
+               width: 4%;
+               height: 4%;
+               top: 36%;
+               left: 47%;
+               transform: rotate(45deg);
+          }
+
+          .config-sreen-info__inner {
+               top: percent(125, 389);
+               right: percent(-170, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(11) {
+          .config-sreen-info__hit {
+               width: 14%;
+               height: 4%;
+               top: 32%;
+               left: 45%;
+               transform: rotate(25deg);
+          }
+
+          .config-sreen-info__inner {
+               top: percent(95, 389);
+               right: percent(-190, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(12) {
+          .config-sreen-info__hit {
+               width: 3%;
+               height: 7%;
+               top: 65%;
+               left: 59%;
+               border-radius: 65%;
+               transform: rotate(25deg);
+          }
+
+          .config-sreen-info__inner {
+               top: percent(215, 389);
+               right: percent(-215, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(13) {
+          .config-sreen-info__hit {
+               width: 4%;
+               height: 4%;
+               top: 70%;
+               left: 52%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(250, 389);
+               right: percent(-195, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(14) {
+          .config-sreen-info__hit {
+               width: 5%;
+               height: 7%;
+               top: 52%;
+               left: 31%;
+               transform: rotate(3deg);
+          }
+
+          .config-sreen-info__inner {
+               top: percent(170, 389);
+               right: percent(-100, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(15) {
+          .config-sreen-info__hit {
+               width: 5%;
+               height: 7%;
+               top: 47%;
+               left: 37%;
+               transform: rotate(36deg);           
+          }
+
+          .config-sreen-info__inner {
+               top: percent(142, 389);
+               right: percent(-130, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(16) {
+          .config-sreen-info__hit {
+               width: 5%;
+               height: 3%;
+               top: 62%;
+               left: 39%;
+               transform: rotate(36deg);       
+          }
+
+          .config-sreen-info__inner {
+               top: percent(225, 389);
+               right: percent(-145, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(17) {
+          .config-sreen-info__hit {
+               width: 4%;
+               height: 3%;
+               top: 60%;
+               left: 35%;
+               transform: rotate(36deg);      
+          }
+
+          .config-sreen-info__inner {
+               top: percent(215, 389);
+               right: percent(-125, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(18) {
+          .config-sreen-info__hit {
+               width: 9%;
+               height: 4%;
+               top: 56%;
+               left: 36%;
+               transform: rotate(36deg);      
+          }
+
+          .config-sreen-info__inner {
+               top: percent(205, 389);
+               right: percent(-150, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(19) {
+          .config-sreen-info__hit {
+               width: 8%;
+               height: 5%;
+               top: 53%;
+               left: 41%;
+               transform: rotate(36deg);
+               border-radius: 69%;      
+          }
+
+          .config-sreen-info__inner {
+               top: percent(170, 389);
+               right: percent(-160, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(20) {
+          .config-sreen-info__hit {
+               width: 8%;
+               height: 5%;
+               top: 60%;
+               left: 51%;
+               transform: rotate(36deg);
+               border-radius: 69%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(192, 389);
+               right: percent(-190, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(21) {
+          .config-sreen-info__hit {
+               width: 4%;
+               height: 3%;
+               top: 67%;
+               left: 48%;
+               transform: rotate(36deg); 
+          }
+
+          .config-sreen-info__inner {
+               top: percent(245, 389);
+               right: percent(-165, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(22) {
+          .config-sreen-info__hit {
+               width: 9%;
+               height: 4%;
+               top: 63%;
+               left: 47%;
+               transform: rotate(36deg); 
+          }
+
+          .config-sreen-info__inner {
+               top: percent(80, 389);
+               right: percent(-110, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(23) {
+          .config-sreen-info__hit {
+               width: 9%;
+               height: 4%;
+               top: 63%;
+               left: 47%;
+               transform: rotate(36deg); 
+          }
+
+          .config-sreen-info__inner {
+               top: percent(230, 389);
+               right: percent(-190, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(24) {
+          .config-sreen-info__hit {
+               width: 4%;
+               height: 2%;
+               top: 64%;
+               left: 57%;
+               transform: rotate(36deg);
+               border-radius: 44%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(210, 389);
+               right: percent(-210, 335);
+          }
+     }
+}
+
+.slide-configurator:nth-child(2) {
+     .config-sreen-info:nth-child(1) {
+          .config-sreen-info__hit {
+               width: 31%;
+               height: 17%;
+               top: 21%;
+               left: 10%;
+               transform: rotate(-25deg);
+               border-radius: 20%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(80, 389);
+               right: percent(-110, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(2) {
+          .config-sreen-info__hit {
+               width: 6%;
+               height: 9%;
+               top: 27%;
+               left: 3%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(105, 389);
+               right: percent(-35, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(3) {
+          .config-sreen-info__hit {
+               width: 6%;
+               height: 9%;
+               top: 7%;
+               left: 35%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(20, 389);
+               right: percent(-150, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(4) {
+          .config-sreen-info__hit {
+               width: 6%;
+               height: 9%;
+               top: 36%;
+               right: 3%;
+          }
+
+          .config-sreen-info__inner {
+               bottom: percent(250, 389);
+               right: percent(-320, 335);
+          }
+     }
+     .config-sreen-info:nth-child(5) {
+          .config-sreen-info__hit {
+               width: 6%;
+               height: 6%;
+               top: 48%;
+               right: 51%;
+          }
+
+          .config-sreen-info__inner {
+               bottom: percent(190, 389);
+               right: percent(-175, 335);
+          }
+     }
+     .config-sreen-info:nth-child(6) {
+          .config-sreen-info__hit {
+               width: 6%;
+               height: 6%;
+               top: 30%;
+               right: 49%;
+          }
+
+          .config-sreen-info__inner {
+               bottom: percent(255, 389);
+               right: percent(-185, 335);
+          }
+     }
+     .config-sreen-info:nth-child(7) {
+          .config-sreen-info__hit {
+               width: 6%;
+               height: 6%;
+               top: 47%;
+               right: 66%;
+          }
+
+          .config-sreen-info__inner {
+               bottom: percent(200, 389);
+               right: percent(-125, 335);
+          }
+     }
+     .config-sreen-info:nth-child(8) {
+          .config-sreen-info__hit {
+               width: 6%;
+               height: 6%;
+               top: 52%;
+               right: 73%;
+          }
+
+          .config-sreen-info__inner {
+               bottom: percent(165, 389);
+               right: percent(-105, 335);
+          }
+     }
+     .config-sreen-info:nth-child(9) {
+          .config-sreen-info__hit {
+               width: 3%;
+               height: 6%;
+               top: 52%;
+               right: 79%;
+          }
+
+          .config-sreen-info__inner {
+               bottom: percent(190, 389);
+               right: percent(-75, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(10) {
+          .config-sreen-info__hit {
+               width: 28%;
+               height: 3%;
+               top: 17%;
+               right: 64%;
+               transform: rotate(-29deg);
+          }
+
+          .config-sreen-info__inner {
+               top: percent(20, 389);
+               right: percent(-75, 335);
+          }
+     }
+}
+
+.slide-configurator:nth-child(3) {
+     .config-sreen-info:nth-child(1) {
+          .config-sreen-info__hit {
+               width: 26%;
+               height: 15%;
+               transform: rotate(-31deg);
+               top: 20%;
+               left: 10%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(80, 389);
+               right: percent(-110, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(2) {
+          .config-sreen-info__hit {
+               left: 5%;
+               top: 50%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(200, 389);
+               left: percent(43, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(2),
+     .config-sreen-info:nth-child(3) {
+          .config-sreen-info__hit {
+               width: 6%;
+               height: 13%;
+          }
+     }
+
+     .config-sreen-info:nth-child(3) {
+          .config-sreen-info__hit {
+               right: 57%;
+               top: 28%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(115, 389);
+               right: percent(-155, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(4) {
+          .config-sreen-info__hit {
+               width: 7%;
+               height: 7%;
+               right: 43%;
+               bottom: 32%;
+          }
+
+          .config-sreen-info__inner {
+               bottom: percent(130, 389);
+               right: percent(-170, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(5) {
+          .config-sreen-info__hit {
+               width: 6.5%;
+               height: 4.5%;
+               right: 49%;
+               bottom: 44%;
+          }
+
+          .config-sreen-info__inner {
+               bottom: percent(170, 389);
+               right: percent(-180, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(6) {
+          .config-sreen-info__hit {
+               width: 7%;
+               height: 5%;
+               right: 46%;
+               bottom: 48%;
+               transform: rotate(24deg);
+          }
+
+          .config-sreen-info__inner {
+               bottom: percent(190, 389);
+               right: percent(-190, 335);
+          }
+     }
+}
+
+.slide-configurator:nth-child(4) {
+     .config-sreen-info:nth-child(1) {
+          .config-sreen-info__hit {
+               width: 6%;
+               height: 6%;
+               top: 27%;
+               left: 3%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(85, 389);
+               right: percent(-42, 335);
+          }
+     }
+     .config-sreen-info:nth-child(2) {
+          .config-sreen-info__hit {
+               width: 6%;
+               height: 6%;
+               top: 3%;
+               left: 39%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(-15, 389);
+               right: percent(-165, 335);
+          }
+     }
+     .config-sreen-info:nth-child(3) {
+          .config-sreen-info__hit {
+               width: 17%;
+               height: 6%;
+               top: 11%;
+               left: 47%;
+               transform: rotate(30deg);
+          }
+
+          .config-sreen-info__inner {
+               top: percent(30, 389);
+               right: percent(-210, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(4) {
+          .config-sreen-info__hit {
+               width: 15%;
+               height: 6%;
+               top: 29%;
+               left: 74%;
+               transform: rotate(30deg);
+          }
+
+          .config-sreen-info__inner {
+               top: percent(100, 389);
+               right: percent(-290, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(5) {
+          .config-sreen-info__hit {
+               width: 6%;
+               height: 6%;
+               top: 41%;
+               left: 86%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(130, 389);
+               right: percent(-320, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(6) {
+          .config-sreen-info__hit {
+               width: 22%;
+               height: 41%;
+               top: 47%;
+               left: 49%;
+               border-radius: 34%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(160, 389);
+               right: percent(-230, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(7) {
+          .config-sreen-info__hit {
+               width: 17%;
+               height: 41%;
+               top: 35%;
+               left: 15%;
+               border-radius: 34%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(160, 389);
+               right: percent(-100, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(8) {
+          .config-sreen-info__hit {
+               width: 24%;
+               height: 30%;
+               top: 24%;
+               left: 30%;
+               border-radius: 37%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(110, 389);
+               right: percent(-180, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(9) {
+          .config-sreen-info__hit {
+               width: 17%;
+               height: 25%;
+               top: 45%;
+               left: 32%;
+               border-radius: 37%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(110, 389);
+               right: percent(-180, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(10) {
+          .config-sreen-info__hit {
+               width: 16%;
+               height: 33%;
+               top: 24%;
+               left: 64%;
+               border-radius: 37%;
+               transform: rotate(-63deg);
+          }
+
+          .config-sreen-info__inner {
+               top: percent(120, 389);
+               right: percent(-270, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(11) {
+          .config-sreen-info__hit {
+               width: 15%;
+               height: 24%;
+               top: 45%;
+               left: 72%;
+               border-radius: 30%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(120, 389);
+               right: percent(-270, 335);
+          }
+     }
+}
+
+.slide-configurator:nth-child(5) {
+     .config-sreen-info:nth-child(1) {
+          .config-sreen-info__hit {
+               width: 10%;
+               height: 22%;
+               top: 24%;
+               left: 45%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(125, 389);
+               right: percent(-185, 335);
+          }
+     }
+     .config-sreen-info:nth-child(2) {
+          .config-sreen-info__hit {
+               width: 8%;
+               height: 7%;
+               bottom: 32%;
+               left: 37%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(200, 389);
+               right: percent(-150, 335);
+          }
+     }
+
+     .config-sreen-info:nth-child(3) {
+          .config-sreen-info__hit {
+               width: 5%;
+               height: 4%;
+               bottom: 39%;
+               left: 46%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(200, 389);
+               right: percent(-180, 335);
+          }
+     }
+     .config-sreen-info:nth-child(4) {
+          .config-sreen-info__hit {
+               width: 7%;
+               height: 9%;
+               bottom: 41%;
+               left: 51%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(170, 389);
+               right: percent(-200, 335);
+          }
+     }
+     .config-sreen-info:nth-child(5) {
+          .config-sreen-info__hit {
+               width: 3%;
+               height: 3%;
+               bottom: 43%;
+               left: 50%;
+          }
+
+          .config-sreen-info__inner {
+               top: percent(170, 389);
+               right: percent(-170, 335);
+          }
+     }
+}
+
+.config-sreen-info-wrapper {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     z-index: 20;
+}
+
+.config-sreen-info {
+     &__hit {
+          //background-color: rgba(191, 241, 191, 0.63);
+          //background-color: rgba(89, 182, 89, 0.63);
+          position: absolute;
+          z-index: 50;
+
+          &.active + .config-sreen-info__inner {
+               opacity: 1;
+               pointer-events: visible;
+               // .config-sreen-info__description {
+               //      pointer-events: visible;
+               //      display: flex;
+               // }
+
+               .config-sreen-info__arrows {
+                    width: 39px;
+               }
+          }
+     }
+
+     &__arrows {
+          width: 0;
+          transition: width 0.3s ease 0s;
+     }
+
+     &__arrow-circle {
+          transform: translate(-16px, -3px);
+          width: 24px;
+          height: 24px;
+     }
+
+     &__inner {
+          pointer-events: none;
+          opacity: 0;
+          position: absolute;
+          width: 100%;
+          height: 10%;
+          z-index: 49;
+          display: flex;
+          align-items: center;
+          transition: opacity 0.3s ease 0s;
+     }
+
+     &__description {
+          // display: none;
+          // pointer-events: none;
+          transform: translateY(-32px);
+          // position: absolute;
+          display: flex;
+          align-items: center;
+          border: 2px solid var(--AcentColor);
+          border-radius: 4px;
+          padding: 10px;
+          background-color: var(--whiteColor);
+          @media (any-hover: hover) {
+               &:hover {
+                    .config-sreen-info__icon:last-child {
+                         transform: translateX(3px);
+                         color: var(--AcentColor);
+                    }
+                    .config-sreen-info__text {
+                         color: var(--AcentColor);
+                    }
+               }
+          }
+     }
+
+     &__icon {
+          color: var(--mainColor);
+          width: 24px;
+          height: 24px;
+          transition:
+               transform 0.3s ease 0s,
+               color 0.3s ease 0s;
+     }
+
+     &__text {
+          margin: 0px 12px 0px 8px;
+          font-size: 14px;
+          text-transform: uppercase;
+          transition: color 0.3s ease 0s;
+     }
+}
+
+.plashka-slide-config {
+     overflow: hidden;
+     opacity: 0;
+     height: 0;
+     position: absolute;
+     top: -140px;
+     right: 50px;
+     z-index: 3;
+     transition: all 0.3s ease 0s;
+
+     &__inner {
+          box-shadow: 0 2px 7px 0 rgba(16, 24, 40, 0.12);
+          border-radius: 4px;
+          padding: 20px;
+          background-color: var(--whiteColor);
+     }
+
+     &__top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          column-gap: 32px;
+          margin-bottom: 16px;
+     }
+
+     &__title {
+          font-size: 32px;
+          line-height: 131%;
+     }
+
+     &__icon {
+          color: var(--AcentColor);
+     }
+
+     &__list {
+     }
+
+     &__li {
+          font-size: 14px;
+          line-height: 143%;
+          padding-left: 15px;
+          position: relative;
+          &::before {
+               content: "";
+               position: absolute;
+               width: 3px;
+               height: 3px;
+               top: 9px;
+               left: 4px;
+               border-radius: 50%;
+               background-color: var(--mainColor);
+          }
+     }
+
+     &__triangle {
+          width: 32px;
+          height: 15px;
+          right: 44%;
+          bottom: -15px;
+          transform: rotate(180deg);
+          position: absolute;
+          &::before {
+               content: "";
+               position: absolute;
+               width: 25px;
+               height: 25px;
+               top: 2px;
+               left: 3px;
+               transform: rotate(45deg);
+               background-color: #fff;
+               box-shadow: 0 0px 3px 0 rgba(16, 24, 40, 0.12);
+          }
+          &::after {
+               content: "";
+               position: absolute;
+               width: 44px;
+               height: 30px;
+               top: 15px;
+               left: -6px;
+               background-color: #fff;
+          }
+     }
+}
+
+.plashka-slide-config-four {
+     top: -165px;
+     right: 50px;
+}
+
+.plashka-configurator {
+     border-radius: 12px;
+     padding: 40px;
+     background-color: var(--BgDark);
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+     &__text {
+          font-size: 32px;
+          line-height: 131%;
+          color: var(--whiteColor);
+     }
+
+     &__button {
+     }
+}

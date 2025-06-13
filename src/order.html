@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Заказ оформлен"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="not-found">
+				<div class="not-found__container">
+					<div class="not-found__inner not-found__inner--order">
+						<h1 class="not-found__title subtitle">Получили ваш заказ!</h1>
+						<p class="not-found__description">Менеджер внимательно с ним ознакомимся и свяжется с вами.</p>
+						<div class="not-found__home">А пока посмотрите что <a href="catalog.html" target="_blank">еще у нас есть</a>.</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+     <script src="https://api-maps.yandex.ru/2.1/?apikey=72e4cd21-9400-4735-9cfe-40e993aeb72f&lang=ru_RU&_v=20240307171659"></script>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

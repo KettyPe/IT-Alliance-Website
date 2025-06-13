@@ -1,0 +1,156 @@
+.contacts {
+     &__container {
+     }
+
+     &__title {
+     }
+
+     &__tabs {
+     }
+}
+
+.tabs-contact {
+     &__btn-wrapper {
+          border-bottom: 1px solid var(--borderColor);
+     }
+
+     &__buttons {
+          display: flex;
+     }
+
+     &__button {
+          display: block;
+          cursor: pointer;
+          transition: color 0.3s ease 0s;
+          padding: 12px 0px 16px 0px;
+          span {
+               font-size: 24px;
+               line-height: 133%;
+               pointer-events: none;
+               white-space: nowrap;
+          }
+
+          position: relative;
+          &::before {
+               content: "";
+               position: absolute;
+               width: 0;
+               height: 2px;
+               bottom: -1px;
+               left: 0;
+               background-color: var(--AcentColor);
+               transition: width 0.3s ease 0s;
+          }
+
+          &.active-tab-btn {
+               color: var(--AcentColor);
+               &::before {
+                    width: 100%;
+               }
+          }
+
+          @media (any-hover: hover) {
+               &:hover {
+                    color: var(--AcentColor);
+               }
+          }
+     }
+
+     &__content-wrapper {
+     }
+
+     &__content {
+          &.active-tab {
+               display: block;
+          }
+     }
+
+     &__actions {
+     }
+
+     &__sub-button {
+          line-height: 150%;
+          color: var(--AcentColor);
+          @include hoverLink;
+     }
+
+     &__subtitle {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 133%;
+     }
+
+     &__schedule {
+          margin-top: 16px;
+          line-height: 150%;
+          color: var(--grayColor);
+     }
+
+     &__address {
+     }
+
+     &__map {
+          height: 848px;
+          width: 100%;
+     }
+}
+
+.actions-tabs-contact {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+
+     &__block {
+          border: 1px solid var(--borderColor);
+          border-radius: 4px;
+          padding: 20px 20px 40px 20px;
+     }
+
+     &__top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 32px;
+     }
+
+     &__icon {
+     }
+
+     &__link {
+          margin-top: 12px;
+          font-size: 32px;
+          line-height: 131%;
+          display: flex;
+          align-items: center;
+          column-gap: 8px;
+          @include hoverLink;
+     }
+}
+
+.address-contact {
+     &__title {
+          font-size: 32px;
+          line-height: 131%;
+          margin-bottom: 20px;
+     }
+
+     &__text {
+          font-size: 24px;
+          line-height: 133%;
+          color: var(--grayColor);
+          margin-bottom: 32px;
+     }
+
+     &__columns {
+          display: flex;
+     }
+
+     &__column {
+          max-width: 460px;
+     }
+
+     &__info {
+          margin: 16px 0px;
+          font-size: 24px;
+          line-height: 133%;
+     }
+}

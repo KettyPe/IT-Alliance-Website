@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"ИТ Альянс"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header-white.htm',{})
+		<main class="page">
+			@@include('html/main/mainblock.htm',{})
+			@@include('html/main/proposal.htm',{})
+			@@include('html/main/partners.htm',{})
+			@@include('html/main/help.htm',{})
+			@@include('html/types-block/_configurator.htm',{})
+			@@include('html/main/equipment.htm',{})
+			@@include('html/main/news.htm',{})
+			@@include('html/main/about.htm',{})
+			@@include('html/_form.htm',{})
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+     <script src="https://api-maps.yandex.ru/2.1/?apikey=72e4cd21-9400-4735-9cfe-40e993aeb72f&lang=ru_RU&_v=20240307171659"></script>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

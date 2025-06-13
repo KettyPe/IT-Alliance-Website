@@ -1,0 +1,36 @@
+.services {
+     &__main {
+     }
+
+     &__benefits {
+     }
+}
+
+.services-main {
+     &__container {
+     }
+
+     &__inner {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+
+          .services-block__cards {
+               margin-bottom: 0;
+          }
+     }
+
+     &__title {
+     }
+
+     &__text {
+          max-width: 860px;
+          font-size: 32px;
+          line-height: 130%;
+          button {
+               color: var(--AcentColor);
+               @include hoverLink;
+          }
+     }
+}
+

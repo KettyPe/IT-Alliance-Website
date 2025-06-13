@@ -1,0 +1,45 @@
+.benefits-services {
+     &__container {
+     }
+
+     &__inner {
+          border-radius: 20px;
+          padding: 40px;
+          background-color: var(--BackgroundGray);
+     }
+
+     &__title {
+          margin-bottom: 16px;
+     }
+
+     &__cards {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+     }
+
+     &__card {
+     }
+}
+
+.card-benefits-services {
+     padding: 20px 20px 40px 20px;
+
+     &__icon {
+          margin-bottom: 32px;
+          svg {
+               width: 40px;
+               height: 40px;
+          }
+     }
+
+     &__title {
+          margin-bottom: 12px;
+          font-size: 24px;
+          line-height: 133%;
+     }
+
+     &__text {
+          color: var(--grayColor);
+          line-height: 150%;
+     }
+}

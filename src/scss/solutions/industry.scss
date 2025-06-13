@@ -1,0 +1,47 @@
+.industry-solutions {
+     &__container {
+     }
+
+     &__top {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          margin-bottom: 60px;
+     }
+
+     &__title {
+     }
+
+     &__desc {
+          font-size: 32px;
+          line-height: 131%;
+     }
+
+     &__btn-wrapper {
+          display: flex;
+          column-gap: 30px;
+     }
+
+     &__button {
+     }
+
+     &__cards {
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          gap: 32px;
+     }
+
+     &__card {
+          min-height: 200px;
+          grid-column: span 2;
+          &:nth-child(7),
+          &:nth-child(8) {
+               grid-column: span 3;
+          }
+
+          .card-services__text {
+               max-width: 400px;
+          }
+     }
+}
+

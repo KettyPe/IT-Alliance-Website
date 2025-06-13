@@ -1,0 +1,11 @@
+import "../scss/style.scss";
+import "./script.js";
+import "./files/menu.js";
+import "./files/adaptive.js";
+import "./files/dropdown.js";
+import "./files/tabs.js";
+import "./files/filter.js";
+import "./files/search.js";
+import "./files/form-file.js";
+import "./files/map.js";
+import "./files/swiper.js";

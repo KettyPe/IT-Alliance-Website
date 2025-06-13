@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Раздел конфигуратора / расчет"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<div class="breadcrumbs">
+                    <div class="breadcrumbs__container">
+                         <ul class="breadcrumbs__list">
+                              <li class="breadcrumbs__item">
+                                   <a href="#" target="_blank">Главная</a>
+                              </li>
+                              <li class="breadcrumbs__item">
+                                   <a href="#" target="_blank">Решения</a>
+                              </li>
+                              <li class="breadcrumbs__item">
+                                   <span>Конфигуратор проекта</span>
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+			<section class="not-found">
+				<div class="not-found__container">
+					<div class="not-found__inner">
+						<h1 class="not-found__title subtitle">Получили ваш проект!</h1>
+						<p class="not-found__description">Менеджер внимательно с ним ознакомимся и свяжется с вами, вышлет коммерческое предложение.</p>
+						<div class="not-found__buttons gap-8">
+							<a href="index.html" class="not-found__button btn btn-blue">
+								<span>На главную</span>
+							</a>
+							<a href="index.html" class="not-found__button btn btn-blue-border">
+								<span>Оформить ещё один проект</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+     <script src="https://api-maps.yandex.ru/2.1/?apikey=72e4cd21-9400-4735-9cfe-40e993aeb72f&lang=ru_RU&_v=20240307171659"></script>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

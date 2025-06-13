@@ -1,0 +1,67 @@
+.about-send {
+     &__container {
+     }
+
+     &__title {
+     }
+
+     &__info {
+          max-width: 736px;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+     }
+
+
+
+     &__blue-text {
+          color: var(--AcentColor);
+     }
+
+     &__blue-text,
+     &__text {
+          text-align: center;
+          font-size: 24px;
+          line-height: 133%;
+     }
+
+     &__text {
+     }
+
+     &__button {
+          width: max-content;
+          margin: 0 auto;
+     }
+}
+
+.seo-about {
+     margin: 0 auto;
+     display: flex;
+     align-items: center;
+     column-gap: 32px;
+     &__image {
+          max-width: 151px;
+          max-height: 133px;
+          img {
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+          }
+     }
+
+     &__seo-name {
+     }
+
+     &__name {
+          font-size: 32px;
+          line-height: 131%;
+          margin-bottom: 8px;
+     }
+
+     &__post {
+          font-size: 24px;
+          line-height: 133%;
+          color: var(--grayColor);
+          display: block;
+     }
+}

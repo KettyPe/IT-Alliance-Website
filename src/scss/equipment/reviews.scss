@@ -1,0 +1,112 @@
+.reviews {
+     &__container {
+     }
+
+     &__top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          column-gap: 30px;
+          margin-bottom: 32px;
+     }
+
+     &__title {
+     }
+
+     &__arrows {
+     }
+
+     &__arrow {
+     }
+
+     &__arrow-prev {
+     }
+
+     &__arrow-next {
+     }
+
+     &__slider {
+     }
+
+     &__swiper-wrapper {
+     }
+
+     &__slide {
+     }
+}
+
+.reviews-slide {
+     &__inner {
+          border: 1px solid var(--borderColor);
+          border-radius: 20px;
+          padding: 40px;
+          display: flex;
+          position: relative;
+          column-gap: 121px;
+     }
+
+     &__title {
+          display: none;
+     }
+
+     &__info {
+          flex: 0 1 223px;
+     }
+
+     &__image {
+          border-radius: 12px;
+          overflow: hidden;
+          //position: relative;
+          //padding-bottom: 100%;
+          width: 223px;
+          height: 223px;
+          margin-bottom: 16px;
+          img {
+               //width: 100%;
+               //height: 100%;
+               //position: absolute;
+               //top: 0;
+               //left: 0;
+               object-fit: cover;
+          }
+     }
+
+     &__desc {
+     }
+
+     &__name {
+          line-height: 150%;
+          margin-bottom: 8px;
+     }
+
+     &__post {
+          font-size: 14px;
+          line-height: 143%;
+          color: var(--grayColor);
+     }
+
+     &__text {
+          max-width: 864px;
+          font-size: 24px;
+          line-height: 133%;
+          p {
+               &:not(:last-child) {
+                    margin-bottom: 20px;
+               }
+          }
+     }
+
+     &__icon {
+          border: 1px solid var(--AcentColor);
+          border-radius: 50px;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          width: 45px;
+          height: 45px;
+          top: 40px;
+          right: 40px;
+     }
+}

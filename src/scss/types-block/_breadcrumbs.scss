@@ -1,0 +1,42 @@
+.breadcrumbs {
+	padding: 20px 0px;
+
+	&__container {
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		column-gap: 12px;
+          overflow-x: auto;
+          &::-webkit-scrollbar {
+               width: 0;
+               height: 0;
+               -ms-overflow-style: none;
+          }
+	}
+
+	&__item {
+          white-space: nowrap;
+		color: var(--grayColor);
+		font-size: 14px;
+		line-height: 143%;
+		position: relative;
+		&:not(:last-child)::before {
+			content: "/";
+			position: absolute;
+			top: 0;
+			right: -8px;
+			color: var(--grayColor);
+		}
+
+		a {
+			@media (any-hover: hover) {
+				transition: color 0.3s ease 0s;
+				&:hover {
+					color: var(--AcentColor);
+				}
+			}
+		}
+	}
+}

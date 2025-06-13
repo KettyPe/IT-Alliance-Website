@@ -1,0 +1,50 @@
+.equipment-catalog {
+     &__main {
+     }
+
+     &__btn-wrapper {
+          margin-bottom: 20px;
+
+     }
+
+     &__container {
+     }
+
+     &__buttons {
+          display: flex;
+          column-gap: 16px;
+
+          overflow-x: auto;
+          &::-webkit-scrollbar {
+               width: 0;
+               height: 0;
+               -ms-overflow-style: none;
+          }
+     }
+
+     &__button {
+          flex: 0 1 265px;
+          border-radius: 12px;
+          padding: 20px 12px;
+          display: flex;
+          align-items: center;
+          column-gap: 8px;
+          background-color: transparent;
+          transition: background-color 0.3s ease 0s;
+          span {
+               pointer-events: none;
+               max-width: 150px;
+               text-align: left;
+          }
+
+          &.active-tab-btn {
+               background-color: var(--BgGrayDark);
+          }
+
+          @media (any-hover: hover){
+               &:hover{
+                    background-color: var(--bg);
+               }
+          }
+     }
+}

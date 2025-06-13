@@ -1,0 +1,101 @@
+.about-company-main {
+     padding: 74px 0px;
+     background-color: var(--BgDark);
+     color: var(--whiteColor);
+
+     &__container {
+     }
+
+     &__inner {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          column-gap: 50px;
+
+          .card-mainblock:nth-child(1) {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+          }
+
+          .card-mainblock:nth-child(6) {
+               display: block;
+               background-color: var(--LightBlue);
+          }
+          .card-mainblock:nth-child(2),
+          .card-mainblock:nth-child(3) {
+               .card-mainblock__title {
+                    margin-bottom: 8px;
+               }
+          }
+     }
+
+     &__info {
+          max-width: 791px;
+          display: flex;
+          flex-direction: column;
+     }
+
+     &__title {
+     }
+
+     &__subtitle,
+     &__text {
+          font-size: 24px;
+          line-height: 133%;
+     }
+
+     &__text {
+          margin-bottom: 28px;
+     }
+
+     &__users {
+     }
+
+     &__btn-wrapper {
+          display: flex;
+          column-gap: 30px;
+     }
+
+     &__button {
+     }
+
+     &__cards {
+          max-width: 607px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 16px;
+
+          a {
+               color: var(--AcentColor);
+               @include hoverLink;
+          }
+     }
+}
+
+.users-about-company-main {
+     display: flex;
+     align-items: center;
+     &__img {
+          position: relative;
+          border: 1px solid #fff;
+          border-radius: 50%;
+          width: 45px;
+          height: 45px;
+          object-fit: cover;
+          margin-right: -10px;
+     }
+
+     &__more {
+          border-radius: 50px;
+          flex: 0 0 45px;
+          width: 45px;
+          height: 45px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: var(--AcentColor);
+          color: var(--whiteColor);
+          @include hoverLink;
+     }
+}

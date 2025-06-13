@@ -1,0 +1,77 @@
+.card-project-main {
+     background-color: var(--BackgroundGray);
+     position: relative;
+
+     &__image {
+          position: absolute;
+          width: 42.3%;
+          height: 100%;
+          top: 0;
+          right: 0;
+          img {
+               position: absolute;
+               width: 100%;
+               height: 100%;
+               top: 0;
+               left: 0;
+               object-fit: cover;
+          }
+     }
+
+     &__container {
+     }
+
+     &__info {
+          padding: 40px 0px;
+          max-width: 864px;
+     }
+
+     &__tags {
+     }
+
+     &__title {
+          font-size: 32px;
+          line-height: 131%;
+     }
+
+     &__text {
+          line-height: 150%;
+     }
+
+     &__btn-wrapper {
+          display: flex;
+          column-gap: 32px;
+          margin: 60px 0px 72px 0px;
+     }
+
+     &__button {
+     }
+
+     &__benefits {
+          &.benefits-main-equipment {
+               max-width: 100%;
+          }
+          .benefits-main-equipment__card {
+               flex: inherit;
+               min-width: 110px;
+          }
+     }
+}
+
+.benefits-main-equipment {
+     
+     &__card {
+     }
+
+     &__text {
+     }
+
+     &__title {
+     }
+
+     &__link {
+          line-height: 150%;
+          color: var(--AcentColor);
+          @include hoverLink;
+     }
+}

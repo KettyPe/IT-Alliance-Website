@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Корзина"
+})
+
+<body>
+     <div class="wrapper">
+          @@include('html/_header.htm',{})
+          <main class="page">
+               <div class="breadcrumbs">
+                    <div class="breadcrumbs__container">
+                         <ul class="breadcrumbs__list">
+                              <li class="breadcrumbs__item">
+                                   <a href="#" target="_blank">Главная</a>
+                              </li>
+                              <li class="breadcrumbs__item">
+                                   <span>Корзина</span>
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+               <div class="cart-empty">
+                    <section class="cart-empty__top">
+                         <div class="cart-empty__container">
+                              <h1 class="cart-empty__title title">Корзина</h1>
+                         </div>
+                    </section>
+                    <section class="cart-empty__mainblock">
+                         <div class="cart-empty__container">
+                              <div class="cart-empty__inner gap-8">
+                                   <div class="cart-empty__image">
+                                        <img src="@img/logo-cart.svg" alt="logo">
+                                   </div>
+                                   <h2 class="cart-empty__subtitle subtitle">Пока пусто</h2>
+                                   <p class="cart-empty__text">Воспользуйтесь <a href="catalog.html">каталогом</a> или
+                                        поиском</p>
+                              </div>
+                         </div>
+                    </section>
+                    <section class="cart-empty__products products-card-news">
+                         <div class="products-card-news__container">
+                              <div class="products-card-news__top mb-8">
+                                   <div class="cart-empty__slider-title-top">
+                                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M18.2634 3.0959C18.6514 2.8641 19.095 2.7417 19.547 2.7417C19.9695 2.7417 20.3847 2.84864 20.754 3.0519C31.9955 8.27465 38.3605 19.1195 37.9676 28.1859L37.9675 28.1869C37.7999 31.9974 36.4357 35.5216 33.7929 38.097C31.1502 40.6724 27.3531 42.1782 22.5452 42.1875C20.6141 42.3065 18.6784 42.0412 16.8503 41.4067C15.0077 40.7672 13.3117 39.7656 11.862 38.4609C10.4122 37.1561 9.23815 35.5746 8.40877 33.8093C7.57938 32.0441 7.11146 30.1307 7.03255 28.1819L7.0317 28.1609L7.03186 28.1609C6.97428 25.906 7.53551 23.6784 8.65462 21.72C9.77373 19.7616 11.4079 18.1471 13.3799 17.0519C13.7255 16.8599 14.1361 16.8223 14.5108 16.9484C14.8856 17.0744 15.19 17.3524 15.3495 17.7142C16.0376 19.2757 17.0015 20.6961 18.1914 21.9088C19.5881 20.0887 20.2305 17.7364 20.2115 15.1522C20.1889 12.0758 19.2226 8.7806 17.605 5.97482C17.3407 5.5337 17.2442 5.01179 17.3337 4.50485C17.4246 3.98972 17.7012 3.5258 18.1112 3.20094C18.1596 3.16263 18.2104 3.12754 18.2634 3.0959ZM20.9317 6.27897C22.232 9.05566 23.002 12.1457 23.0239 15.1315C23.0506 18.7562 21.9682 22.3371 19.2512 24.9246C18.7324 25.4187 17.9252 25.4438 17.3767 24.9829C15.8166 23.6719 14.5096 22.093 13.5145 20.325C12.5381 21.0858 11.7154 22.0325 11.0966 23.1154C10.2341 24.6247 9.80071 26.341 9.84318 28.0787C9.90818 29.6491 10.2859 31.1907 10.9543 32.6133C11.6242 34.0391 12.5725 35.3165 13.7434 36.3703C14.9144 37.4242 16.2842 38.2332 17.7725 38.7497C19.2607 39.2662 20.8372 39.4798 22.4092 39.378C22.4395 39.376 22.4698 39.375 22.5001 39.375C26.7272 39.375 29.7912 38.0696 31.83 36.0828C33.8769 34.0881 35.0158 31.2845 35.1577 28.0642C35.4798 20.6313 30.4062 11.2914 20.9317 6.27897ZM20.0232 4.53877L20.0136 4.52269C20.0169 4.52801 20.0201 4.53337 20.0232 4.53877Z"
+                                                  fill="currentColor" />
+                                             <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M29.5312 26.7188C30.3079 26.7188 30.9375 27.3483 30.9375 28.125C30.9375 29.9898 30.1967 31.7782 28.8781 33.0968C27.5595 34.4155 25.7711 35.1562 23.9062 35.1562C23.1296 35.1562 22.5 34.5267 22.5 33.75C22.5 32.9733 23.1296 32.3438 23.9062 32.3438C25.0251 32.3438 26.0982 31.8993 26.8894 31.1081C27.6805 30.3169 28.125 29.2439 28.125 28.125C28.125 27.3483 28.7546 26.7188 29.5312 26.7188Z"
+                                                  fill="currentColor" />
+                                        </svg>
+                                        <h5 class="products-card-news__title products-card-news__title--cart subtitle">Горячие предложения</h5>
+                                   </div>
+                                   <div class="products-card-news__arrows arrows">
+                                        <button
+                                             class="products-card-news__arrow products-card-news__arrow-prev arrow arrow-blue"
+                                             type="button">
+                                             @@include('html/icons/arrow-left.htm')
+                                        </button>
+                                        <button
+                                             class="products-card-news__arrow products-card-news__arrow-next arrow arrow-blue"
+                                             type="button">
+                                             @@include('html/icons/arrow-right.htm')
+                                        </button>
+                                   </div>
+                              </div>
+                              <div class="products-card-news__slider swiper mb-8">
+                                   <div class="products-card-news__swiper-wrapper swiper-wrapper">
+                                        <div class="products-card-news__slide swiper-slide">
+                                             <div class="tab-equipment__card">
+                                                  <div class="card-equipment">
+                                                       <div class="card-equipment__labels">
+                                                            <div
+                                                                 class="card-equipment__label card-equipment__label--registry">
+                                                                 <span>В реестре</span>
+                                                            </div>
+                                                            <div
+                                                                 class="card-equipment__label card-equipment__label--new">
+                                                                 <span>Новинка</span>
+                                                            </div>
+                                                       </div>
+                                                       <div class="card-equipment__slider swiper">
+                                                            <div class="card-equipment__swiper-wrapper swiper-wrapper">
+                                                                 <div class="card-equipment__slide swiper-slide">
+                                                                      <a href="#" class="card-equipment__slide-link"
+                                                                           target="_blank">
+                                                                           <div class="card-equipment__image">
+                                                                                <img src="@img/equipment/laser.png"
+                                                                                     alt="equipment cartridge">
+                                                                           </div>
+                                                                      </a>
+                                                                 </div>
+                                                                 <div class="card-equipment__slide swiper-slide">
+                                                                      <a href="#" class="card-equipment__slide-link"
+                                                                           target="_blank">
+                                                                           <div class="card-equipment__image">
+                                                                                <img src="@img/equipment/laser.png"
+                                                                                     alt="equipment cartridge">
+                                                                           </div>
+                                                                      </a>
+                                                                 </div>
+                                                                 <div class="card-equipment__slide swiper-slide">
+                                                                      <a href="#" class="card-equipment__slide-link"
+                                                                           target="_blank">
+                                                                           <div class="card-equipment__image">
+                                                                                <img src="@img/equipment/laser.png"
+                                                                                     alt="equipment cartridge">
+                                                                           </div>
+                                                                      </a>
+                                                                 </div>
+                                                            </div>
+                                                            <div class="card-equipment__dotts dotts"></div>
+                                                       </div>
+                                                       <div class="card-equipment__info">
+                                                            <p class="card-equipment__price">500 000 ₽</p>
+                                                            <a href="#" class="card-equipment__title"
+                                                                 title="Картридж лазерный Pantum TL-5120 "
+                                                                 target="_blank">Картридж лазерный Pantum TL-5120 </a>
+                                                            <p class="card-equipment__text">
+                                                                 МФУ лазерное Pantum M7100DN поставляется в белом цвете.
+                                                                 Поддерживает функционал принтера
+                                                            </p>
+                                                            <div class="card-equipment__status">
+                                                                 <span class="card-equipment__status-active">На
+                                                                      складе</span>
+                                                            </div>
+                                                            <button class="card-equipment__button btn btn-blue-border"
+                                                                 type="button" data-fancybox data-src="#solutions">
+                                                                 <span>Заказать</span>
+                                                            </button>
+                                                       </div>
+
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="products-card-news__slide swiper-slide">
+                                             <div class="tab-equipment__card">
+                                                  <div class="card-equipment">
+                                                       <div class="card-equipment__labels">
+                                                            <div
+                                                                 class="card-equipment__label card-equipment__label--registry">
+                                                                 <span>В реестре</span>
+                                                            </div>
+                                                            <div
+                                                                 class="card-equipment__label card-equipment__label--new">
+                                                                 <span>Новинка</span>
+                                                            </div>
+                                                       </div>
+                                                       <div class="card-equipment__slider swiper">
+                                                            <div class="card-equipment__swiper-wrapper swiper-wrapper">
+                                                                 <div class="card-equipment__slide swiper-slide">
+                                                                      <a href="#" class="card-equipment__slide-link"
+                                                                           target="_blank">
+                                                                           <div class="card-equipment__image">
+                                                                                <img src="@img/equipment/laser.png"
+                                                                                     alt="equipment cartridge">
+                                                                           </div>
+                                                                      </a>
+                                                                 </div>
+                                                                 <div class="card-equipment__slide swiper-slide">
+                                                                      <a href="#" class="card-equipment__slide-link"
+                                                                           target="_blank">
+                                                                           <div class="card-equipment__image">
+                                                                                <img src="@img/equipment/laser.png"
+                                                                                     alt="equipment cartridge">
+                                                                           </div>
+                                                                      </a>
+                                                                 </div>
+                                                                 <div class="card-equipment__slide swiper-slide">
+                                                                      <a href="#" class="card-equipment__slide-link"
+                                                                           target="_blank">
+                                                                           <div class="card-equipment__image">
+                                                                                <img src="@img/equipment/laser.png"
+                                                                                     alt="equipment cartridge">
+                                                                           </div>
+                                                                      </a>
+                                                                 </div>
+                                                            </div>
+                                                            <div class="card-equipment__dotts dotts"></div>
+                                                       </div>
+                                                       <div class="card-equipment__info">
+                                                            <p class="card-equipment__price">500 000 ₽</p>
+                                                            <a href="#" class="card-equipment__title"
+                                                                 title="Картридж лазерный Pantum TL-5120 "
+                                                                 target="_blank">Картридж лазерный Pantum TL-5120 </a>
+                                                            <p class="card-equipment__text">
+                                                                 МФУ лазерное Pantum M7100DN поставляется в белом цвете.
+                                                                 Поддерживает функционал принтера
+                                                            </p>
+                                                            <div class="card-equipment__status">
+                                                                 <span class="card-equipment__status-active">На
+                                                                      складе</span>
+                                                            </div>
+                                                            <button class="card-equipment__button btn btn-blue-border"
+                                                                 type="button" data-fancybox data-src="#solutions">
+                                                                 <span>Заказать</span>
+                                                            </button>
+                                                       </div>
+
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="products-card-news__slide swiper-slide">
+                                             <div class="tab-equipment__card">
+                                                  <div class="card-equipment">
+                                                       <div class="card-equipment__labels">
+                                                            <div
+                                                                 class="card-equipment__label card-equipment__label--registry">
+                                                                 <span>В реестре</span>
+                                                            </div>
+                                                            <div
+                                                                 class="card-equipment__label card-equipment__label--new">
+                                                                 <span>Новинка</span>
+                                                            </div>
+                                                       </div>
+                                                       <div class="card-equipment__slider swiper">
+                                                            <div class="card-equipment__swiper-wrapper swiper-wrapper">
+                                                                 <div class="card-equipment__slide swiper-slide">
+                                                                      <a href="#" class="card-equipment__slide-link"
+                                                                           target="_blank">
+                                                                           <div class="card-equipment__image">
+                                                                                <img src="@img/equipment/laser.png"
+                                                                                     alt="equipment cartridge">
+                                                                           </div>
+                                                                      </a>
+                                                                 </div>
+                                                                 <div class="card-equipment__slide swiper-slide">
+                                                                      <a href="#" class="card-equipment__slide-link"
+                                                                           target="_blank">
+                                                                           <div class="card-equipment__image">
+                                                                                <img src="@img/equipment/laser.png"
+                                                                                     alt="equipment cartridge">
+                                                                           </div>
+                                                                      </a>
+                                                                 </div>
+                                                                 <div class="card-equipment__slide swiper-slide">
+                                                                      <a href="#" class="card-equipment__slide-link"
+                                                                           target="_blank">
+                                                                           <div class="card-equipment__image">
+                                                                                <img src="@img/equipment/laser.png"
+                                                                                     alt="equipment cartridge">
+                                                                           </div>
+                                                                      </a>
+                                                                 </div>
+                                                            </div>
+                                                            <div class="card-equipment__dotts dotts"></div>
+                                                       </div>
+                                                       <div class="card-equipment__info">
+                                                            <p class="card-equipment__price">500 000 ₽</p>
+                                                            <a href="#" class="card-equipment__title"
+                                                                 title="Картридж лазерный Pantum TL-5120 "
+                                                                 target="_blank">Картридж лазерный Pantum TL-5120 </a>
+                                                            <p class="card-equipment__text">
+                                                                 МФУ лазерное Pantum M7100DN поставляется в белом цвете.
+                                                                 Поддерживает функционал принтера
+                                                            </p>
+                                                            <div class="card-equipment__status">
+                                                                 <span class="card-equipment__status-active">На
+                                                                      складе</span>
+                                                            </div>
+                                                            <button class="card-equipment__button btn btn-blue-border"
+                                                                 type="button" data-fancybox data-src="#solutions">
+                                                                 <span>Заказать</span>
+                                                            </button>
+                                                       </div>
+
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="products-card-news__slide swiper-slide">
+                                             <div class="tab-equipment__card">
+                                                  <div class="card-equipment">
+                                                       <div class="card-equipment__labels">
+                                                            <div
+                                                                 class="card-equipment__label card-equipment__label--registry">
+                                                                 <span>В реестре</span>
+                                                            </div>
+                                                            <div
+                                                                 class="card-equipment__label card-equipment__label--new">
+                                                                 <span>Новинка</span>
+                                                            </div>
+                                                       </div>
+                                                       <div class="card-equipment__slider swiper">
+                                                            <div class="card-equipment__swiper-wrapper swiper-wrapper">
+                                                                 <div class="card-equipment__slide swiper-slide">
+                                                                      <a href="#" class="card-equipment__slide-link"
+                                                                           target="_blank">
+                                                                           <div class="card-equipment__image">
+                                                                                <img src="@img/equipment/laser.png"
+                                                                                     alt="equipment cartridge">
+                                                                           </div>
+                                                                      </a>
+                                                                 </div>
+                                                                 <div class="card-equipment__slide swiper-slide">
+                                                                      <a href="#" class="card-equipment__slide-link"
+                                                                           target="_blank">
+                                                                           <div class="card-equipment__image">
+                                                                                <img src="@img/equipment/laser.png"
+                                                                                     alt="equipment cartridge">
+                                                                           </div>
+                                                                      </a>
+                                                                 </div>
+                                                                 <div class="card-equipment__slide swiper-slide">
+                                                                      <a href="#" class="card-equipment__slide-link"
+                                                                           target="_blank">
+                                                                           <div class="card-equipment__image">
+                                                                                <img src="@img/equipment/laser.png"
+                                                                                     alt="equipment cartridge">
+                                                                           </div>
+                                                                      </a>
+                                                                 </div>
+                                                            </div>
+                                                            <div class="card-equipment__dotts dotts"></div>
+                                                       </div>
+                                                       <div class="card-equipment__info">
+                                                            <p class="card-equipment__price">500 000 ₽</p>
+                                                            <a href="#" class="card-equipment__title"
+                                                                 title="Картридж лазерный Pantum TL-5120 "
+                                                                 target="_blank">Картридж лазерный Pantum TL-5120 </a>
+                                                            <p class="card-equipment__text">
+                                                                 МФУ лазерное Pantum M7100DN поставляется в белом цвете.
+                                                                 Поддерживает функционал принтера
+                                                            </p>
+                                                            <div class="card-equipment__status">
+                                                                 <span class="card-equipment__status-active">На
+                                                                      складе</span>
+                                                            </div>
+                                                            <button class="card-equipment__button btn btn-blue-border"
+                                                                 type="button" data-fancybox data-src="#solutions">
+                                                                 <span>Заказать</span>
+                                                            </button>
+                                                       </div>
+
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="products-card-news__slide swiper-slide">
+                                             <div class="tab-equipment__card">
+                                                  <div class="card-equipment">
+                                                       <div class="card-equipment__labels">
+                                                            <div
+                                                                 class="card-equipment__label card-equipment__label--registry">
+                                                                 <span>В реестре</span>
+                                                            </div>
+                                                            <div
+                                                                 class="card-equipment__label card-equipment__label--new">
+                                                                 <span>Новинка</span>
+                                                            </div>
+                                                       </div>
+                                                       <div class="card-equipment__slider swiper">
+                                                            <div class="card-equipment__swiper-wrapper swiper-wrapper">
+                                                                 <div class="card-equipment__slide swiper-slide">
+                                                                      <a href="#" class="card-equipment__slide-link"
+                                                                           target="_blank">
+                                                                           <div class="card-equipment__image">
+                                                                                <img src="@img/equipment/laser.png"
+                                                                                     alt="equipment cartridge">
+                                                                           </div>
+                                                                      </a>
+                                                                 </div>
+                                                                 <div class="card-equipment__slide swiper-slide">
+                                                                      <a href="#" class="card-equipment__slide-link"
+                                                                           target="_blank">
+                                                                           <div class="card-equipment__image">
+                                                                                <img src="@img/equipment/laser.png"
+                                                                                     alt="equipment cartridge">
+                                                                           </div>
+                                                                      </a>
+                                                                 </div>
+                                                                 <div class="card-equipment__slide swiper-slide">
+                                                                      <a href="#" class="card-equipment__slide-link"
+                                                                           target="_blank">
+                                                                           <div class="card-equipment__image">
+                                                                                <img src="@img/equipment/laser.png"
+                                                                                     alt="equipment cartridge">
+                                                                           </div>
+                                                                      </a>
+                                                                 </div>
+                                                            </div>
+                                                            <div class="card-equipment__dotts dotts"></div>
+                                                       </div>
+                                                       <div class="card-equipment__info">
+                                                            <p class="card-equipment__price">500 000 ₽</p>
+                                                            <a href="#" class="card-equipment__title"
+                                                                 title="Картридж лазерный Pantum TL-5120 "
+                                                                 target="_blank">Картридж лазерный Pantum TL-5120 </a>
+                                                            <p class="card-equipment__text">
+                                                                 МФУ лазерное Pantum M7100DN поставляется в белом цвете.
+                                                                 Поддерживает функционал принтера
+                                                            </p>
+                                                            <div class="card-equipment__status">
+                                                                 <span class="card-equipment__status-active">На
+                                                                      складе</span>
+                                                            </div>
+                                                            <button class="card-equipment__button btn btn-blue-border"
+                                                                 type="button" data-fancybox data-src="#solutions">
+                                                                 <span>Заказать</span>
+                                                            </button>
+                                                       </div>
+
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </section>
+               </div>
+          </main>
+          @@include('html/_footer.htm',{})
+     </div>
+     @@include('html/_popup.htm',{})
+     <script
+          src="https://api-maps.yandex.ru/2.1/?apikey=72e4cd21-9400-4735-9cfe-40e993aeb72f&lang=ru_RU&_v=20240307171659"></script>
+     @@include('html/_js.htm',{})
+</body>
+
+</html>

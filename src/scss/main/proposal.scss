@@ -1,0 +1,33 @@
+.proposal {
+     &__container {
+     }
+
+     &__top {
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+          column-gap: 30px;
+          margin-bottom: 32px;
+     }
+
+     &__title {
+     }
+
+     &__button {
+     }
+
+     &__btn-mb {
+          display: none;
+     }
+
+     &__text {
+          max-width: 830px;
+          font-size: 32px;
+          line-height: 130%;
+     }
+
+     &__text-link {
+          color: var(--AcentColor);
+          @include hoverLink;
+     }
+}

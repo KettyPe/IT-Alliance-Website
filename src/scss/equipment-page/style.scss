@@ -1,0 +1,22 @@
+.equipment-page {
+     &__vendors {
+          .vendors {
+               background-color: var(--whiteColor);
+               padding: 0 !important;
+          }
+          .vendors__arrows .swiper-button-disabled {
+               background-color: var(--BackgroundGray) !important; 
+          }
+
+     }
+
+     &__projects {
+          background-color: var(--BackgroundGray);
+          padding: 60px 0px;
+          .content-tabs-help__title {
+               font-size: 48px;
+               line-height: 130%;
+               color: var(--mainColor);
+          }
+     }
+}

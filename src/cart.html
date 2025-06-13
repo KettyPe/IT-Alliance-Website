@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Корзина"
+})
+
+<body>
+     <div class="wrapper">
+          @@include('html/_header.htm',{})
+          <main class="page">
+               <div class="breadcrumbs">
+                    <div class="breadcrumbs__container">
+                         <ul class="breadcrumbs__list">
+                              <li class="breadcrumbs__item">
+                                   <a href="#" target="_blank">Главная</a>
+                              </li>
+                              <li class="breadcrumbs__item">
+                                   <span>Корзина</span>
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+               <div class="cart">
+                    <div class="cart__top mb-8">
+                         <div class="cart__container">
+                              <div class="cart__top-inner">
+                                   <h1 class="cart__title title">Корзина</h1>
+                                   <ul class="cart__actions cart-actions gap-8">
+                                        <li class="cart-actions__item" title="Скачать">
+                                             <a download="#" href="#">
+                                                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M2.25 17.4375C2.66421 17.4375 3 17.7733 3 18.1875V19.6875C3 20.2842 3.23705 20.8565 3.65901 21.2785C4.08097 21.7004 4.65326 21.9375 5.25 21.9375H18.75C19.3467 21.9375 19.919 21.7004 20.341 21.2785C20.7629 20.8565 21 20.2842 21 19.6875V18.1875C21 17.7733 21.3358 17.4375 21.75 17.4375C22.1642 17.4375 22.5 17.7733 22.5 18.1875V19.6875C22.5 20.6821 22.1049 21.6359 21.4016 22.3391C20.6984 23.0424 19.7446 23.4375 18.75 23.4375H5.25C4.25544 23.4375 3.30161 23.0424 2.59835 22.3391C1.89509 21.6359 1.5 20.6821 1.5 19.6875V18.1875C1.5 17.7733 1.83579 17.4375 2.25 17.4375Z"
+                                                            fill="currentColor" />
+                                                       <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M7.01192 10.8681C7.32641 10.5985 7.79989 10.6349 8.06946 10.9494L12 15.5351L15.9306 10.9494C16.2001 10.6349 16.6736 10.5985 16.9881 10.8681C17.3026 11.1376 17.339 11.6111 17.0695 11.9256L12.5695 17.1756C12.427 17.3418 12.219 17.4375 12 17.4375C11.7811 17.4375 11.5731 17.3418 11.4306 17.1756L6.93057 11.9256C6.661 11.6111 6.69743 11.1376 7.01192 10.8681Z"
+                                                            fill="currentColor" />
+                                                       <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M12 2.4375C12.4142 2.4375 12.75 2.77329 12.75 3.1875V16.6875C12.75 17.1017 12.4142 17.4375 12 17.4375C11.5858 17.4375 11.25 17.1017 11.25 16.6875V3.1875C11.25 2.77329 11.5858 2.4375 12 2.4375Z"
+                                                            fill="currentColor" />
+                                                  </svg>
+                                             </a>
+                                        </li>
+                                        <li class="cart-actions__item" title="Распечатать">
+                                             <a href="#">
+                                                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M2.22988 9.12197C2.6497 8.70216 3.21909 8.46631 3.8128 8.46631H20.1872C20.7809 8.46631 21.3503 8.70216 21.7701 9.12197C22.1899 9.54179 22.4258 10.1112 22.4258 10.7049V17.4035C22.4258 17.9972 22.1899 18.5666 21.7701 18.9864C21.3503 19.4062 20.7809 19.6421 20.1872 19.6421H17.21C16.7958 19.6421 16.46 19.3063 16.46 18.8921C16.46 18.4779 16.7958 18.1421 17.21 18.1421H20.1872C20.3831 18.1421 20.5709 18.0643 20.7095 17.9258C20.848 17.7873 20.9258 17.5994 20.9258 17.4035V10.7049C20.9258 10.509 20.848 10.3211 20.7095 10.1826C20.5709 10.0441 20.3831 9.96631 20.1872 9.96631H3.8128C3.61692 9.96631 3.42906 10.0441 3.29054 10.1826C3.15203 10.3211 3.07422 10.509 3.07422 10.7049V17.4035C3.07422 17.5994 3.15203 17.7873 3.29054 17.9258C3.42906 18.0643 3.61692 18.1421 3.8128 18.1421H6.78996C7.20418 18.1421 7.53996 18.4779 7.53996 18.8921C7.53996 19.3063 7.20418 19.6421 6.78996 19.6421H3.8128C3.21909 19.6421 2.6497 19.4062 2.22988 18.9864C1.81007 18.5666 1.57422 17.9972 1.57422 17.4035V10.7049C1.57422 10.1112 1.81007 9.54179 2.22988 9.12197Z"
+                                                            fill="currentColor" />
+                                                       <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M6.04004 16.6592C6.04004 16.245 6.37583 15.9092 6.79004 15.9092H17.2101C17.6243 15.9092 17.9601 16.245 17.9601 16.6592V21.8692C17.9601 22.2655 17.8027 22.6456 17.5224 22.9258C17.2422 23.2061 16.8621 23.3635 16.4658 23.3635H7.53433C7.13802 23.3635 6.75794 23.2061 6.47771 22.9258C6.19747 22.6456 6.04004 22.2655 6.04004 21.8692V16.6592ZM7.54004 17.4092V21.8635H16.4601V17.4092H7.54004Z"
+                                                            fill="currentColor" />
+                                                       <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M6.47771 2.94939C6.75794 2.66915 7.13802 2.51172 7.53433 2.51172H16.4658C16.8621 2.51172 17.2422 2.66915 17.5224 2.94939C17.8027 3.22962 17.9601 3.6097 17.9601 4.00601V9.21605C17.9601 9.63026 17.6243 9.96605 17.2101 9.96605C16.7959 9.96605 16.4601 9.63026 16.4601 9.21605V4.01172H7.54004V9.21605C7.54004 9.63026 7.20425 9.96605 6.79004 9.96605C6.37583 9.96605 6.04004 9.63026 6.04004 9.21605V4.00601C6.04004 3.6097 6.19747 3.22962 6.47771 2.94939Z"
+                                                            fill="currentColor" />
+                                                       <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M15.7163 12.9375C15.7163 12.5233 16.0521 12.1875 16.4663 12.1875H17.9549C18.3691 12.1875 18.7049 12.5233 18.7049 12.9375C18.7049 13.3517 18.3691 13.6875 17.9549 13.6875H16.4663C16.0521 13.6875 15.7163 13.3517 15.7163 12.9375Z"
+                                                            fill="currentColor" />
+                                                  </svg>
+                                             </a>
+                                        </li>
+                                        <li class="cart-actions__item" title="Отправить на почту">
+                                             <button type="button" data-fancybox data-src="#mail">
+                                                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                       xmlns="http://www.w3.org/2000/svg">
+                                                       <g clip-path="url(#clip0_654_4232)">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M2.75 3.8125C2.33579 3.8125 2 4.14829 2 4.5625V17.3125C2 17.7267 2.33579 18.0625 2.75 18.0625H19.25C19.6642 18.0625 20 17.7267 20 17.3125V4.5625C20 4.14829 19.6642 3.8125 19.25 3.8125H2.75ZM0.5 4.5625C0.5 3.31986 1.50736 2.3125 2.75 2.3125H19.25C20.4926 2.3125 21.5 3.31986 21.5 4.5625V17.3125C21.5 18.5551 20.4926 19.5625 19.25 19.5625H2.75C1.50736 19.5625 0.5 18.5551 0.5 17.3125V4.5625Z"
+                                                                 fill="currentColor" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M0.679474 4.4507C0.948331 4.1356 1.42172 4.09812 1.73682 4.36697L10.5228 11.8636C10.6572 11.9743 10.8259 12.035 11 12.035C11.1742 12.035 11.3429 11.9743 11.4772 11.8636L20.2632 4.36697C20.5783 4.09812 21.0517 4.1356 21.3206 4.4507C21.5894 4.76581 21.5519 5.2392 21.2368 5.50805L12.44 13.0138C12.0358 13.3506 11.5262 13.535 11 13.535C10.4738 13.535 9.96431 13.3505 9.56001 13.0138L9.55317 13.0081L0.763205 5.50805C0.448104 5.2392 0.410616 4.76581 0.679474 4.4507Z"
+                                                                 fill="currentColor" />
+                                                       </g>
+                                                       <defs>
+                                                            <clipPath id="clip0_654_4232">
+                                                                 <rect width="21" height="21" fill="white"
+                                                                      transform="translate(0.5 0.4375)" />
+                                                            </clipPath>
+                                                       </defs>
+                                                  </svg>
+                                             </button>
+                                        </li>
+                                   </ul>
+                              </div>
+                              <p class="cart__quantity">4 товара</p>
+                         </div>
+                    </div>
+                    <section class="cart__main">
+                         <div class="cart__container">
+                              <div class="cart__main-block">
+                                   <div class="cart__products products-cart">
+                                        <div class="products-cart__top mb-8 gap-8">
+                                             <div class="products-cart__checkbox checkbox">
+                                                  <input id="all" class="checkbox__input" type="checkbox"
+                                                       value="productsCart" name="cart">
+                                                  <label for="all" class="checkbox__label">
+                                                       <span class="checkbox__text">Выбрать все</span>
+                                                  </label>
+                                             </div>
+                                             <div class="products-cart__quantity">
+                                                  <button class="products-cart__delete" type="button">
+                                                       <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_620_13874)">
+                                                                 <path d="M18.75 10.6875L17.25 22.6875H6.75L5.25 10.6875"
+                                                                      stroke="currentColor" stroke-width="1.5"
+                                                                      stroke-linecap="round" stroke-linejoin="round" />
+                                                                 <path d="M3 7.6875H21" stroke="currentColor"
+                                                                      stroke-width="1.5" stroke-linecap="round"
+                                                                      stroke-linejoin="round" />
+                                                                 <path d="M8.18994 7.25271V4.65771C8.18994 4.25989 8.34798 3.87836 8.62928 3.59705C8.91059 3.31575 9.29212 3.15771 9.68994 3.15771H14.1899C14.5878 3.15771 14.9693 3.31575 15.2506 3.59705C15.5319 3.87836 15.6899 4.25989 15.6899 4.65771V7.65771"
+                                                                      stroke="currentColor" stroke-width="1.5"
+                                                                      stroke-linecap="round" stroke-linejoin="round" />
+                                                            </g>
+                                                            <defs>
+                                                                 <clipPath id="clip0_620_13874">
+                                                                      <rect width="21" height="21" fill="white"
+                                                                           transform="translate(1.5 2.4375)" />
+                                                                 </clipPath>
+                                                            </defs>
+                                                       </svg>
+                                                  </button>
+                                                  <span class="products-cart__number">1</span>
+                                             </div>
+                                        </div>
+                                        <div class="products-cart__cards">
+                                             <article class="products-cart__card products-cart__card--outStock card-products-cart">
+                                                  <div class="card-products-cart__check checkbox">
+                                                       <input id="Laser"
+                                                            class="checkbox__input"
+                                                            type="checkbox" value="productsCart" name="cart">
+                                                       <label for="Laser"
+                                                            class="checkbox__label"></label>
+                                                  </div>
+                                                  <div class="card-products-cart__art-inner">
+                                                       <div class="card-products-cart__image">
+                                                            <img src="@img/equipment/laser.png" alt="equipment laser">
+                                                       </div>
+                                                       <div class="card-products-cart__inner">
+                                                            <p class="card-products-cart__title">МФУ лазерное Pantum M7100DN</p>
+                                                            <div style="display: none;" class="card-products-cart__stepper stepper">
+                                                                 <button type="button"
+                                                                      class="stepper__btn stepper__btn--down stepper__btn--disable"
+                                                                      aria-label="Увеличить количество">
+                                                                      <span>-</span>
+                                                                 </button>
+                                                                 <label class="stepper__field">
+                                                                      <input type="text" value="1" maxlength="5"
+                                                                           class="stepper__input">
+                                                                 </label>
+                                                                 <button type="button"
+                                                                      class="stepper__btn stepper__btn--up"
+                                                                      aria-label="Уменьшить количество">
+                                                                      <span>+</span>
+                                                                 </button>
+                                                            </div>
+                                                       </div>
+                                                       <div class="card-products-cart__info">
+                                                            <div class="card-products-cart__info-main-wrapper">
+                                                                 <div style="display: none;" class="card-products-cart__info-main">
+                                                                      <div class="card-products-cart__info-inner">
+                                                                           <p class="card-products-cart__old-price">50
+                                                                                000
+                                                                                <span>₽</span>
+                                                                           </p>
+                                                                           <div class="card-products-cart__discount">
+                                                                                <span>-30%</span>
+                                                                           </div>
+                                                                      </div>
+                                                                      <p class="card-products-cart__price">35 000
+                                                                           <span>₽</span>
+                                                                      </p>
+                                                                 </div>
+                                                                 <p class="card-products-cart__out-stock">Нет в наличии</p>
+                                                            </div>
+                                                            <button class="card-products-cart__delete" type="button">
+                                                                 <svg width="18" height="19" viewBox="0 0 18 19"
+                                                                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                      <g clip-path="url(#clip0_673_165)">
+                                                                           <path d="M14.0625 7.66504L12.9375 16.665H5.0625L3.9375 7.66504"
+                                                                                stroke="currentColor" stroke-width="1.5"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                           <path d="M2.25 5.41504H15.75"
+                                                                                stroke="currentColor" stroke-width="1.5"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                           <path d="M6.14258 5.08883V3.14258C6.14258 2.84421 6.2611 2.55806 6.47208 2.34708C6.68306 2.1361 6.96921 2.01758 7.26758 2.01758H10.6426C10.9409 2.01758 11.2271 2.1361 11.4381 2.34708C11.6491 2.55806 11.7676 2.84421 11.7676 3.14258V5.39258"
+                                                                                stroke="currentColor" stroke-width="1.5"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                      </g>
+                                                                      <defs>
+                                                                           <clipPath id="clip0_673_165">
+                                                                                <rect width="15.75" height="15.75"
+                                                                                     fill="white"
+                                                                                     transform="translate(1.125 1.47754)" />
+                                                                           </clipPath>
+                                                                      </defs>
+                                                                 </svg>
+                                                                 <span>Удалить</span>
+                                                            </button>
+                                                       </div>
+                                                  </div>
+                                             </article>
+                                             <article class="products-cart__card card-products-cart">
+                                                  <div class="card-products-cart__check checkbox">
+                                                       <input id="Laser2"
+                                                            class="checkbox__input"
+                                                            type="checkbox" value="productsCart" name="cart">
+                                                       <label for="Laser2"
+                                                            class="checkbox__label"></label>
+                                                  </div>
+                                                  <div class="card-products-cart__art-inner">
+                                                       <div class="card-products-cart__image">
+                                                            <img src="@img/equipment/laser.png" alt="equipment laser">
+                                                       </div>
+                                                       <div class="card-products-cart__inner">
+                                                            <p class="card-products-cart__title">МФУ лазерное Pantum M7100DNМФУ лазерное Pantum M7100DN</p>
+                                                            <div class="card-products-cart__stepper stepper">
+                                                                 <button type="button"
+                                                                      class="stepper__btn stepper__btn--down stepper__btn--disable"
+                                                                      aria-label="Увеличить количество">
+                                                                      <span>-</span>
+                                                                 </button>
+                                                                 <label class="stepper__field">
+                                                                      <input type="text" value="1" maxlength="5"
+                                                                           class="stepper__input">
+                                                                 </label>
+                                                                 <button type="button"
+                                                                      class="stepper__btn stepper__btn--up"
+                                                                      aria-label="Уменьшить количество">
+                                                                      <span>+</span>
+                                                                 </button>
+                                                            </div>
+                                                       </div>
+                                                       <div class="card-products-cart__info">
+                                                            <div class="card-products-cart__info-main-wrapper">
+                                                                 <div class="card-products-cart__info-main">
+                                                                      <div class="card-products-cart__info-inner">
+                                                                           <p class="card-products-cart__old-price">50
+                                                                                000
+                                                                                <span>₽</span>
+                                                                           </p>
+                                                                           <div class="card-products-cart__discount">
+                                                                                <span>-30%</span>
+                                                                           </div>
+                                                                      </div>
+                                                                      <p class="card-products-cart__price">35 000
+                                                                           <span>₽</span>
+                                                                      </p>
+                                                                 </div>
+                                                                 <p style="display: none;" class="card-products-cart__out-stock">Нет в наличии</p>
+                                                            </div>
+                                                            <button class="card-products-cart__delete" type="button">
+                                                                 <svg width="18" height="19" viewBox="0 0 18 19"
+                                                                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                      <g clip-path="url(#clip0_673_165)">
+                                                                           <path d="M14.0625 7.66504L12.9375 16.665H5.0625L3.9375 7.66504"
+                                                                                stroke="currentColor" stroke-width="1.5"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                           <path d="M2.25 5.41504H15.75"
+                                                                                stroke="currentColor" stroke-width="1.5"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                           <path d="M6.14258 5.08883V3.14258C6.14258 2.84421 6.2611 2.55806 6.47208 2.34708C6.68306 2.1361 6.96921 2.01758 7.26758 2.01758H10.6426C10.9409 2.01758 11.2271 2.1361 11.4381 2.34708C11.6491 2.55806 11.7676 2.84421 11.7676 3.14258V5.39258"
+                                                                                stroke="currentColor" stroke-width="1.5"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                      </g>
+                                                                      <defs>
+                                                                           <clipPath id="clip0_673_165">
+                                                                                <rect width="15.75" height="15.75"
+                                                                                     fill="white"
+                                                                                     transform="translate(1.125 1.47754)" />
+                                                                           </clipPath>
+                                                                      </defs>
+                                                                 </svg>
+                                                                 <span>Удалить</span>
+                                                            </button>
+                                                       </div>
+                                                  </div>
+                                             </article>
+                                             <article class="products-cart__card card-products-cart">
+                                                  <div class="card-products-cart__check checkbox">
+                                                       <input id="Laser3"
+                                                            class="checkbox__input"
+                                                            type="checkbox" value="productsCart" name="cart">
+                                                       <label for="Laser3"
+                                                            class="checkbox__label"></label>
+                                                  </div>
+                                                  <div class="card-products-cart__art-inner">
+                                                       <div class="card-products-cart__image">
+                                                            <img src="@img/equipment/laser.png" alt="equipment laser">
+                                                       </div>
+                                                       <div class="card-products-cart__inner">
+                                                            <p class="card-products-cart__title">МФУ лазерное Pantum M7100DN</p>
+                                                            <div class="card-products-cart__stepper stepper">
+                                                                 <button type="button"
+                                                                      class="stepper__btn stepper__btn--down stepper__btn--disable"
+                                                                      aria-label="Увеличить количество">
+                                                                      <span>-</span>
+                                                                 </button>
+                                                                 <label class="stepper__field">
+                                                                      <input type="text" value="1" maxlength="5"
+                                                                           class="stepper__input">
+                                                                 </label>
+                                                                 <button type="button"
+                                                                      class="stepper__btn stepper__btn--up"
+                                                                      aria-label="Уменьшить количество">
+                                                                      <span>+</span>
+                                                                 </button>
+                                                            </div>
+                                                       </div>
+                                                       <div class="card-products-cart__info">
+                                                            <div class="card-products-cart__info-main-wrapper">
+                                                                 <div class="card-products-cart__info-main">
+                                                                      <p class="card-products-cart__price">35 000
+                                                                           <span>₽</span>
+                                                                      </p>
+                                                                 </div>
+                                                                 <p style="display: none;" class="card-products-cart__out-stock">Нет в наличии</p>
+                                                            </div>
+                                                            <button class="card-products-cart__delete" type="button">
+                                                                 <svg width="18" height="19" viewBox="0 0 18 19"
+                                                                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                      <g clip-path="url(#clip0_673_165)">
+                                                                           <path d="M14.0625 7.66504L12.9375 16.665H5.0625L3.9375 7.66504"
+                                                                                stroke="currentColor" stroke-width="1.5"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                           <path d="M2.25 5.41504H15.75"
+                                                                                stroke="currentColor" stroke-width="1.5"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                           <path d="M6.14258 5.08883V3.14258C6.14258 2.84421 6.2611 2.55806 6.47208 2.34708C6.68306 2.1361 6.96921 2.01758 7.26758 2.01758H10.6426C10.9409 2.01758 11.2271 2.1361 11.4381 2.34708C11.6491 2.55806 11.7676 2.84421 11.7676 3.14258V5.39258"
+                                                                                stroke="currentColor" stroke-width="1.5"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                      </g>
+                                                                      <defs>
+                                                                           <clipPath id="clip0_673_165">
+                                                                                <rect width="15.75" height="15.75"
+                                                                                     fill="white"
+                                                                                     transform="translate(1.125 1.47754)" />
+                                                                           </clipPath>
+                                                                      </defs>
+                                                                 </svg>
+                                                                 <span>Удалить</span>
+                                                            </button>
+                                                       </div>
+                                                  </div>
+                                             </article>
+                                        </div>
+                                   </div>
+                                   <div class="cart__total total-cart">
+                                        <div class="total-cart__body gap-8">
+                                             <p class="total-cart__title">Сумма заказа</p>
+                                             <div class="total-cart__rows">
+                                                  <div class="total-cart__row">
+                                                       <p><span>3</span> товара</p>
+                                                       <p>200 000 <span>₽</span></p>
+                                                  </div>
+                                                  <div class="total-cart__row total-cart__row--discount">
+                                                       <p>Скидка</p>
+                                                       <p>-30 000 <span>₽</span></p>
+                                                  </div>
+                                             </div>
+                                             <div class="total-cart__amount">
+                                                  <div class="total-cart__row total-cart__row--amount">
+                                                       <p>Итого</p>
+                                                       <p>200 000 <span>₽</span></p>
+                                                  </div>
+                                                  <p class="total-cart__text">*точную стоимость на текущий момент
+                                                       уточняйте у менеджеров отдела продаж</p>
+                                                  <button class="total-cart__button btn btn-dark"
+                                                       type="button"><span>Заказать</span></button>
+                                             </div>
+                                             <div class="total-cart__promo promo-cart">
+                                                  <div class="promo-cart__top">
+                                                       <div class="promo-cart__icon">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                 <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                      d="M2.46967 4.46967C3.45818 3.48116 5.00536 3.25 7 3.25H17C18.9946 3.25 20.5418 3.48116 21.5303 4.46967C22.5188 5.45818 22.75 7.00536 22.75 9V10C22.75 10.4142 22.4142 10.75 22 10.75C21.0342 10.75 20.25 11.5342 20.25 12.5C20.25 13.4658 21.0342 14.25 22 14.25C22.4142 14.25 22.75 14.5858 22.75 15C22.75 16.9946 22.5188 18.5418 21.5303 19.5303C20.5418 20.5188 18.9946 20.75 17 20.75H7C5.00536 20.75 3.45818 20.5188 2.46967 19.5303C1.48116 18.5418 1.25 16.9946 1.25 15V14.5C1.25 14.0858 1.58579 13.75 2 13.75C2.96579 13.75 3.75 12.9658 3.75 12C3.75 11.0342 2.96579 10.25 2 10.25C1.58579 10.25 1.25 9.91421 1.25 9.5V9C1.25 7.00536 1.48116 5.45818 2.46967 4.46967ZM2.75061 8.8372C4.18324 9.17623 5.25 10.4641 5.25 12C5.25 13.5359 4.18324 14.8238 2.75061 15.1628C2.76494 17.0573 3.03288 17.9722 3.53033 18.4697C4.04182 18.9812 4.99464 19.25 7 19.25H17C19.0054 19.25 19.9582 18.9812 20.4697 18.4697C20.9214 18.0179 21.1839 17.2218 21.239 15.6603C19.8116 15.3176 18.75 14.0322 18.75 12.5C18.75 10.9639 19.8171 9.67586 21.25 9.33706V9C21.25 6.99464 20.9812 6.04182 20.4697 5.53033C19.9582 5.01884 19.0054 4.75 17 4.75H7C4.99464 4.75 4.04182 5.01884 3.53033 5.53033C3.03288 6.02778 2.76494 6.94266 2.75061 8.8372Z"
+                                                                      fill="currentColor" />
+                                                                 <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                      d="M15.5303 8.21967C15.8232 8.51256 15.8232 8.98744 15.5303 9.28033L9.53033 15.2803C9.23744 15.5732 8.76256 15.5732 8.46967 15.2803C8.17678 14.9874 8.17678 14.5126 8.46967 14.2197L14.4697 8.21967C14.7626 7.92678 15.2374 7.92678 15.5303 8.21967Z"
+                                                                      fill="currentColor" />
+                                                                 <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                      d="M13.9946 14.75C13.9946 14.1977 14.4423 13.75 14.9946 13.75H15.0036C15.5559 13.75 16.0036 14.1977 16.0036 14.75C16.0036 15.3023 15.5559 15.75 15.0036 15.75H14.9946C14.4423 15.75 13.9946 15.3023 13.9946 14.75Z"
+                                                                      fill="currentColor" />
+                                                                 <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                      d="M7.99463 9.25C7.99463 8.69772 8.44234 8.25 8.99463 8.25H9.00361C9.5559 8.25 10.0036 8.69772 10.0036 9.25C10.0036 9.80228 9.5559 10.25 9.00361 10.25H8.99463C8.44234 10.25 7.99463 9.80228 7.99463 9.25Z"
+                                                                      fill="currentColor" />
+                                                            </svg>
+                                                       </div>
+                                                       <p class="promo-cart__title">Промокоды и сертификаты</p>
+                                                       <div class="promo-cart__arrow">
+                                                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                 <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                      d="M4.86957 9.86567C5.16247 9.57277 5.63734 9.57277 5.93023 9.86567L11.3636 15.299C11.7123 15.6478 12.2875 15.6478 12.6362 15.299L18.0696 9.86567C18.3625 9.57277 18.8373 9.57277 19.1302 9.86567C19.4231 10.1586 19.4231 10.6334 19.1302 10.9263L13.6969 16.3597C12.7623 17.2942 11.2375 17.2942 10.3029 16.3597L4.86957 10.9263C4.57668 10.6334 4.57668 10.1586 4.86957 9.86567Z"
+                                                                      fill="currentColor" />
+                                                            </svg>
+                                                       </div>
+                                                  </div>
+                                                  <div class="promo-cart__actions">
+                                                       <div class="promo-cart__actions-row">
+                                                            <div class="promo-cart__item">
+                                                                 <input id="formCartPromo" class="promo-cart__input input"
+                                                                      type="text">
+                                                                 <label for="formCartPromo" class="promo-cart__label promo-cart__label--promo label">Промокод</label>
+                                                                 <label style="display: none;" for="formCartPromo" class="promo-cart__label promo-cart__label--promoActive label">Промокод применен</label>
+                                                            </div>
+                                                            <button class="promo-cart__button btn btn-dark-border"
+                                                                 type="button"><span>Применить</span></button>
+                                                            <button style="display: none;"
+                                                                 class="promo-cart__button btn btn-dark-border"
+                                                                 type="button"><span>Удалить</span></button>
+                                                       </div>
+                                                       <p class="promo-cart__error">Промокод не применен</p>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </section>
+                    <section class="cart__products products-card-news">
+                         <div class="products-card-news__container">
+                              <div class="products-card-news__top mb-8">
+                                   <h5 class="products-card-news__title products-card-news__title--cart subtitle">Может пригодиться</h5>
+                                   <div class="products-card-news__arrows arrows">
+                                        <button
+                                             class="products-card-news__arrow products-card-news__arrow-prev arrow arrow-blue"
+                                             type="button">
+                                             @@include('html/icons/arrow-left.htm')
+                                        </button>
+                                        <button
+                                             class="products-card-news__arrow products-card-news__arrow-next arrow arrow-blue"
+                                             type="button">
+                                             @@include('html/icons/arrow-right.htm')
+                                        </button>
+                                   </div>
+                              </div>
+                              <div class="cart-help__slider swiper mb-8">
+                                   <div class="cart-help__swiper-wrapper swiper-wrapper">
+                                        <div class="cart-help__slide swiper-slide">
+                                             <div class="card-equipment">
+                                                  <div class="card-equipment__labels">
+                                                       <div
+                                                            class="card-equipment__label card-equipment__label--registry">
+                                                            <span>В реестре</span>
+                                                       </div>
+                                                       <div
+                                                            class="card-equipment__label card-equipment__label--new">
+                                                            <span>Новинка</span>
+                                                       </div>
+                                                  </div>
+                                                  <div class="card-equipment__slider swiper">
+                                                       <div class="card-equipment__swiper-wrapper swiper-wrapper">
+                                                            <div class="card-equipment__slide swiper-slide">
+                                                                 <a href="#" class="card-equipment__slide-link"
+                                                                      target="_blank">
+                                                                      <div class="card-equipment__image">
+                                                                           <img src="@img/equipment/laser.png"
+                                                                                alt="equipment cartridge">
+                                                                      </div>
+                                                                 </a>
+                                                            </div>
+                                                            <div class="card-equipment__slide swiper-slide">
+                                                                 <a href="#" class="card-equipment__slide-link"
+                                                                      target="_blank">
+                                                                      <div class="card-equipment__image">
+                                                                           <img src="@img/equipment/laser.png"
+                                                                                alt="equipment cartridge">
+                                                                      </div>
+                                                                 </a>
+                                                            </div>
+                                                            <div class="card-equipment__slide swiper-slide">
+                                                                 <a href="#" class="card-equipment__slide-link"
+                                                                      target="_blank">
+                                                                      <div class="card-equipment__image">
+                                                                           <img src="@img/equipment/laser.png"
+                                                                                alt="equipment cartridge">
+                                                                      </div>
+                                                                 </a>
+                                                            </div>
+                                                       </div>
+                                                       <div class="card-equipment__dotts dotts"></div>
+                                                  </div>
+                                                  <div class="card-equipment__info">
+                                                       <p class="card-equipment__price">500 000 ₽</p>
+                                                       <a href="#" class="card-equipment__title"
+                                                            title="Картридж лазерный Pantum TL-5120 "
+                                                            target="_blank">Картридж лазерный Pantum TL-5120 </a>
+                                                       <p class="card-equipment__text">
+                                                            МФУ лазерное Pantum M7100DN поставляется в белом цвете.
+                                                            Поддерживает функционал принтера
+                                                       </p>
+                                                       <div class="card-equipment__status">
+                                                            <span class="card-equipment__status-active">На
+                                                                 складе</span>
+                                                       </div>
+                                                       <button class="card-equipment__button btn btn-blue-border"
+                                                            type="button" data-fancybox data-src="#solutions">
+                                                            <span>Заказать</span>
+                                                       </button>
+                                                  </div>
+
+                                             </div>
+                                        </div>
+                                        <div class="cart-help__slide swiper-slide">
+                                             <div class="card-equipment">
+                                                  <div class="card-equipment__labels">
+                                                       <div
+                                                            class="card-equipment__label card-equipment__label--registry">
+                                                            <span>В реестре</span>
+                                                       </div>
+                                                       <div
+                                                            class="card-equipment__label card-equipment__label--new">
+                                                            <span>Новинка</span>
+                                                       </div>
+                                                  </div>
+                                                  <div class="card-equipment__slider swiper">
+                                                       <div class="card-equipment__swiper-wrapper swiper-wrapper">
+                                                            <div class="card-equipment__slide swiper-slide">
+                                                                 <a href="#" class="card-equipment__slide-link"
+                                                                      target="_blank">
+                                                                      <div class="card-equipment__image">
+                                                                           <img src="@img/equipment/laser.png"
+                                                                                alt="equipment cartridge">
+                                                                      </div>
+                                                                 </a>
+                                                            </div>
+                                                            <div class="card-equipment__slide swiper-slide">
+                                                                 <a href="#" class="card-equipment__slide-link"
+                                                                      target="_blank">
+                                                                      <div class="card-equipment__image">
+                                                                           <img src="@img/equipment/laser.png"
+                                                                                alt="equipment cartridge">
+                                                                      </div>
+                                                                 </a>
+                                                            </div>
+                                                            <div class="card-equipment__slide swiper-slide">
+                                                                 <a href="#" class="card-equipment__slide-link"
+                                                                      target="_blank">
+                                                                      <div class="card-equipment__image">
+                                                                           <img src="@img/equipment/laser.png"
+                                                                                alt="equipment cartridge">
+                                                                      </div>
+                                                                 </a>
+                                                            </div>
+                                                       </div>
+                                                       <div class="card-equipment__dotts dotts"></div>
+                                                  </div>
+                                                  <div class="card-equipment__info">
+                                                       <p class="card-equipment__price">500 000 ₽</p>
+                                                       <a href="#" class="card-equipment__title"
+                                                            title="Картридж лазерный Pantum TL-5120 "
+                                                            target="_blank">Картридж лазерный Pantum TL-5120 </a>
+                                                       <p class="card-equipment__text">
+                                                            МФУ лазерное Pantum M7100DN поставляется в белом цвете.
+                                                            Поддерживает функционал принтера
+                                                       </p>
+                                                       <div class="card-equipment__status">
+                                                            <span class="card-equipment__status-active">На
+                                                                 складе</span>
+                                                       </div>
+                                                       <button class="card-equipment__button btn btn-blue-border"
+                                                            type="button" data-fancybox data-src="#solutions">
+                                                            <span>Заказать</span>
+                                                       </button>
+                                                  </div>
+
+                                             </div>
+                                        </div>
+                                        <div class="cart-help__slide swiper-slide">
+                                             <div class="card-equipment">
+                                                  <div class="card-equipment__labels">
+                                                       <div
+                                                            class="card-equipment__label card-equipment__label--registry">
+                                                            <span>В реестре</span>
+                                                       </div>
+                                                       <div
+                                                            class="card-equipment__label card-equipment__label--new">
+                                                            <span>Новинка</span>
+                                                       </div>
+                                                  </div>
+                                                  <div class="card-equipment__slider swiper">
+                                                       <div class="card-equipment__swiper-wrapper swiper-wrapper">
+                                                            <div class="card-equipment__slide swiper-slide">
+                                                                 <a href="#" class="card-equipment__slide-link"
+                                                                      target="_blank">
+                                                                      <div class="card-equipment__image">
+                                                                           <img src="@img/equipment/laser.png"
+                                                                                alt="equipment cartridge">
+                                                                      </div>
+                                                                 </a>
+                                                            </div>
+                                                            <div class="card-equipment__slide swiper-slide">
+                                                                 <a href="#" class="card-equipment__slide-link"
+                                                                      target="_blank">
+                                                                      <div class="card-equipment__image">
+                                                                           <img src="@img/equipment/laser.png"
+                                                                                alt="equipment cartridge">
+                                                                      </div>
+                                                                 </a>
+                                                            </div>
+                                                            <div class="card-equipment__slide swiper-slide">
+                                                                 <a href="#" class="card-equipment__slide-link"
+                                                                      target="_blank">
+                                                                      <div class="card-equipment__image">
+                                                                           <img src="@img/equipment/laser.png"
+                                                                                alt="equipment cartridge">
+                                                                      </div>
+                                                                 </a>
+                                                            </div>
+                                                       </div>
+                                                       <div class="card-equipment__dotts dotts"></div>
+                                                  </div>
+                                                  <div class="card-equipment__info">
+                                                       <p class="card-equipment__price">500 000 ₽</p>
+                                                       <a href="#" class="card-equipment__title"
+                                                            title="Картридж лазерный Pantum TL-5120 "
+                                                            target="_blank">Картридж лазерный Pantum TL-5120 </a>
+                                                       <p class="card-equipment__text">
+                                                            МФУ лазерное Pantum M7100DN поставляется в белом цвете.
+                                                            Поддерживает функционал принтера
+                                                       </p>
+                                                       <div class="card-equipment__status">
+                                                            <span class="card-equipment__status-active">На
+                                                                 складе</span>
+                                                       </div>
+                                                       <button class="card-equipment__button btn btn-blue-border"
+                                                            type="button" data-fancybox data-src="#solutions">
+                                                            <span>Заказать</span>
+                                                       </button>
+                                                  </div>
+
+                                             </div>
+                                        </div>
+                                                                                <div class="cart-help__slide swiper-slide">
+                                             <div class="card-equipment">
+                                                  <div class="card-equipment__labels">
+                                                       <div
+                                                            class="card-equipment__label card-equipment__label--registry">
+                                                            <span>В реестре</span>
+                                                       </div>
+                                                       <div
+                                                            class="card-equipment__label card-equipment__label--new">
+                                                            <span>Новинка</span>
+                                                       </div>
+                                                  </div>
+                                                  <div class="card-equipment__slider swiper">
+                                                       <div class="card-equipment__swiper-wrapper swiper-wrapper">
+                                                            <div class="card-equipment__slide swiper-slide">
+                                                                 <a href="#" class="card-equipment__slide-link"
+                                                                      target="_blank">
+                                                                      <div class="card-equipment__image">
+                                                                           <img src="@img/equipment/laser.png"
+                                                                                alt="equipment cartridge">
+                                                                      </div>
+                                                                 </a>
+                                                            </div>
+                                                            <div class="card-equipment__slide swiper-slide">
+                                                                 <a href="#" class="card-equipment__slide-link"
+                                                                      target="_blank">
+                                                                      <div class="card-equipment__image">
+                                                                           <img src="@img/equipment/laser.png"
+                                                                                alt="equipment cartridge">
+                                                                      </div>
+                                                                 </a>
+                                                            </div>
+                                                            <div class="card-equipment__slide swiper-slide">
+                                                                 <a href="#" class="card-equipment__slide-link"
+                                                                      target="_blank">
+                                                                      <div class="card-equipment__image">
+                                                                           <img src="@img/equipment/laser.png"
+                                                                                alt="equipment cartridge">
+                                                                      </div>
+                                                                 </a>
+                                                            </div>
+                                                       </div>
+                                                       <div class="card-equipment__dotts dotts"></div>
+                                                  </div>
+                                                  <div class="card-equipment__info">
+                                                       <p class="card-equipment__price">500 000 ₽</p>
+                                                       <a href="#" class="card-equipment__title"
+                                                            title="Картридж лазерный Pantum TL-5120 "
+                                                            target="_blank">Картридж лазерный Pantum TL-5120 </a>
+                                                       <p class="card-equipment__text">
+                                                            МФУ лазерное Pantum M7100DN поставляется в белом цвете.
+                                                            Поддерживает функционал принтера
+                                                       </p>
+                                                       <div class="card-equipment__status">
+                                                            <span class="card-equipment__status-active">На
+                                                                 складе</span>
+                                                       </div>
+                                                       <button class="card-equipment__button btn btn-blue-border"
+                                                            type="button" data-fancybox data-src="#solutions">
+                                                            <span>Заказать</span>
+                                                       </button>
+                                                  </div>
+
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </section>
+               </div>
+          </main>
+          @@include('html/_footer.htm',{})
+     </div>
+     @@include('html/_popup.htm',{})
+     <script src="https://api-maps.yandex.ru/2.1/?apikey=72e4cd21-9400-4735-9cfe-40e993aeb72f&lang=ru_RU&_v=20240307171659"></script>
+     @@include('html/_js.htm',{})
+</body>
+
+</html>

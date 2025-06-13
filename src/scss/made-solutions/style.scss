@@ -1,0 +1,38 @@
+.baner-made-solutions {
+     &__container {
+     }
+
+     &__inner {
+          border-radius: 20px;
+          padding: 40px;
+          background-color: var(--BgDark);
+          color: var(--whiteColor);
+     }
+
+     &__title {
+     }
+
+     &__subtitle {
+          font-size: 24px;
+          line-height: 133%;
+          max-width: 680px;
+     }
+
+     &__btn-wrapper {
+          display: flex;
+     }
+
+     &__button {
+     }
+}
+
+.made-solutions {
+     &__inner {
+          display: flex;
+          column-gap: 32px;
+     }
+
+     &__filter {
+          flex: 0 0 352px;
+     }
+}

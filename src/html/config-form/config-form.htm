@@ -1,0 +1,554 @@
+<section class="config-form">
+     <div class="config-form__container">
+          <h3 class="config-form__title mb-8">Свяжемся с вами , уточним детали, подготовим коммерческе
+               предложение</h3>
+          <div class="config-form__form-body form-config gap-8">
+               <div class="form-config__rows">
+                    <div class="form-config__row mb-8">
+                         <p class="form-config__title mb-6">Описание проекта</p>
+                         <ul class="form-config__inner">
+                              <li class="form-config__item">
+                                   <p class="form-config__radio-title">Оснащаем новый объект?</p>
+                                   <div class="form-config__radio-wrapper">
+                                        <div class="form-config__radio radio-config">
+                                             <input id="yesObject" class="radio-config__input" checked
+                                                  type="radio" value="Yes" name="object">
+                                             <label for="yesObject" class="radio-config__label">
+                                                  <span class="radio-config__text">Да</span>
+                                             </label>
+                                        </div>
+                                        <div class="form-config__radio radio-config">
+                                             <input id="noObject" class="radio-config__input"
+                                                  type="radio" value="No" name="object">
+                                             <label for="noObject" class="radio-config__label">
+                                                  <span class="radio-config__text">Нет</span>
+                                             </label>
+                                        </div>
+                                   </div>
+                              </li>
+                              <li class="form-config__item">
+                                   <p class="form-config__radio-title">Заменяем устаревшее оборудование?
+                                   </p>
+                                   <div class="form-config__radio-wrapper">
+                                        <div class="form-config__radio radio-config">
+                                             <input id="yesEquipment" class="radio-config__input" checked
+                                                  type="radio" value="Yes" name="equipment">
+                                             <label for="yesEquipment" class="radio-config__label">
+                                                  <span class="radio-config__text">Да</span>
+                                             </label>
+                                        </div>
+                                        <div class="form-config__radio radio-config">
+                                             <input id="noEquipment" class="radio-config__input"
+                                                  type="radio" value="No" name="equipment">
+                                             <label for="noEquipment" class="radio-config__label">
+                                                  <span class="radio-config__text">Нет</span>
+                                             </label>
+                                        </div>
+                                   </div>
+                              </li>
+                              <li class="form-config__item">
+                                   <p class="form-config__radio-title">Модернизируем существующий объект?
+                                   </p>
+                                   <div class="form-config__radio-wrapper">
+                                        <div class="form-config__radio radio-config">
+                                             <input id="yesUpgrade" class="radio-config__input" checked
+                                                  type="radio" value="Yes" name="upgrade">
+                                             <label for="yesUpgrade" class="radio-config__label">
+                                                  <span class="radio-config__text">Да</span>
+                                             </label>
+                                        </div>
+                                        <div class="form-config__radio radio-config">
+                                             <input id="noUpgrade" class="radio-config__input"
+                                                  type="radio" value="No" name="upgrade">
+                                             <label for="noUpgrade" class="radio-config__label">
+                                                  <span class="radio-config__text">Нет</span>
+                                             </label>
+                                        </div>
+                                   </div>
+                              </li>
+                              <li class="form-config__item">
+                                   <div class="form-config__dropdown dropdown-config dropdown">
+                                        <button class="dropdown-config__btn dropdown-btn" type="button">
+                                             <p class="dropdown-config__title dropdown-title">
+                                                  Будут ли проходить строительно-монтажные работы на
+                                                  объекте?
+                                             </p>
+                                             <span
+                                                  class="dropdown-config__text dropdown-btn-text"></span>
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                                       d="M4.86969 9.53071C5.16259 9.23781 5.63746 9.23781 5.93035 9.53071L11.3637 14.964C11.7125 15.3128 12.2876 15.3128 12.6364 14.964L18.0697 9.53071C18.3626 9.23781 18.8375 9.23781 19.1304 9.53071C19.4232 9.8236 19.4232 10.2985 19.1304 10.5914L13.697 16.0247C12.7625 16.9593 11.2376 16.9593 10.303 16.0247L4.86969 10.5914C4.5768 10.2985 4.5768 9.8236 4.86969 9.53071Z"
+                                                       fill="currentColor" />
+                                             </svg>
+                                        </button>
+                                        <ul class="dropdown-config__list dropdown-list">
+                                             <li class="dropdown-config__search search-dropdown">
+                                                  <input class="search-dropdown__input"
+                                                       placeholder="Поиск" autofocus type="text">
+                                                  <button class="search-dropdown__btn-loop"
+                                                       type="button">
+                                                       <svg width="16" height="16" viewBox="0 0 16 16"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M6 2C8.20914 2 10 3.79086 10 6C10 8.20914 8.20914 10 6 10C3.79086 10 2 8.20914 2 6C2 3.79086 3.79086 2 6 2ZM11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11C8.76142 11 11 8.76142 11 6Z"
+                                                                 fill="currentColor" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M6.67215 3.61662C6.39327 3.51697 6.09573 3.4805 5.80104 3.50984C5.50635 3.53918 5.22184 3.6336 4.96809 3.78629C4.71433 3.93897 4.49764 4.1461 4.33368 4.39272C4.1808 4.62268 4.24328 4.93304 4.47324 5.08592C4.7032 5.23881 5.01355 5.17632 5.16644 4.94636C5.24842 4.82305 5.35676 4.71949 5.48364 4.64314C5.61052 4.5668 5.75277 4.51959 5.90012 4.50492C6.04747 4.49025 6.19623 4.50848 6.33567 4.55831C6.47512 4.60813 6.60175 4.6883 6.70644 4.79303C6.90166 4.98833 7.21824 4.98839 7.41354 4.79316C7.60884 4.59794 7.6089 4.28136 7.41368 4.08606C7.20431 3.87661 6.95104 3.71627 6.67215 3.61662Z"
+                                                                 fill="currentColor" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M8.54994 9.09345C8.36424 9.29783 8.37938 9.61405 8.58376 9.79975L14.1638 14.8698C14.3681 15.0554 14.6844 15.0403 14.8701 14.8359C15.0558 14.6315 15.0406 14.3153 14.8362 14.1296L9.25623 9.05963C9.05186 8.87393 8.73564 8.88908 8.54994 9.09345Z"
+                                                                 fill="currentColor" />
+                                                       </svg>
+                                                  </button>
+                                             </li>
+                                             <li class="dropdown-config__item dropdown-item">
+                                                  <p>Текст</p>
+                                             </li>
+                                             <li class="dropdown-config__item dropdown-item">
+                                                  <p>Текст 1</p>
+                                             </li>
+                                             <li class="dropdown-config__item dropdown-item">
+                                                  <p>Текст 2</p>
+                                             </li>
+                                             <li class="dropdown-config__item dropdown-item">
+                                                  <p>Текст 3</p>
+                                             </li>
+                                        </ul>
+                                        <input type="text" name="select-objects" value=""
+                                             class="dropdown-config__input dropdown-input">
+                                   </div>
+                              </li>
+                              <li class="form-config__item">
+                                   <div class="form-config__dropdown dropdown-config dropdown">
+                                        <button class="dropdown-config__btn dropdown-btn" type="button">
+                                             <p class="dropdown-config__title dropdown-title">
+                                                  Для кого делаем систему?
+                                             </p>
+                                             <span
+                                                  class="dropdown-config__text dropdown-btn-text"></span>
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                                       d="M4.86969 9.53071C5.16259 9.23781 5.63746 9.23781 5.93035 9.53071L11.3637 14.964C11.7125 15.3128 12.2876 15.3128 12.6364 14.964L18.0697 9.53071C18.3626 9.23781 18.8375 9.23781 19.1304 9.53071C19.4232 9.8236 19.4232 10.2985 19.1304 10.5914L13.697 16.0247C12.7625 16.9593 11.2376 16.9593 10.303 16.0247L4.86969 10.5914C4.5768 10.2985 4.5768 9.8236 4.86969 9.53071Z"
+                                                       fill="currentColor" />
+                                             </svg>
+                                        </button>
+                                        <ul class="dropdown-config__list dropdown-list">
+                                             <li class="dropdown-config__search search-dropdown">
+                                                  <input class="search-dropdown__input"
+                                                       placeholder="Поиск" autofocus type="text">
+                                                  <button class="search-dropdown__btn-loop"
+                                                       type="button">
+                                                       <svg width="16" height="16" viewBox="0 0 16 16"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M6 2C8.20914 2 10 3.79086 10 6C10 8.20914 8.20914 10 6 10C3.79086 10 2 8.20914 2 6C2 3.79086 3.79086 2 6 2ZM11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11C8.76142 11 11 8.76142 11 6Z"
+                                                                 fill="currentColor" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M6.67215 3.61662C6.39327 3.51697 6.09573 3.4805 5.80104 3.50984C5.50635 3.53918 5.22184 3.6336 4.96809 3.78629C4.71433 3.93897 4.49764 4.1461 4.33368 4.39272C4.1808 4.62268 4.24328 4.93304 4.47324 5.08592C4.7032 5.23881 5.01355 5.17632 5.16644 4.94636C5.24842 4.82305 5.35676 4.71949 5.48364 4.64314C5.61052 4.5668 5.75277 4.51959 5.90012 4.50492C6.04747 4.49025 6.19623 4.50848 6.33567 4.55831C6.47512 4.60813 6.60175 4.6883 6.70644 4.79303C6.90166 4.98833 7.21824 4.98839 7.41354 4.79316C7.60884 4.59794 7.6089 4.28136 7.41368 4.08606C7.20431 3.87661 6.95104 3.71627 6.67215 3.61662Z"
+                                                                 fill="currentColor" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M8.54994 9.09345C8.36424 9.29783 8.37938 9.61405 8.58376 9.79975L14.1638 14.8698C14.3681 15.0554 14.6844 15.0403 14.8701 14.8359C15.0558 14.6315 15.0406 14.3153 14.8362 14.1296L9.25623 9.05963C9.05186 8.87393 8.73564 8.88908 8.54994 9.09345Z"
+                                                                 fill="currentColor" />
+                                                       </svg>
+                                                  </button>
+                                             </li>
+                                             <li class="dropdown-config__item dropdown-item">
+                                                  <p>Текст</p>
+                                             </li>
+                                             <li class="dropdown-config__item dropdown-item">
+                                                  <p>Текст 1</p>
+                                             </li>
+                                             <li class="dropdown-config__item dropdown-item">
+                                                  <p>Текст 2</p>
+                                             </li>
+                                             <li class="dropdown-config__item dropdown-item">
+                                                  <p>Текст 3</p>
+                                             </li>
+                                        </ul>
+                                        <input type="text" name="select-objects" value=""
+                                             class="dropdown-config__input dropdown-input">
+                                   </div>
+                              </li>
+                              <li class="form-config__item">
+                                   <div class="form-config__dropdown dropdown-config dropdown">
+                                        <button class="dropdown-config__btn dropdown-btn" type="button">
+                                             <p class="dropdown-config__title dropdown-title">
+                                                  Область, для которой подбираем оснащение
+                                             </p>
+                                             <span
+                                                  class="dropdown-config__text dropdown-btn-text"></span>
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                                       d="M4.86969 9.53071C5.16259 9.23781 5.63746 9.23781 5.93035 9.53071L11.3637 14.964C11.7125 15.3128 12.2876 15.3128 12.6364 14.964L18.0697 9.53071C18.3626 9.23781 18.8375 9.23781 19.1304 9.53071C19.4232 9.8236 19.4232 10.2985 19.1304 10.5914L13.697 16.0247C12.7625 16.9593 11.2376 16.9593 10.303 16.0247L4.86969 10.5914C4.5768 10.2985 4.5768 9.8236 4.86969 9.53071Z"
+                                                       fill="currentColor" />
+                                             </svg>
+                                        </button>
+                                        <ul class="dropdown-config__list dropdown-list">
+                                             <li style="display: none;"
+                                                  class="dropdown-config__search search-dropdown">
+                                                  <input class="search-dropdown__input"
+                                                       placeholder="Поиск" autofocus type="text">
+                                                  <button class="search-dropdown__btn-loop"
+                                                       type="button">
+                                                       <svg width="16" height="16" viewBox="0 0 16 16"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M6 2C8.20914 2 10 3.79086 10 6C10 8.20914 8.20914 10 6 10C3.79086 10 2 8.20914 2 6C2 3.79086 3.79086 2 6 2ZM11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11C8.76142 11 11 8.76142 11 6Z"
+                                                                 fill="currentColor" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M6.67215 3.61662C6.39327 3.51697 6.09573 3.4805 5.80104 3.50984C5.50635 3.53918 5.22184 3.6336 4.96809 3.78629C4.71433 3.93897 4.49764 4.1461 4.33368 4.39272C4.1808 4.62268 4.24328 4.93304 4.47324 5.08592C4.7032 5.23881 5.01355 5.17632 5.16644 4.94636C5.24842 4.82305 5.35676 4.71949 5.48364 4.64314C5.61052 4.5668 5.75277 4.51959 5.90012 4.50492C6.04747 4.49025 6.19623 4.50848 6.33567 4.55831C6.47512 4.60813 6.60175 4.6883 6.70644 4.79303C6.90166 4.98833 7.21824 4.98839 7.41354 4.79316C7.60884 4.59794 7.6089 4.28136 7.41368 4.08606C7.20431 3.87661 6.95104 3.71627 6.67215 3.61662Z"
+                                                                 fill="currentColor" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M8.54994 9.09345C8.36424 9.29783 8.37938 9.61405 8.58376 9.79975L14.1638 14.8698C14.3681 15.0554 14.6844 15.0403 14.8701 14.8359C15.0558 14.6315 15.0406 14.3153 14.8362 14.1296L9.25623 9.05963C9.05186 8.87393 8.73564 8.88908 8.54994 9.09345Z"
+                                                                 fill="currentColor" />
+                                                       </svg>
+                                                  </button>
+                                             </li>
+                                             <li class="dropdown-config__item dropdown-item">
+                                                  <p>Текст</p>
+                                             </li>
+                                             <li class="dropdown-config__item dropdown-item">
+                                                  <p>Текст 1</p>
+                                             </li>
+                                             <li class="dropdown-config__item dropdown-item">
+                                                  <p>Текст 2</p>
+                                             </li>
+                                             <li class="dropdown-config__item dropdown-item">
+                                                  <p>Текст 3</p>
+                                             </li>
+                                        </ul>
+                                        <input type="text" name="select-objects" value=""
+                                             class="dropdown-config__input dropdown-input">
+                                   </div>
+                              </li>
+                              <li class="form-config__item">
+                                   <textarea class="form-config__textarea form-config__input--big input" name="formComments" id="formComments"></textarea>
+                                   <label for="formComments" class="form-config__label label">Укажите
+                                        свой ответ или комментарий</label>
+                              </li>
+                              <li class="form-config__item">
+                                   <div class="form-config__dropdown dropdown-config dropdown">
+                                        <button class="dropdown-config__btn dropdown-btn" type="button">
+                                             <p class="dropdown-config__title dropdown-title">
+                                                  Тип помещений <span>*</span>
+                                             </p>
+                                             <span
+                                                  class="dropdown-config__text dropdown-btn-text"></span>
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                                       d="M4.86969 9.53071C5.16259 9.23781 5.63746 9.23781 5.93035 9.53071L11.3637 14.964C11.7125 15.3128 12.2876 15.3128 12.6364 14.964L18.0697 9.53071C18.3626 9.23781 18.8375 9.23781 19.1304 9.53071C19.4232 9.8236 19.4232 10.2985 19.1304 10.5914L13.697 16.0247C12.7625 16.9593 11.2376 16.9593 10.303 16.0247L4.86969 10.5914C4.5768 10.2985 4.5768 9.8236 4.86969 9.53071Z"
+                                                       fill="currentColor" />
+                                             </svg>
+                                        </button>
+                                        <ul class="dropdown-config__list dropdown-list">
+                                             <li style="display: none;"
+                                                  class="dropdown-config__search search-dropdown">
+                                                  <input class="search-dropdown__input dropdown-input"
+                                                       placeholder="Поиск" autofocus type="text">
+                                                  <button class="search-dropdown__btn-loop"
+                                                       type="button">
+                                                       <svg width="16" height="16" viewBox="0 0 16 16"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M6 2C8.20914 2 10 3.79086 10 6C10 8.20914 8.20914 10 6 10C3.79086 10 2 8.20914 2 6C2 3.79086 3.79086 2 6 2ZM11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11C8.76142 11 11 8.76142 11 6Z"
+                                                                 fill="currentColor" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M6.67215 3.61662C6.39327 3.51697 6.09573 3.4805 5.80104 3.50984C5.50635 3.53918 5.22184 3.6336 4.96809 3.78629C4.71433 3.93897 4.49764 4.1461 4.33368 4.39272C4.1808 4.62268 4.24328 4.93304 4.47324 5.08592C4.7032 5.23881 5.01355 5.17632 5.16644 4.94636C5.24842 4.82305 5.35676 4.71949 5.48364 4.64314C5.61052 4.5668 5.75277 4.51959 5.90012 4.50492C6.04747 4.49025 6.19623 4.50848 6.33567 4.55831C6.47512 4.60813 6.60175 4.6883 6.70644 4.79303C6.90166 4.98833 7.21824 4.98839 7.41354 4.79316C7.60884 4.59794 7.6089 4.28136 7.41368 4.08606C7.20431 3.87661 6.95104 3.71627 6.67215 3.61662Z"
+                                                                 fill="currentColor" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M8.54994 9.09345C8.36424 9.29783 8.37938 9.61405 8.58376 9.79975L14.1638 14.8698C14.3681 15.0554 14.6844 15.0403 14.8701 14.8359C15.0558 14.6315 15.0406 14.3153 14.8362 14.1296L9.25623 9.05963C9.05186 8.87393 8.73564 8.88908 8.54994 9.09345Z"
+                                                                 fill="currentColor" />
+                                                       </svg>
+                                                  </button>
+                                             </li>
+                                             <li class="dropdown-config__item dropdown-item">
+                                                  <p>Текст</p>
+                                             </li>
+                                             <li class="dropdown-config__item dropdown-item">
+                                                  <p>Текст 1</p>
+                                             </li>
+                                             <li class="dropdown-config__item dropdown-item">
+                                                  <p>Текст 2</p>
+                                             </li>
+                                             <li class="dropdown-config__item dropdown-item">
+                                                  <p>Текст 3</p>
+                                             </li>
+                                        </ul>
+                                        <input type="text" name="select-objects" value=""
+                                             class="dropdown-config__input dropdown-input">
+                                   </div>
+                              </li>
+                              <li class="form-config__item">
+                                   <div class="form-config__dropdown dropdown-config dropdown">
+                                        <button class="dropdown-config__btn dropdown-btn" type="button">
+                                             <p class="dropdown-config__title dropdown-title">
+                                                  Статус текущего проекта
+                                             </p>
+                                             <span
+                                                  class="dropdown-config__text dropdown-btn-text"></span>
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                                       d="M4.86969 9.53071C5.16259 9.23781 5.63746 9.23781 5.93035 9.53071L11.3637 14.964C11.7125 15.3128 12.2876 15.3128 12.6364 14.964L18.0697 9.53071C18.3626 9.23781 18.8375 9.23781 19.1304 9.53071C19.4232 9.8236 19.4232 10.2985 19.1304 10.5914L13.697 16.0247C12.7625 16.9593 11.2376 16.9593 10.303 16.0247L4.86969 10.5914C4.5768 10.2985 4.5768 9.8236 4.86969 9.53071Z"
+                                                       fill="currentColor" />
+                                             </svg>
+                                        </button>
+                                        <ul class="dropdown-config__list dropdown-list">
+                                             <li style="display: none;"
+                                                  class="dropdown-config__search search-dropdown">
+                                                  <input class="search-dropdown__input dropdown-input"
+                                                       placeholder="Поиск" autofocus type="text">
+                                                  <button class="search-dropdown__btn-loop"
+                                                       type="button">
+                                                       <svg width="16" height="16" viewBox="0 0 16 16"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M6 2C8.20914 2 10 3.79086 10 6C10 8.20914 8.20914 10 6 10C3.79086 10 2 8.20914 2 6C2 3.79086 3.79086 2 6 2ZM11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11C8.76142 11 11 8.76142 11 6Z"
+                                                                 fill="currentColor" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M6.67215 3.61662C6.39327 3.51697 6.09573 3.4805 5.80104 3.50984C5.50635 3.53918 5.22184 3.6336 4.96809 3.78629C4.71433 3.93897 4.49764 4.1461 4.33368 4.39272C4.1808 4.62268 4.24328 4.93304 4.47324 5.08592C4.7032 5.23881 5.01355 5.17632 5.16644 4.94636C5.24842 4.82305 5.35676 4.71949 5.48364 4.64314C5.61052 4.5668 5.75277 4.51959 5.90012 4.50492C6.04747 4.49025 6.19623 4.50848 6.33567 4.55831C6.47512 4.60813 6.60175 4.6883 6.70644 4.79303C6.90166 4.98833 7.21824 4.98839 7.41354 4.79316C7.60884 4.59794 7.6089 4.28136 7.41368 4.08606C7.20431 3.87661 6.95104 3.71627 6.67215 3.61662Z"
+                                                                 fill="currentColor" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M8.54994 9.09345C8.36424 9.29783 8.37938 9.61405 8.58376 9.79975L14.1638 14.8698C14.3681 15.0554 14.6844 15.0403 14.8701 14.8359C15.0558 14.6315 15.0406 14.3153 14.8362 14.1296L9.25623 9.05963C9.05186 8.87393 8.73564 8.88908 8.54994 9.09345Z"
+                                                                 fill="currentColor" />
+                                                       </svg>
+                                                  </button>
+                                             </li>
+                                             <li class="dropdown-config__item dropdown-item">
+                                                  <p>Текст</p>
+                                             </li>
+                                             <li class="dropdown-config__item dropdown-item">
+                                                  <p>Текст 1</p>
+                                             </li>
+                                        </ul>
+                                        <input type="text" name="select-objects" value=""
+                                             class="dropdown-config__input dropdown-input">
+                                   </div>
+                              </li>
+                              <li class="form-config__item">
+                                   <div class="form-config__dropdown dropdown-config dropdown">
+                                        <button class="dropdown-config__btn dropdown-btn" type="button">
+                                             <p class="dropdown-config__title dropdown-title">
+                                                  Какое оборудование может потребоваться? <span>*</span>
+                                             </p>
+                                             <span
+                                                  class="dropdown-config__text dropdown-btn-text"></span>
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                                       d="M4.86969 9.53071C5.16259 9.23781 5.63746 9.23781 5.93035 9.53071L11.3637 14.964C11.7125 15.3128 12.2876 15.3128 12.6364 14.964L18.0697 9.53071C18.3626 9.23781 18.8375 9.23781 19.1304 9.53071C19.4232 9.8236 19.4232 10.2985 19.1304 10.5914L13.697 16.0247C12.7625 16.9593 11.2376 16.9593 10.303 16.0247L4.86969 10.5914C4.5768 10.2985 4.5768 9.8236 4.86969 9.53071Z"
+                                                       fill="currentColor" />
+                                             </svg>
+                                        </button>
+                                        <ul class="dropdown-config__list dropdown-list">
+                                             <li style="display: none;"
+                                                  class="dropdown-config__search search-dropdown">
+                                                  <input class="search-dropdown__input dropdown-input"
+                                                       placeholder="Поиск" autofocus type="text">
+                                                  <button class="search-dropdown__btn-loop"
+                                                       type="button">
+                                                       <svg width="16" height="16" viewBox="0 0 16 16"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M6 2C8.20914 2 10 3.79086 10 6C10 8.20914 8.20914 10 6 10C3.79086 10 2 8.20914 2 6C2 3.79086 3.79086 2 6 2ZM11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11C8.76142 11 11 8.76142 11 6Z"
+                                                                 fill="currentColor" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M6.67215 3.61662C6.39327 3.51697 6.09573 3.4805 5.80104 3.50984C5.50635 3.53918 5.22184 3.6336 4.96809 3.78629C4.71433 3.93897 4.49764 4.1461 4.33368 4.39272C4.1808 4.62268 4.24328 4.93304 4.47324 5.08592C4.7032 5.23881 5.01355 5.17632 5.16644 4.94636C5.24842 4.82305 5.35676 4.71949 5.48364 4.64314C5.61052 4.5668 5.75277 4.51959 5.90012 4.50492C6.04747 4.49025 6.19623 4.50848 6.33567 4.55831C6.47512 4.60813 6.60175 4.6883 6.70644 4.79303C6.90166 4.98833 7.21824 4.98839 7.41354 4.79316C7.60884 4.59794 7.6089 4.28136 7.41368 4.08606C7.20431 3.87661 6.95104 3.71627 6.67215 3.61662Z"
+                                                                 fill="currentColor" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M8.54994 9.09345C8.36424 9.29783 8.37938 9.61405 8.58376 9.79975L14.1638 14.8698C14.3681 15.0554 14.6844 15.0403 14.8701 14.8359C15.0558 14.6315 15.0406 14.3153 14.8362 14.1296L9.25623 9.05963C9.05186 8.87393 8.73564 8.88908 8.54994 9.09345Z"
+                                                                 fill="currentColor" />
+                                                       </svg>
+                                                  </button>
+                                             </li>
+                                             <li class="dropdown-config__item dropdown-item">
+                                                  <p>Текст</p>
+                                             </li>
+                                             <li class="dropdown-config__item dropdown-item">
+                                                  <p>Текст 1</p>
+                                             </li>
+                                        </ul>
+                                        <input type="text" name="select-objects" value=""
+                                             class="dropdown-config__input dropdown-input">
+                                   </div>
+                              </li>
+                              <li class="form-config__item">
+                                   <textarea class="form-config__textarea form-config__input--big input" name="formComments" id="formComments2"></textarea>
+                                   <label for="formComments2" class="form-config__label label">Укажите
+                                        свой ответ или комментарий</label>
+                              </li>
+                              <li class="form-config__item">
+                                   <div class="form-config__dropdown dropdown-config dropdown">
+                                        <button class="dropdown-config__btn dropdown-btn" type="button">
+                                             <p class="dropdown-config__title dropdown-title">
+                                                  Услуги <span>*</span>
+                                             </p>
+                                             <span
+                                                  class="dropdown-config__text dropdown-btn-text"></span>
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                                       d="M4.86969 9.53071C5.16259 9.23781 5.63746 9.23781 5.93035 9.53071L11.3637 14.964C11.7125 15.3128 12.2876 15.3128 12.6364 14.964L18.0697 9.53071C18.3626 9.23781 18.8375 9.23781 19.1304 9.53071C19.4232 9.8236 19.4232 10.2985 19.1304 10.5914L13.697 16.0247C12.7625 16.9593 11.2376 16.9593 10.303 16.0247L4.86969 10.5914C4.5768 10.2985 4.5768 9.8236 4.86969 9.53071Z"
+                                                       fill="currentColor" />
+                                             </svg>
+                                        </button>
+                                        <ul class="dropdown-config__list dropdown-list">
+                                             <li style="display: none;"
+                                                  class="dropdown-config__search search-dropdown">
+                                                  <input class="search-dropdown__input dropdown-input"
+                                                       placeholder="Поиск" autofocus type="text">
+                                                  <button class="search-dropdown__btn-loop"
+                                                       type="button">
+                                                       <svg width="16" height="16" viewBox="0 0 16 16"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M6 2C8.20914 2 10 3.79086 10 6C10 8.20914 8.20914 10 6 10C3.79086 10 2 8.20914 2 6C2 3.79086 3.79086 2 6 2ZM11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11C8.76142 11 11 8.76142 11 6Z"
+                                                                 fill="currentColor" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M6.67215 3.61662C6.39327 3.51697 6.09573 3.4805 5.80104 3.50984C5.50635 3.53918 5.22184 3.6336 4.96809 3.78629C4.71433 3.93897 4.49764 4.1461 4.33368 4.39272C4.1808 4.62268 4.24328 4.93304 4.47324 5.08592C4.7032 5.23881 5.01355 5.17632 5.16644 4.94636C5.24842 4.82305 5.35676 4.71949 5.48364 4.64314C5.61052 4.5668 5.75277 4.51959 5.90012 4.50492C6.04747 4.49025 6.19623 4.50848 6.33567 4.55831C6.47512 4.60813 6.60175 4.6883 6.70644 4.79303C6.90166 4.98833 7.21824 4.98839 7.41354 4.79316C7.60884 4.59794 7.6089 4.28136 7.41368 4.08606C7.20431 3.87661 6.95104 3.71627 6.67215 3.61662Z"
+                                                                 fill="currentColor" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M8.54994 9.09345C8.36424 9.29783 8.37938 9.61405 8.58376 9.79975L14.1638 14.8698C14.3681 15.0554 14.6844 15.0403 14.8701 14.8359C15.0558 14.6315 15.0406 14.3153 14.8362 14.1296L9.25623 9.05963C9.05186 8.87393 8.73564 8.88908 8.54994 9.09345Z"
+                                                                 fill="currentColor" />
+                                                       </svg>
+                                                  </button>
+                                             </li>
+                                             <li class="dropdown-config__item dropdown-item">
+                                                  <p>Текст</p>
+                                             </li>
+                                             <li class="dropdown-config__item dropdown-item">
+                                                  <p>Текст 1</p>
+                                             </li>
+                                        </ul>
+                                        <input type="text" name="select-objects" value=""
+                                             class="dropdown-config__input dropdown-input">
+                                   </div>
+                              </li>
+                              <li class="form-config__item">
+                                   <div class="form-config__dropdown dropdown-config dropdown">
+                                        <button class="dropdown-config__btn dropdown-btn" type="button">
+                                             <p class="dropdown-config__title dropdown-title">
+                                                  Местонахождение объекта оснащения
+                                             </p>
+                                             <span
+                                                  class="dropdown-config__text dropdown-btn-text"></span>
+                                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                                       d="M4.86969 9.53071C5.16259 9.23781 5.63746 9.23781 5.93035 9.53071L11.3637 14.964C11.7125 15.3128 12.2876 15.3128 12.6364 14.964L18.0697 9.53071C18.3626 9.23781 18.8375 9.23781 19.1304 9.53071C19.4232 9.8236 19.4232 10.2985 19.1304 10.5914L13.697 16.0247C12.7625 16.9593 11.2376 16.9593 10.303 16.0247L4.86969 10.5914C4.5768 10.2985 4.5768 9.8236 4.86969 9.53071Z"
+                                                       fill="currentColor" />
+                                             </svg>
+                                        </button>
+                                        <ul class="dropdown-config__list dropdown-list">
+                                             <li style="display: none;"
+                                                  class="dropdown-config__search search-dropdown">
+                                                  <input class="search-dropdown__input dropdown-input"
+                                                       placeholder="Поиск" autofocus type="text">
+                                                  <button class="search-dropdown__btn-loop"
+                                                       type="button">
+                                                       <svg width="16" height="16" viewBox="0 0 16 16"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M6 2C8.20914 2 10 3.79086 10 6C10 8.20914 8.20914 10 6 10C3.79086 10 2 8.20914 2 6C2 3.79086 3.79086 2 6 2ZM11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11C8.76142 11 11 8.76142 11 6Z"
+                                                                 fill="currentColor" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M6.67215 3.61662C6.39327 3.51697 6.09573 3.4805 5.80104 3.50984C5.50635 3.53918 5.22184 3.6336 4.96809 3.78629C4.71433 3.93897 4.49764 4.1461 4.33368 4.39272C4.1808 4.62268 4.24328 4.93304 4.47324 5.08592C4.7032 5.23881 5.01355 5.17632 5.16644 4.94636C5.24842 4.82305 5.35676 4.71949 5.48364 4.64314C5.61052 4.5668 5.75277 4.51959 5.90012 4.50492C6.04747 4.49025 6.19623 4.50848 6.33567 4.55831C6.47512 4.60813 6.60175 4.6883 6.70644 4.79303C6.90166 4.98833 7.21824 4.98839 7.41354 4.79316C7.60884 4.59794 7.6089 4.28136 7.41368 4.08606C7.20431 3.87661 6.95104 3.71627 6.67215 3.61662Z"
+                                                                 fill="currentColor" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                 d="M8.54994 9.09345C8.36424 9.29783 8.37938 9.61405 8.58376 9.79975L14.1638 14.8698C14.3681 15.0554 14.6844 15.0403 14.8701 14.8359C15.0558 14.6315 15.0406 14.3153 14.8362 14.1296L9.25623 9.05963C9.05186 8.87393 8.73564 8.88908 8.54994 9.09345Z"
+                                                                 fill="currentColor" />
+                                                       </svg>
+                                                  </button>
+                                             </li>
+                                             <li class="dropdown-config__item dropdown-item">
+                                                  <p>Текст</p>
+                                             </li>
+                                             <li class="dropdown-config__item dropdown-item">
+                                                  <p>Текст 1</p>
+                                             </li>
+                                        </ul>
+                                        <input type="text" name="select-objects" value=""
+                                             class="dropdown-config__input dropdown-input">
+                                   </div>
+                              </li>
+                         </ul>
+                    </div>
+                    <div class="form-config__row">
+                         <p class="form-config__title mb-6">Контактные данные</p>
+                         <ul class="form-config__inner">
+                              <li class="form-config__item">
+                                   <input id="formFIO" class="form-config__input input" type="text" name="fio">
+                                   <label for="formFIO" class="form-config__label label">ФИО
+                                        <span>*</span></label>
+                              </li>
+                              <li class="form-config__items">
+                                   <div class="form-config__item">
+                                        <input id="formYourTel" class="form-config__input input"
+                                             type="tel" name="tel">
+                                        <label for="formYourTel"
+                                             class="form-config__label label">Телефон
+                                             <span>*</span></label>
+                                   </div>
+                                   <div class="form-config__item">
+                                        <input id="formEmail" class="form-config__input input"
+                                             type="email" name="email">
+                                        <label for="formEmail"
+                                             class="form-config__label label">Электронная почта
+                                             <span>*</span></label>
+                                   </div>
+                              </li>
+                              <li class="form-config__item">
+                                   <input id="formNameCompany" name="nameCompany" class="form-config__input input" type="text">
+                                   <label for="formNameCompany" class="form-config__label label">Название компании</label>
+                              </li>
+                              <li class="form-config__item">
+                                   <textarea class="form-config__textarea form-config__input--big input" name="addressDelivery" id="addressDelivery"></textarea>
+                                   <label for="addressDelivery" class="form-config__label label">Адрес для
+                                        доставки</label>
+                              </li>
+                         </ul>
+                    </div>
+                    <button class="config-offer__button config-offer__button--mb btn btn-dark" type="submit">
+                         <span>Получить коммерческое предложение</span>
+                    </button>
+               </div>
+               <div class="form-config__offer config-offer">
+                    <div class="config-offer__top">
+                         <div class="config-offer__image">
+                              <img src="@img/configurator/form-config/ivan.jpg" alt="ivanov ivan">
+                         </div>
+                         <div class="config-offer__info">
+                              <p class="config-offer__name">Иванов Иван</p>
+                              <p class="config-offer__post">Эксперт по системной интегации</p>
+                         </div>
+                    </div>
+                    <div class="config-offer__line">
+                         <svg width="100%" height="20" viewBox="0 0 489 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 18.1025H65.3053C66.1182 18.1025 66.8502 17.6105 67.1572 16.8578L72.9557 2.6406C73.4676 1.38564 75.0531 0.992439 76.092 1.86282L94.9189 17.6356C95.2789 17.9372 95.7264 18.1025 96.1961 18.1025C110.799 18.1025 344.224 18.1025 488 18.1025"
+                                   stroke="#D9D9D9" stroke-width="2" stroke-linecap="round" />
+                         </svg>
+                    </div>
+                    <div class="config-offer__bottom">
+                         <p class="config-offer__text mb-8">Ваши ответы помогут нам подобрать решение для
+                              вашего проекта.</p>
+                         <button class="config-offer__button config-offer__button--dc btn btn-dark" type="submit">
+                              <span>Получить коммерческое предложение</span>
+                         </button>
+                    </div>
+               </div>
+          </div>
+     </div>
+</section>

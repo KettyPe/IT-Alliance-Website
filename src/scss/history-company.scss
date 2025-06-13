@@ -1,0 +1,61 @@
+.history-company {
+
+     &__container {
+     }
+
+     &__inner {
+          max-width: 736px;
+     }
+
+     &__title {
+     }
+
+     &__subtitle {
+          font-size: 24px;
+          line-height: 133%;
+     }
+
+     &__list {
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+
+     }
+
+     &__item {
+     }
+
+     &__item-title {
+          font-size: 32px;
+          line-height: 131%;
+          margin-bottom: 16px;
+     }
+
+     &__text {
+          line-height: 150%;
+          p {
+               &:not(:last-child) {
+                    margin-bottom: 25px;
+               }
+          }
+     }
+
+     &__sublist {
+     }
+
+     &__subitem {
+          line-height: 150%;
+          padding-left: 25px;
+          position: relative;
+          &::before{
+               content:'';
+               position:absolute;
+               width: 3px;
+               height: 3px;
+               top:11px;
+               left: 10px;
+               background-color: var(--mainColor);
+               border-radius: 50%;
+          }
+     }
+}

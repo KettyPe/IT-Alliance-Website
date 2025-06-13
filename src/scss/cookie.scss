@@ -1,0 +1,47 @@
+.cookie {
+     position: absolute;
+     max-width: 569px;
+     bottom: 32px;
+     left: 32px;
+     border-radius: 12px;
+     background-color: var(--whiteColor);
+     color: var(--mainColor);
+     z-index: 10;
+
+     &__inner {
+          padding: 20px;
+     }
+
+     &__top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 16px;
+     }
+
+     &__title {
+          font-size: 24px;
+          line-height: 133%;
+     }
+
+     &__close {
+          @include hoverClose;
+     }
+
+     &__policy {
+          line-height: 150%;
+          margin-bottom: 32px;
+          a {
+               color: var(--AcentColor);
+               @include hoverLink;
+          }
+     }
+
+     &__bottom {
+          display: flex;
+          column-gap: 32px;
+     }
+
+     &__button {
+     }
+}

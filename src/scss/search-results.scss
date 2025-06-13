@@ -1,0 +1,102 @@
+.search-results {
+     padding: 60px 0px 0px 0px;
+
+     &__container {
+     }
+
+     &__not-found {
+          margin-bottom: 200px;
+     }
+
+     &__title {
+          margin-bottom: 32px;
+     }
+
+     &__text {
+          font-size: 24px;
+          line-height: 133%;
+     }
+}
+
+.tabs-search-results {
+     display: flex;
+     column-gap: 32px;
+
+     &__buttons {
+          flex: 0 0 352px;
+          height: 100%;
+          border-left: 1px solid var(--borderColor);
+     }
+
+     &__button {
+          padding: 12px;
+          cursor: pointer;
+          display: block;
+          span {
+               pointer-events: none;
+          }
+          position: relative;
+          &::before {
+               content: "";
+               position: absolute;
+               width: 2px;
+               height: 0;
+               top: 0;
+               left: -1px;
+               background-color: var(--AcentColor);
+               border-radius: 10px;
+               transition: height 0.3s ease 0s;
+          }
+
+          &.active-tab-btn {
+               &::before {
+                    height: 100%;
+               }
+          }
+
+          @media (any-hover: hover) {
+               transition: color 0.3s ease 0s;
+               &:hover {
+                    color: var(--AcentColor);
+               }
+          }
+     }
+
+     &__content {
+          flex: 0 1 864px;
+          //display: none;
+          flex-direction: column;
+          gap: 32px;
+     }
+
+     &__article {
+     }
+}
+
+.article-search {
+
+     &__title {
+          font-size: 24px;
+          line-height: 133%;
+          margin-bottom: 8px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+          overflow: hidden;
+          @include hoverLink;
+     }
+
+     &__text {
+          line-height: 150%;
+          margin-bottom: 16px;
+
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+     }
+
+     .breadcrumbs {
+          padding: 0px;
+     }
+}

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Карточка проекта"
+})
+
+<body>
+     <div class="wrapper">
+          @@include('html/_header.htm',{})
+          <main class="page">
+               <div class="breadcrumbs">
+                    <div class="breadcrumbs__container">
+                         <ul class="breadcrumbs__list">
+                              <li class="breadcrumbs__item">
+                                   <a href="index.html" target="_blank">Главная</a>
+                              </li>
+                              <li class="breadcrumbs__item">
+                                   <a href="project.html" target="_blank">Проекты</a>
+                              </li>
+                              <li class="breadcrumbs__item">
+                                   <span>Поставка передовых компьютерных классов для ФКУ "ДВОУМТС МВД РОССИИ"</span>
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+               <div class="card-project">
+                    @@include('html/card-project/main.htm',{})
+                    <section class="card-project__text text-card-project">
+                         <div class="text-card-project__container">
+                              <h2 class="text-card-project__title subtitle mb-8">Заказчик</h2>
+                              <p class="text-card-project__text">Федеральное казенное учреждение "Дальневосточное окружное управление материально-технического снабжения Министерства внутренних дел Российской Федерации"</p>
+                         </div>
+                    </section>
+                    <section class="card-project__benefits benefits-equipment">
+                         <div class="benefits-equipment__container">
+                              <h2 class="benefits-equipment__title subtitle">Цели проекта</h2>
+                              <div class="benefits-equipment__cards">
+                                   <article class="benefits-equipment__card">
+                                        <p class="benefits-equipment__card-title">Улучшить качество обучения</p>
+                                        <p class="benefits-equipment__card-text">Внедрить передовые компьютерные классы, чтобы создать интерактивную обучающую среду, способствующую более эффективному усвоению материала</p>
+                                   </article>
+                                   <article class="benefits-equipment__card">
+                                        <p class="benefits-equipment__card-title">Использовать современное оборудование</p>
+                                        <p class="benefits-equipment__card-text">Чтобы обеспечить защиту данных и конфиденциальность информации. Это особенно важно в сфере силовых структур</p>
+                                   </article>
+                                   <article class="benefits-equipment__card">
+                                        <p class="benefits-equipment__card-title">Вести дистанционные занятия</p>
+                                        <p class="benefits-equipment__card-text">Чтобы позволить обучающимся и преподавателям работать из любой точки. Это повысит гибкость и мобильность образовательного процесса</p>
+                                   </article>
+                                   <article class="benefits-equipment__card">
+                                        <p class="benefits-equipment__card-title">Использовать инновационные технологии и инструменты</p>
+                                        <p class="benefits-equipment__card-text">Чтобы персонал заказчика развивал свои профессиональные навыки и был готов к решению сложных задач</p>
+                                   </article>
+                              </div>
+                         </div>
+                    </section>
+                    @@include('html/card-project/products.htm',{})
+                    <div class="card-project__form form-card-project">
+                         <div class="form-card-project__container">
+                              <div class="form-card-project__inner gap-8">
+                                   <h4 class="form-card-project__title subtitle">Похожий проект?</h4>
+                                   <p class="form-card-project__text">Оставьте контакты, мы свяжемся с вами, расспросим о проекте и задачах. <br> Подберем решение</p>
+                                   <button class="form-card-project__button btn btn-white" type="button" data-fancybox data-src="#project"><span>Отправить</span></button>
+                              </div>
+                         </div>
+                    </div>
+                    <section class="card-project__results results-card-project">
+                         <div class="results-card-project__container">
+                              <div class="results-card-project__top mb-8">
+                                   <h4 class="text-card-project__title subtitle mb-8">Итоги</h4>
+                                   <p class="text-card-project__text">С радостью сообщаем, что проект по поставке нового интерактивного оборудования для МОУ "Каракульская СОШ" в рамках Национального проекта успешно завершен. Наша компания обогатила образовательную среду школы и <a href="#" target="_blank">показала свою эффективность</a> в реализации сложных проектов. </p>
+                              </div>
+                              <div class="results-card-project__benefits">
+                                   <div class="benefits-equipment__cards">
+                                        <article class="benefits-equipment__card">
+                                             <p class="benefits-equipment__card-title">Внедрили инновационные решения</p>
+                                             <p class="benefits-equipment__card-text">Оснастили передовые компьютерные классы с возможностью дистанционного обучения, полностью соответствующие потребностям ФКУ "ДВОУМТС МВД России”</p>
+                                        </article>
+                                        <article class="benefits-equipment__card">
+                                             <p class="benefits-equipment__card-title">Провели техническую экспертизу</p>
+                                             <p class="benefits-equipment__card-text">Наш опыт и партнерство с ведущими производителями позволили предложить высококачественное оборудование, отвечающее самым строгим стандартам</p>
+                                        </article>
+                                        <article class="benefits-equipment__card">
+                                             <p class="benefits-equipment__card-title">Персонализированный подход</p>
+                                             <p class="benefits-equipment__card-text">Учли специфику деятельности заказчика, разработав уникальное коммерческое предложение, оптимизированное под его требования и бюджет</p>
+                                        </article>
+                                        <article class="benefits-equipment__card">
+                                             <p class="benefits-equipment__card-title">Клиентоориентированный сервис</p>
+                                             <p class="benefits-equipment__card-text">Гарантировали круглосуточную техническую поддержку и оперативное реагирование на любые запросы заказчика, обеспечивая комфорт и уверенность в результате</p>
+                                        </article>
+                                   </div>
+                              </div>
+                         </div>
+                    </section>
+                    <section class="card-project__text text-card-project">
+                         <div class="text-card-project__container">
+                              <h4 class="text-card-project__title subtitle mb-8">Говорим спасибо</h4>
+                              <p class="text-card-project__text">Выражаем благодарность ФКУ "ДВОУМТС МВД России" за доверие и возможность стать поставщиком интерактивного оборудования. Мы стремимся к долгосрочному сотрудничеству и готовы к новым вызовам в обеспечении потребностей заказчика.</p>
+                         </div>
+                    </section>
+                    <section class="reviews">
+                         <div class="reviews__container">
+                              <div class="reviews__top">
+                                   <h5 class="reviews__title subtitle">Отзывы</h5>
+                                   <div class="reviews__arrows arrows">
+                                        <button class="reviews__arrow arrow  reviews__arrow-prev arrow arrow-blue"
+                                             type="button">
+                                             @@include('html/icons/arrow-left.htm')
+                                        </button>
+                                        <button class="reviews__arrow arrow  reviews__arrow-next arrow arrow-blue"
+                                             type="button">
+                                             @@include('html/icons/arrow-right.htm')
+                                        </button>
+                                   </div>
+                              </div>
+                              <div class="reviews__slider swiper">
+                                   <div class="reviews__swiper-wrapper swiper-wrapper">
+                                        <div class="reviews__slide swiper-slide reviews-slide">
+                                             <div class="reviews-slide__inner">
+                                                  <h5 class="reviews-slide__title">Отзыв</h5>
+                                                  <div class="reviews-slide__info">
+                                                       <div class="reviews-slide__image">
+                                                            <img src="@img/reviews/01.jpg" alt="Александр Говорин">
+                                                       </div>
+                                                       <div class="reviews-slide__desc">
+                                                            <p class="reviews-slide__name">Александр Говорин</p>
+                                                            <p class="reviews-slide__post">Директор ФКУ "ДВОУМТС МВД РОССИИ"</p>
+                                                       </div>
+                                                  </div>
+                                                  <div class="reviews-slide__text">
+                                                       <p>Сотрудничаем с ИТ Альянс с 2020 года.</p>
+                                                       <p>За этот период компанией выполнен значительный объем работ по поставке оборудования и комплектации рабочих классов.</p>
+                                                       <p>Положительно оцениваем профессианализм сотрудников ИТ Альянс, внимательное отношение к клиенту, высокую скорость и качество работы. </p>
+                                                  </div>
+                                                  <div class="reviews-slide__icon">
+                                                       <img src="@img/icons/text.svg" alt="">
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </section>
+                    <div class="help help--project">
+                         <div class="help__container">
+                              <section class="content-tabs-help__section">
+                                   <div class="content-tabs-help__top">
+                                        <p class="content-tabs-help__title">Похожие проекты</p>
+                                        <div class="content-tabs-help__arrows arrows">
+                                             <button
+                                                  class="content-tabs-help__arrow arrow project-help__arrow-prev arrow arrow-black"
+                                                  type="button">
+                                                  @@include('html/icons/arrow-left.htm')
+                                             </button>
+                                             <button
+                                                  class="content-tabs-help__arrow arrow project-help__arrow-next arrow arrow-black"
+                                                  type="button">
+                                                  @@include('html/icons/arrow-right.htm')
+                                             </button>
+                                        </div>
+                                   </div>
+                                   <div class="project-help__slider swiper">
+                                        <div class="project-help__swiper-wrapper swiper-wrapper">
+                                             <div class="project-help__slide swiper-slide slide-project-help">
+                                                  <div class="slide-project-help__inner">
+                                                       <a href="#" class="slide-project-help__image" target="_blank">
+                                                            <img src="@img/help-project/01.jpg" alt="help-project">
+                                                       </a>
+                                                       <div class="slide-project-help__tags tags">
+                                                            <div class="tags__item tags__item--gray">
+                                                                 <span>Гос</span>
+                                                            </div>
+                                                            <div class="tags__item tags__item--green">
+                                                                 <span>Образование</span>
+                                                            </div>
+                                                       </div>
+                                                       <div class="slide-project-help__info">
+                                                            <a href="#" class="slide-project-help__title" target="_blank">Поставка
+                                                                 передовых компьютерных классов </a>
+                                                            <p class="slide-project-help__text">для ФКУ "ДВОУМТС МВД России"</p>
+                                                       </div>
+                                                       <ul class="slide-project-help__list">
+                                                            <li><span class="slide-project-help__item">Компьютерные классы</span>
+                                                            </li>
+                                                            <li><span class="slide-project-help__item">Интерактивное
+                                                                      оборудование</span></li>
+                                                            <li><span class="slide-project-help__item">Печатное
+                                                                      оборудование</span></li>
+                                                            <li><span class="slide-project-help__item">Мультимедиа</span></li>
+                    
+                                                       </ul>
+                                                       <div class="slide-project-help__dropdown dropdown-project-help">
+                                                            <div class="dropdown-project-help__info">
+                                                                 <div class="dropdown-project-help__text">
+                                                                      <span>Ещё</span>
+                                                                      <span>4</span>
+                                                                 </div>
+                                                                 <div class="dropdown-project-help__icon">
+                                                                      <svg width="12" height="6" viewBox="0 0 12 6" fill="none"
+                                                                           xmlns="http://www.w3.org/2000/svg">
+                                                                           <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                                d="M0.65224 0.196002C0.87191 -0.0236675 1.22807 -0.0236675 1.44774 0.196002L5.52274 4.271C5.78432 4.53258 6.21566 4.53258 6.47724 4.271L10.5522 0.196002C10.7719 -0.0236675 11.1281 -0.0236675 11.3477 0.196002C11.5674 0.415672 11.5674 0.771828 11.3477 0.991498L7.27273 5.0665C6.57182 5.76742 5.42816 5.76742 4.72724 5.0665L0.65224 0.991498C0.43257 0.771828 0.43257 0.415672 0.65224 0.196002Z"
+                                                                                fill="currentColor" />
+                                                                      </svg>
+                                                                 </div>
+                                                            </div>
+                                                            <ul class="dropdown-project-help__list">
+                                                                 <li><span class="dropdown-project-help__item">Компьютерные
+                                                                           классы</span></li>
+                                                                 <li><span class="dropdown-project-help__item">Интерактивное
+                                                                           оборудование</span></li>
+                                                                 <li><span class="dropdown-project-help__item">Печатная
+                                                                           техника</span></li>
+                                                                 <li><span class="dropdown-project-help__item">Мультимедиа</span>
+                                                                 </li>
+                                                            </ul>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                             <div class="project-help__slide swiper-slide slide-project-help">
+                                                  <div class="slide-project-help__inner">
+                                                       <a href="#" class="slide-project-help__image" target="_blank">
+                                                            <img src="@img/help-project/01.jpg" alt="help-project">
+                                                       </a>
+                                                       <div class="slide-project-help__tags tags">
+                                                            <div class="tags__item tags__item--gray">
+                                                                 <span>Гос</span>
+                                                            </div>
+                                                            <div class="tags__item tags__item--pink">
+                                                                 <span>Силовые структуры</span>
+                                                            </div>
+                                                       </div>
+                                                       <div class="slide-project-help__info">
+                                                            <a href="#" class="slide-project-help__title" target="_blank">Поставка
+                                                                 передовых компьютерных классов </a>
+                                                            <p class="slide-project-help__text">для ФКУ "ДВОУМТС МВД России"</p>
+                                                       </div>
+                                                       <ul class="slide-project-help__list">
+                                                            <li><span class="slide-project-help__item">Компьютерные классы</span>
+                                                            </li>
+                                                            <li><span class="slide-project-help__item">Интерактивное
+                                                                      оборудование</span></li>
+                                                            <li><span class="slide-project-help__item">Печатное
+                                                                      оборудование</span></li>
+                    
+                                                       </ul>
+                                                       <div class="slide-project-help__dropdown dropdown-project-help">
+                                                            <div class="dropdown-project-help__info">
+                                                                 <div class="dropdown-project-help__text">
+                                                                      <span>Ещё</span>
+                                                                      <span>4</span>
+                                                                 </div>
+                                                                 <div class="dropdown-project-help__icon">
+                                                                      <svg width="12" height="6" viewBox="0 0 12 6" fill="none"
+                                                                           xmlns="http://www.w3.org/2000/svg">
+                                                                           <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                                d="M0.65224 0.196002C0.87191 -0.0236675 1.22807 -0.0236675 1.44774 0.196002L5.52274 4.271C5.78432 4.53258 6.21566 4.53258 6.47724 4.271L10.5522 0.196002C10.7719 -0.0236675 11.1281 -0.0236675 11.3477 0.196002C11.5674 0.415672 11.5674 0.771828 11.3477 0.991498L7.27273 5.0665C6.57182 5.76742 5.42816 5.76742 4.72724 5.0665L0.65224 0.991498C0.43257 0.771828 0.43257 0.415672 0.65224 0.196002Z"
+                                                                                fill="currentColor" />
+                                                                      </svg>
+                                                                 </div>
+                                                            </div>
+                                                            <ul class="dropdown-project-help__list">
+                                                                 <li><span class="dropdown-project-help__item">Компьютерные
+                                                                           классы</span></li>
+                                                                 <li><span class="dropdown-project-help__item">Интерактивное
+                                                                           оборудование</span></li>
+                                                                 <li><span class="dropdown-project-help__item">Печатная
+                                                                           техника</span></li>
+                                                                 <li><span class="dropdown-project-help__item">Мультимедиа</span>
+                                                                 </li>
+                                                            </ul>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                             <div class="project-help__slide swiper-slide slide-project-help">
+                                                  <div class="slide-project-help__inner">
+                                                       <a href="#" class="slide-project-help__image" target="_blank">
+                                                            <img src="@img/help-project/01.jpg" alt="help-project">
+                                                       </a>
+                                                       <div class="slide-project-help__tags tags">
+                                                            <div class="tags__item tags__item--gray">
+                                                                 <span>Гос</span>
+                                                            </div>
+                                                            <div class="tags__item tags__item--orange">
+                                                                 <span>Производство</span>
+                                                            </div>
+                                                       </div>
+                                                       <div class="slide-project-help__info">
+                                                            <a href="#" class="slide-project-help__title" target="_blank">Поставка
+                                                                 передовых компьютерных классов </a>
+                                                            <p class="slide-project-help__text">для ФКУ "ДВОУМТС МВД России"</p>
+                                                       </div>
+                                                       <ul class="slide-project-help__list">
+                                                            <li><span class="slide-project-help__item">Компьютерные классы</span>
+                                                            </li>
+                                                            <li><span class="slide-project-help__item">Интерактивное
+                                                                      оборудование</span></li>
+                                                            <li><span class="slide-project-help__item">Печатное
+                                                                      оборудование</span></li>
+                                                            <li><span class="slide-project-help__item">Печатное
+                                                                      оборудование</span></li>
+                                                       </ul>
+                                                       <div class="slide-project-help__dropdown dropdown-project-help">
+                                                            <div class="dropdown-project-help__info">
+                                                                 <div class="dropdown-project-help__text">
+                                                                      <span>Ещё</span>
+                                                                      <span>4</span>
+                                                                 </div>
+                                                                 <div class="dropdown-project-help__icon">
+                                                                      <svg width="12" height="6" viewBox="0 0 12 6" fill="none"
+                                                                           xmlns="http://www.w3.org/2000/svg">
+                                                                           <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                                d="M0.65224 0.196002C0.87191 -0.0236675 1.22807 -0.0236675 1.44774 0.196002L5.52274 4.271C5.78432 4.53258 6.21566 4.53258 6.47724 4.271L10.5522 0.196002C10.7719 -0.0236675 11.1281 -0.0236675 11.3477 0.196002C11.5674 0.415672 11.5674 0.771828 11.3477 0.991498L7.27273 5.0665C6.57182 5.76742 5.42816 5.76742 4.72724 5.0665L0.65224 0.991498C0.43257 0.771828 0.43257 0.415672 0.65224 0.196002Z"
+                                                                                fill="currentColor" />
+                                                                      </svg>
+                                                                 </div>
+                                                            </div>
+                                                            <ul class="dropdown-project-help__list">
+                                                                 <li><span class="dropdown-project-help__item">Компьютерные
+                                                                           классы</span></li>
+                                                                 <li><span class="dropdown-project-help__item">Интерактивное
+                                                                           оборудование</span></li>
+                                                                 <li><span class="dropdown-project-help__item">Печатная
+                                                                           техника</span></li>
+                                                                 <li><span class="dropdown-project-help__item">Мультимедиа</span>
+                                                                 </li>
+                                                            </ul>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <a href="#" class="content-tabs-help__button btn btn-white" target="_blank"><span>Смотреть все
+                                             проекты</span></a>
+                              </section>
+                         </div>
+                    </div>
+               </div>
+          </main>
+          @@include('html/_footer.htm',{})
+     </div>
+     @@include('html/_popup.htm',{})
+     <script src="https://api-maps.yandex.ru/2.1/?apikey=72e4cd21-9400-4735-9cfe-40e993aeb72f&lang=ru_RU&_v=20240307171659"></script>
+     @@include('html/_js.htm',{})
+</body>
+
+</html>               

@@ -1,0 +1,75 @@
+.config-main {
+     &__container {
+     }
+
+     &__main {
+     }
+
+     &__main,
+     &__inner {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+
+     &__inner {
+          margin-bottom: 40px;
+     }
+
+     &__subtitle {
+     }
+
+     &__title {
+     }
+
+     &__text {
+          font-size: 24px;
+          line-height: 133%;
+          text-align: center;
+     }
+
+     &__buttons {
+          display: flex;
+     }
+
+     &__button {
+     }
+
+     &__slider {
+          transform: translateX(34px);
+     }
+
+     &__swiper-wrapper {
+     }
+
+     &__slide {
+     }
+
+     &__arrows {
+          justify-content: center;
+     }
+
+     &__arrow {
+     }
+
+     &__arrow-prev {
+     }
+
+     &__arrow-next {
+     }
+}
+
+.slide-config {
+     &__image {
+          position: relative;
+          padding-bottom: 70%;
+          img {
+               position: absolute;
+               width: 100%;
+               height: 100%;
+               top: 0;
+               left: 0;
+               object-fit: contain;
+          }
+     }
+}
